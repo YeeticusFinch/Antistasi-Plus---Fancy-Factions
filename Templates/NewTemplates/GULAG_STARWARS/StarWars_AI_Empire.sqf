@@ -2,8 +2,8 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "NATO"] call _fnc_saveToTemplate;
-["spawnMarkerName", "NATO support corridor"] call _fnc_saveToTemplate;
+["name", "Galactic Empire"] call _fnc_saveToTemplate;
+["spawnMarkerName", "Galactic Empire support corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
 ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] call _fnc_saveToTemplate;
