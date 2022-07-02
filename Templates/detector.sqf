@@ -25,6 +25,8 @@ A3A_hasCup = false;
 A3A_hasAegis = false;
 A3A_hasGlobMob = false;
 A3A_hasGlobMobAaf = false;
+A3A_hasStarWars = false;
+A3A_hasWW2 = false;
 
 //Aegis submods
 private _activeAegis = false;
