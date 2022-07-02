@@ -43,6 +43,18 @@ private _activeAfrf = false;
 private _activeUsaf = false;
 private _activeSaf = false;
 
+//Star Wars mods
+private _activeSWOP = false;
+private _active3AS = false;
+
+//WW2 mods
+private _activeVIOC = false;
+private _activeFOW = false;
+private _activeNF = false;
+private _activeWW2ac = false;
+private _activeRealPanzer = false;
+private _activeEAW = false;
+
 //Actual Detection
 //IFA Detection
 if (isClass (configFile >> "CfgPatches" >> "LIB_Core")) then {
