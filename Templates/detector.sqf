@@ -56,6 +56,7 @@ private _activeNF = false;
 private _activeWW2ac = false;
 private _activeRealPanzer = false;
 private _activeEAW = false;
+private _activeGEIST = false;
 
 //Actual Detection
 //IFA Detection
