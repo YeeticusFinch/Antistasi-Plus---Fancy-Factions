@@ -155,17 +155,17 @@
 ["playerDefaultLoadout", []] call _fnc_saveToTemplate;
 ["pvpLoadouts", [
 		//Team Leader
-		["vanilla_blufor_teamLeader"] call A3A_fnc_getLoadout,
+		["LIB_GER_unterofficer_WssFrsbrgOschaMp40"] call A3A_fnc_getLoadout,
 		//Medic
-		["vanilla_blufor_medic"] call A3A_fnc_getLoadout,
+		["LIB_GER_medic_WssFrsbrgK98"] call A3A_fnc_getLoadout,
 		//Autorifleman
-		["vanilla_blufor_machineGunner"] call A3A_fnc_getLoadout,
+		["LIB_GER_mgunner_WssFrsbrgStrmmMg42"] call A3A_fnc_getLoadout,
 		//Marksman
-		["vanilla_blufor_marksman"] call A3A_fnc_getLoadout,
+		["LIB_GER_sniper_WssFrsbrgUschaK98zf39"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
-		["vanilla_blufor_AT"] call A3A_fnc_getLoadout,
+		["LIB_GER_AT_soldier_WssFrsbrgStrmmMp40"] call A3A_fnc_getLoadout,
 		//AT2
-		["vanilla_blufor_rifleman"] call A3A_fnc_getLoadout
+		["LIB_GER_ober_rifleman_WssFrsbrgOmnnG43"] call A3A_fnc_getLoadout
 	]
 ] call _fnc_saveToTemplate;
 
@@ -183,27 +183,18 @@ _loadoutData setVariable ["SMGs", []];
 _loadoutData setVariable ["machineGuns", []];
 _loadoutData setVariable ["marksmanRifles", []];
 _loadoutData setVariable ["sniperRifles", []];
-_loadoutData setVariable ["lightATLaunchers", [
-	["launch_MRAWS_sand_F", "", "acc_pointer_IR", "", ["MRAWS_HE_F", "MRAWS_HEAT55_F"], [], ""],
-	["launch_MRAWS_sand_F", "", "acc_pointer_IR", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
-	["launch_MRAWS_sand_F", "", "acc_pointer_IR", "", ["MRAWS_HEAT_F", "MRAWS_HE_F"], [], ""],
-	["launch_MRAWS_sand_rail_F", "", "acc_pointer_IR", "", ["MRAWS_HE_F", "MRAWS_HEAT55_F"], [], ""],
-	["launch_MRAWS_sand_rail_F", "", "acc_pointer_IR", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
-	["launch_MRAWS_sand_rail_F", "", "acc_pointer_IR", "", ["MRAWS_HEAT_F", "MRAWS_HE_F"], [], ""]
-]];
+_loadoutData setVariable ["lightATLaunchers", []];
 _loadoutData setVariable ["ATLaunchers", []];
 _loadoutData setVariable ["missileATLaunchers", []];
-_loadoutData setVariable ["AALaunchers", [
-	["launch_B_Titan_F", "", "acc_pointer_IR", "", ["Titan_AA"], [], ""]
-]];
+_loadoutData setVariable ["AALaunchers", []];
 _loadoutData setVariable ["sidearms", []];
 
-_loadoutData setVariable ["ATMines", ["ATMine_Range_Mag"]];
-_loadoutData setVariable ["APMines", ["APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag"]];
-_loadoutData setVariable ["lightExplosives", ["DemoCharge_Remote_Mag"]];
-_loadoutData setVariable ["heavyExplosives", ["SatchelCharge_Remote_Mag"]];
+_loadoutData setVariable ["ATMines", ["LIB_TMI_42_MINE_mag"]];
+_loadoutData setVariable ["APMines", ["LIB_SMI_35_MINE_mag"]];
+_loadoutData setVariable ["lightExplosives", ["LIB_Ladung_Small_MINE_mag"]];
+_loadoutData setVariable ["heavyExplosives", ["LIB_Ladung_Big_MINE_mag"]];
 
-_loadoutData setVariable ["antiInfantryGrenades", ["HandGrenade", "MiniGrenade"]];
+_loadoutData setVariable ["antiInfantryGrenades", ["LIB_Shg24"]];
 _loadoutData setVariable ["antiTankGrenades", []];
 _loadoutData setVariable ["smokeGrenades", ["SmokeShell"]];
 _loadoutData setVariable ["signalsmokeGrenades", ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"]];
