@@ -88,7 +88,7 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["B_T_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["VIOC_B_LIB_Kfz1","VIOC_B_LIB_Kfz1_hood"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["VIOC_B_LIB_Kfz1","VIOC_B_LIB_Kfz1_Hood"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed",["VIOC_B_LIB_Kfz1_MG42", "VIOC_B_LIB_SdKfz251"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehiclesTrucks", ["VIOC_B_LIB_OpelBlitz_Tent_Y_Camo", "VIOC_B_LIB_SdKfz_7"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["VIOC_B_LIB_OpelBlitz_Parm"]] call _fnc_saveToTemplate;
@@ -97,45 +97,44 @@
 ["vehiclesFuelTrucks", ["VIOC_B_LIB_OpelBlitz_Fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["VIOC_B_LIB_OpelBlitz_Ambulance"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["FA_SdKfz234", "FA_Sdkfz231"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["VIOC_B_LIB_PzKpfwIV_H_tarn51c", "VIOC_B_LIB_PzKpfwVI_E_2", "LIB_GER_StuG_III_G_Tarn", "LIB_GER_PzKpfwV_Tarn"]] call _fnc_saveToTemplate; //made it to here
-["vehiclesAA", ["B_T_APC_Tracked_01_AA_F"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["VIOC_B_LIB_PzKpfwIV_H_tarn51c", "VIOC_B_LIB_PzKpfwVI_E_2", "LIB_GER_StuG_III_G_Tarn", "LIB_GER_PzKpfwV_Tarn"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["VIOC_B_LIB_SdKfz_7_AA", "VIOC_B_LIB_FlakPanzerIV_Wirbelwind"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["VIOC_B_LIB_SdKfz251"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_03_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
-["vehiclesTransportBoats", ["B_T_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["B_T_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
-["vehiclesAmphibious", ["B_T_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["VIOC_B_sab_nl_t22"]] call _fnc_saveToTemplate; //FYI, this aint just a speedboat, this is a biggole cruiser ship
+["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["B_Plane_CAS_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["B_Plane_Fighter_01_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", ["B_T_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["VIOC_B_sab_sw_ju87", "VIOC_B_sab_sw_bf110"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["VIOC_B_LIB_FW190F8", "VIOC_B_sab_fl_bf109f"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["B_Heli_Light_01_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["B_Heli_Transport_03_F", "B_Heli_Transport_03_unarmed_F", "B_Heli_Transport_01_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["B_Heli_Attack_01_dynamicLoadout_F", "B_Heli_Light_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", []] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", []] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", []] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [
-["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]],
-["B_T_MBT_01_mlrs_F",["12Rnd_230mm_rockets"]]
+["VIOC_B_LIB_SdKfz124",["32Rnd_155mm_Mo_shells"]],
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", ["B_UAV_02_dynamicLoadout_F", "B_T_UAV_03_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate;
+["uavsAttack", []] call _fnc_saveToTemplate;
+["uavsPortable", []] call _fnc_saveToTemplate;
 
 ["vehiclesMilitiaLightArmed", ["VIOC_B_LIB_Kfz1_MG42"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["VIOC_B_LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["VIOC_B_LIB_Kfz1_hood"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaApcs", ["VIOC_B_LIB_SdKfz251"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["B_AFV_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", ["VIOC_B_LIB_PzKpfwIV_H_tarn51c"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["B_GEN_Offroad_01_gen_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_covered_F", "B_GEN_Van_02_transport_F"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["VIOC_B_LIB_Kfz1_sernyt", "VIOC_B_LIB_Kfz1_Hood_sernyt", "VIOC_B_LIB_Kfz1_MG42_sernyt", "VIOC_B_LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["B_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
-["staticAT", ["B_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAA", ["B_static_AA_F"]] call _fnc_saveToTemplate;
-["staticMortars", ["B_Mortar_01_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["VIOC_B_LIB_MG42_Lafette_Deployed"]] call _fnc_saveToTemplate;
+["staticAT", ["VIOC_B_LIB_leFH18_AT"]] call _fnc_saveToTemplate;
+["staticAA", ["VIOC_B_LIB_Flakvierling_38]] call _fnc_saveToTemplate;
+["staticMortars", ["VIOC_B_LIB_GrWr34"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
