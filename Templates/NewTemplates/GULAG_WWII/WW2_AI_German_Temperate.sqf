@@ -2,8 +2,8 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "NATO"] call _fnc_saveToTemplate;
-["spawnMarkerName", "NATO support corridor"] call _fnc_saveToTemplate;
+["name", "Wehrmacht"] call _fnc_saveToTemplate;
+["spawnMarkerName", "Wehrmacht support corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
 ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] call _fnc_saveToTemplate;
