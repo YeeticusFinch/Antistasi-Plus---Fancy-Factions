@@ -54,28 +54,28 @@
 	["elite_machinegunner", "LIB_GER_mgunner"],
 	["elite_marksman", "LIB_GER_sniper"],
 	["elite_sniper", "LIB_GER_sniper"],
+	
+	["sf_squadleader", "LIB_GER_unterofficer_WssFrsbrgOschaMp40"], //I swear GEIST's naming is a nightmare, too bad theyre like the only ones who added the SS
+	["sf_rifleman", "LIB_GER_ober_rifleman_WssFrsbrgOmnnG43"],
+	["sf_radioman", "LIB_GER_radioman_WssFrsbrgStrmmMp40"],
+	["sf_medic", "LIB_GER_medic_WssFrsbrgK98"],
+	["sf_engineer", "LIB_GER_PWM_soldier_WssFrsbrgStrmmMp40"],
+	["sf_explosivesexpert", "LIB_GER_sapper_WssFrsbrgStrmmMp40"],
+	["sf_grenadier", "LIB_GER_ober_rifleman_WssFrsbrgOmnnG43"],
+	["sf_lat", "LIB_GER_AT_soldier_WssFrsbrgStrmmMp40"],
+	["sf_at", "LIB_GER_AT_soldier_WssFrsbrgStrmmMp40"],
+	["sf_aa", "LIB_GER_AT_soldier_WssFrsbrgStrmmMp40"],
+	["sf_machinegunner", "LIB_GER_mgunner_WssFrsbrgStrmmMg42"],
+	["sf_marksman", "LIB_GER_sniper_WssFrsbrgUschaK98zf39"],
+	["sf_sniper", "LIB_GER_sniper_WssFrsbrgUschaK98zf39"],
 
-	["sf_squadleader", "B_recon_TL_F"],
-	["sf_rifleman", "B_recon_F"],
-	["sf_radioman", "B_recon_F"],
-	["sf_medic", "B_recon_medic_F"],
-	["sf_engineer", "B_recon_F"],
-	["sf_explosivesexpert", "B_recon_exp_F"],
-	["sf_grenadier", "B_recon_JTAC_F"],
-	["sf_lat", "B_recon_LAT_F"],
-	["sf_at", "B_recon_LAT_F"],
-	["sf_aa", "B_soldier_AA_F"],
-	["sf_machinegunner", "B_soldier_AR_F"],
-	["sf_marksman", "B_recon_M_F"],
-	["sf_sniper", "B_sniper_F"],
-
-	["other_crew", "B_crew_F"],
-	["other_unarmed", "B_Survivor_F"],
-	["other_official", "B_officer_F"],
-	["other_traitor", "B_G_Soldier_F"],
-	["other_pilot", "B_Helipilot_F"],
-	["police_squadleader", "B_Soldier_F"],
-	["police_standard", "B_Soldier_F"]
+	["other_crew", "LIB_GER_tank_crew"],
+	["other_unarmed", "LIB_GER_unequip"],
+	["other_official", "LIB_GER_oberst"],
+	["other_traitor", "LIB_GER_ober_lieutenant"],
+	["other_pilot", "LIB_GER_pilot"],
+	["police_squadleader", "SG_sturmtrooper_unterofficer"],
+	["police_standard", "SG_sturmtrooper_rifleman"]
 ]] call _fnc_saveToTemplate;
 
 
@@ -88,18 +88,18 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["B_T_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["B_T_MRAP_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed",["B_T_LSV_01_AT_F", "B_T_MRAP_01_gmg_F"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
-["vehiclesTrucks", ["B_T_Truck_01_covered_F", "B_T_Truck_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["B_T_Truck_01_cargo_F", "B_T_Truck_01_flatbed_F"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["B_T_Truck_01_ammo_F"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["B_T_Truck_01_Repair_F"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["B_T_Truck_01_fuel_F"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["B_T_Truck_01_medical_F"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["B_T_APC_Wheeled_01_cannon_F", "B_T_APC_Tracked_01_CRV_F", "B_T_APC_Tracked_01_rcws_F"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["B_T_MBT_01_cannon_F", "B_T_MBT_01_TUSK_F", "B_T_AFV_Wheeled_01_cannon_F", "B_T_AFV_Wheeled_01_up_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["VIOC_B_LIB_Kfz1","VIOC_B_LIB_Kfz1_hood"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed",["VIOC_B_LIB_Kfz1_MG42", "VIOC_B_LIB_SdKfz251"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+["vehiclesTrucks", ["VIOC_B_LIB_OpelBlitz_Tent_Y_Camo", "VIOC_B_LIB_SdKfz_7"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["VIOC_B_LIB_OpelBlitz_Parm"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["VIOC_B_LIB_OpelBlitz_Ammo"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["VIOC_B_LIB_OpelBlitz_Parm"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["VIOC_B_LIB_OpelBlitz_Fuel"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["VIOC_B_LIB_OpelBlitz_Ambulance"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["FA_SdKfz234", "FA_Sdkfz231"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["VIOC_B_LIB_PzKpfwIV_H_tarn51c", "VIOC_B_LIB_PzKpfwVI_E_2", "LIB_GER_StuG_III_G_Tarn", "LIB_GER_PzKpfwV_Tarn"]] call _fnc_saveToTemplate; //made it to here
 ["vehiclesAA", ["B_T_APC_Tracked_01_AA_F"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["B_T_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["VIOC_B_LIB_SdKfz251"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
 ["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_03_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
@@ -124,10 +124,10 @@
 ["uavsAttack", ["B_UAV_02_dynamicLoadout_F", "B_T_UAV_03_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate;
 
-["vehiclesMilitiaLightArmed", ["B_LSV_01_armed_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["B_Truck_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["B_LSV_01_unarmed_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["B_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["VIOC_B_LIB_Kfz1_MG42"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["VIOC_B_LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["VIOC_B_LIB_Kfz1_hood"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["VIOC_B_LIB_SdKfz251"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["B_AFV_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_covered_F", "B_GEN_Van_02_transport_F"]] call _fnc_saveToTemplate;
