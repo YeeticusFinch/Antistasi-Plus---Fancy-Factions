@@ -27,5 +27,5 @@ Title says it all, this is a modification of the Chernarus Antistasi PLUS missio
 
 ### Occupant Faction: Japan [FOW, SW, EAW mods]
 - Arma 3 mods don't cover much of the Japanese's assets in WW2
-### Invading Faction: USA [VIOC, FOW mods
+### Invading Faction: USA [VIOC, FOW mods]
 - Murica!
