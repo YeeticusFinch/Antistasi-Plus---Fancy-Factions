@@ -16,6 +16,7 @@ Title says it all, this is a modification of the Chernarus Antistasi PLUS missio
 ### Invading Faction: Separatists [3AS and Opposition mods]
 - It's just all droids lol
 
+Note - the star wars mode could have either faction be the occupier or the invader
 ## World War II - Eastern Front
 
 ### Ocupant Faction: Germany [VIOC, WW2 Armored Cars, GEIST, IFA3 mods]
