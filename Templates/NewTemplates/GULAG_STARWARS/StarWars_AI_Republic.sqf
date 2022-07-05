@@ -35,7 +35,7 @@
 	["military_explosivesexpert", ""],
 	["military_grenadier", ""],
 	["military_lat", "B_soldier_LAT_F"],
-	["military_at", "B_soldier_AT_F"],
+	["military_at", "SWOP_CGP1_Jek"],
 	["military_aa", "B_soldier_AA_F"],
 	["military_machinegunner", "B_soldier_AR_F"],
 	["military_marksman", "B_soldier_M_F"],
