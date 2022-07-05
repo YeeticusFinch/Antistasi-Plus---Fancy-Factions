@@ -109,12 +109,12 @@
 ["vehiclesAmphibious", ["B_T_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["swop_tieb"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["swop_tie_FOtorpe", "swop_tieFOSFtorpe", "swop_tietorpe", "swop_tie_silencer"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["swop_tie_FOtorpe", "swop_tieFOSFtorpe", "swop_tietorpe", "swop_tie_int", "swop_tie"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["swop_lambda", "sh_flyable"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["swop_tieFO", " swop_tie", "swop_tiefosf"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["swop_tieFO", "swop_tie", "swop_tiefosf"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["swop_lambda"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["swop_TIE_Stryker", "swop_tiedef, "swop_tie_int, swop_tiex1"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["swop_TIE_Stryker", "swop_tiedef", "swop_tiex1", "swop_tie_silencer"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [
 ["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]],
