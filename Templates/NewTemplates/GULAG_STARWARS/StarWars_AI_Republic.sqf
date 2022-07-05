@@ -259,12 +259,12 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData setVariable ["uniforms", ["SWOP_Clonetrooper_P1_501rex_F_CombatUniform", "SWOP_Clonetrooper_P1_212cody_F_CombatUniform", "SWOP_Clonetrooper_CGfox_F_CombatUniform"]];
-_sfLoadoutData setVariable ["vests", ["SWOP_Clonetrooper_P1_212cody_armor"]];
-_sfLoadoutData setVariable ["Hvests", ["V_PlateCarrierIAGL_oli"]];
-_sfLoadoutData setVariable ["backpacks", ["B_Kitbag_rgr", "B_AssaultPack_rgr", "B_Carryall_wdl_F", "B_Carryall_green_F"]];
-_sfLoadoutData setVariable ["helmets", ["H_Booniehat_wdl", "H_HelmetB_light_wdl", "H_HelmetSpecB_wdl", "H_HelmetB_plain_wdl"]];
-_sfLoadoutData setVariable ["binoculars", ["Laserdesignator"]];
+_sfLoadoutData setVariable ["uniforms", ["3AS_U_Rep_Katarn_Armor_Sev", "SWOP_Clonetrooper_RCsev_F_CombatUniform"]];
+_sfLoadoutData setVariable ["vests", ["3AS_V_Katarn_Vest_Demo", "3AS_V_Katarn_Vest_Tech", "3AS_V_Katarn_Vest_Tech_Foxtrot", "3AS_V_Katarn_Vest_Tech_Omega"]];
+_sfLoadoutData setVariable ["Hvests", ["SWOP_Clonetrooper_Katarn_armor"]];
+_sfLoadoutData setVariable ["backpacks", ["SWOP_B_RCsevBackpack_B", "SWOP_B_RCBackpack_B", "3AS_B_Katarn_Backpack_Sev", "3AS_B_Katarn_Backpack_Gregor"]];
+_sfLoadoutData setVariable ["helmets", ["3AS_H_Katarn_Helmet_Sev", "SWOP_ClonetrooperRCsev_helmet"]];
+_sfLoadoutData setVariable ["binoculars", ["JLTS_CloneBinocular_black"]];
 
 
 _sfLoadoutData setVariable ["rifles", [
@@ -276,22 +276,15 @@ _sfLoadoutData setVariable ["rifles", [
 ["3AS_WestarM5_F", "", "acc_pointer_IR", "3AS_Optic_Scope_WestarM5", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["carbines", [
-["SWOP_DC17M_rifle", "", "", "SWOP_DC17MRifle_HoloScope", [], [], ""],
-["SWOP_DC17M_rifle", "", "", "SWOP_DC17MRifle_HoloScope", [], [], ""],
-["SWOP_DC17M_rifle", "", "", "SWOP_DC17MRifle_HoloScope", [], [], ""],
-["SWOP_DC17M_rifle", "", "", "SWOP_DC17MRifle_HoloScope", [], [], ""],
-["swop_RepShotgun", "", "", "", [], [], ""],
-["swop_RepShotgun", "", "", "", [], [], ""]
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
+["JLTS_DP23", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["grenadeLaunchers", [
-["SWOP_DC17M_AT", "", "", "SWOP_DC17MRifle_HoloScope", [], [], ""],
-["3AS_DC15A_GL", "3AS_Muzzle_LE_DC15A", "acc_pointer_IR", "3AS_Optic_LEScope_DC15A", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["3AS_DC15A_GL", "3AS_Muzzle_LE_DC15A", "acc_pointer_IR", "3AS_Optic_LEScope_DC15A", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["3AS_DC15C_GL", "", "acc_pointer_IR", "3AS_optic_reflex_DC15C", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["3AS_DC15C_GL", "", "acc_pointer_IR", "3AS_optic_acog_DC15C", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["SWOP_DC15AGL", "", "", "swop_DC15A_HoloScope", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
-["3AS_WestarM5_GL", "", "acc_pointer_IR", "", [], [], ""],
-["3AS_WestarM5_GL", "", "acc_pointer_IR", "", [], [], ""]. //// FIND CLASSNAME FOR WESTAR GRENADES
+["3AS_DC17M_F", "", "", "", ["3AS_AntiArmour_mag"], [], ""],
+["3AS_WestarM5_GL", "", "acc_pointer_IR", "", [], ["3AS_6Rnd_HE_Grenade_shell", "3AS_6Rnd_HE_Grenade_shell"], ""]
 ]];
 _sfLoadoutData setVariable ["SMGs", [
 ["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""],
@@ -311,20 +304,19 @@ _sfLoadoutData setVariable ["machineGuns", [
 ["SWOP_Z6_Blaster", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag", "3AS_5Rnd_EC80_mag", "3AS_AntiArmour_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag", "3AS_5Rnd_EC80_mag"], [], ""],
 ["SWOP_DLT19DBlasterRifle", "", "", "", [], [], ""],
-["SWOP_DLT19DBlasterRifle", "", "", "", [], [], ""],
-["SWOP_DLT19DBlasterRifle", "", "", "", [], [], ""],
-["SWOP_DLT19DBlasterRifle", "", "", "", [], [], ""],
-["SWOP_DC17M_Sniper", "", "", "", [], [], ""],
 ["SWOP_DC17M_Sniper", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
-["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_5Rnd_EC80_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_5Rnd_EC80_mag"], [], ""],
 ["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
 ["swop_blue_lightsaber", "", "", "", [], [], ""],
-["swop_green_lightsaber", "", "", "", [], [], ""],
+["JLTS_Glocko", "", "", "", [], [], ""],
 ["3AS_DC17S_F", "", "acc_flashlight_pistol", "", [], [], ""],
 ["3AS_DC17S_F", "", "acc_flashlight_pistol", "", [], [], ""],
 ["3AS_DC17STest_F", "", "acc_flashlight_pistol", "", [], [], ""],
