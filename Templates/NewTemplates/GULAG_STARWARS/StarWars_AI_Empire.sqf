@@ -90,31 +90,31 @@
 ["vehiclesBasic", ["SW_SpeederBike"]] call _fnc_saveToTemplate;  //////INCOMPLETE
 ["vehiclesLightUnarmed", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed",["SW_SpeederBike", "SW_SpeederBikeIMPw"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
-["vehiclesTrucks", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["B_T_Truck_01_cargo_F", "B_T_Truck_01_flatbed_F"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["B_T_Truck_01_ammo_F"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["B_T_Truck_01_Repair_F"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["B_T_Truck_01_fuel_F"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["B_T_Truck_01_medical_F"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["O_SWOP_HoverT_1", "SWOP_LIUV"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["O_JM_TX130_1", "O_SWOP_HoverTa_1", "O_SWOP_HoverTf_1", "O_SWOP_HoverTr_1"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["ATSTst"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["B_T_APC_Tracked_01_AA_F"]] call _fnc_saveToTemplate;
+["vehiclesAA", []] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["O_SWOP_HoverT_1"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_03_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
-["vehiclesTransportBoats", ["B_T_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["B_T_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
-["vehiclesAmphibious", ["B_T_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
+["vehiclesGunBoats", []] call _fnc_saveToTemplate;
+["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["swop_tieb"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["swop_tie_FOtorpe", "swop_tieFOSFtorpe", "swop_tietorpe", "swop_tie_int", "swop_tie"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["swop_tieb", "swop_tiedef", "swop_TIE_Stryker"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["swop_tie_FOtorpe", "swop_tieFOSFtorpe", "swop_tietorpe", "swop_tie_int", "swop_tiedef", "swop_tie"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["swop_lambda", "sh_flyable"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["swop_tieFO", "swop_tie", "swop_tiefosf"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["swop_lambda"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["swop_TIE_Stryker", "swop_tiedef", "swop_tiex1", "swop_tie_silencer"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["swop_TIE_Stryker", "swop_tiex1", "swop_tie_silencer"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [
 ["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]],
@@ -124,17 +124,17 @@
 ["uavsAttack", ["B_UAV_02_dynamicLoadout_F", "B_T_UAV_03_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate;
 
-["vehiclesMilitiaLightArmed", ["B_LSV_01_armed_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["B_Truck_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["B_LSV_01_unarmed_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["B_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["B_AFV_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["SW_SpeederBikeIMPw"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["O_SWOP_HoverT_1"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["O_SWOP_HoverTa_1"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", ["O_JM_TX130_1"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["B_GEN_Offroad_01_gen_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_covered_F", "B_GEN_Van_02_transport_F"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["B_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
-["staticAT", ["B_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAA", ["B_static_AA_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["EWEBSWBF"]] call _fnc_saveToTemplate;
+["staticAT", ["NavyGunIm"]] call _fnc_saveToTemplate;
+["staticAA", ["Imperial_TurboLaser"]] call _fnc_saveToTemplate;
 ["staticMortars", ["B_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["not_supported"]] call _fnc_saveToTemplate;
 
