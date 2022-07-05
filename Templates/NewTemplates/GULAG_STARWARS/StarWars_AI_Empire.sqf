@@ -13,69 +13,69 @@
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_squadleader", "SWOP_Storm_Cap"],
-	["militia_rifleman", "SWOP_Storm_stormtrooperC"],
-	["militia_radioman", "SWOP_Storm_Lt"],
+	["militia_squadleader", "SWOP_Navy_Green_Cap"],
+	["militia_rifleman", "SWOP_Navy_arm"],
+	["militia_radioman", "SWOP_Navy_arm"],
 	["militia_medic", "SWOP_Navy_arm"],
-	["militia_engineer", "SWOP_Navy_A"],
+	["militia_engineer", "SWOP_Navy_arm"],
 	["militia_explosivesexpert", "SWOP_Navy_arm"],
-	["militia_grenadier", "SWOP_Navy_GA"],
-	["militia_lat", "SWOP_Navy"],
-	["militia_at", "SWOP_Storm_stormtrooperC_t"],
-	["militia_aa", "SWOP_Storm_shoretrooper_AA"],
-	["militia_machinegunner", "SWOP_Storm_stormtrooperC"],
-	["militia_marksman", "SWOP_Storm_stormtrooperC_dlt"],
-	["militia_sniper", "SWOP_Scout_sniper"],
+	["militia_grenadier", "SWOP_Navy_arm"],
+	["militia_lat", "SWOP_Navy_arm"],
+	["militia_at", "SWOP_Navy_arm"],
+	["militia_aa", "SWOP_Navy_arm"],
+	["militia_machinegunner", "SWOP_Navy_arm"],
+	["militia_marksman", "SWOP_Navy_arm"],
+	["militia_sniper", "SWOP_Navy_arm"],
 
 	["military_squadleader", "SWOP_Storm_stormtrooper_SL"],
-	["military_rifleman", "SWOP_Snow_stormtrooper_t"],
-	["military_radioman", "SWOP_Storm_stormtrooper_dlt"],
-	["military_medic", "SWOP_Snow_stormtrooper_medic"],
+	["military_rifleman", "SWOP_Snow_stormtrooper"],
+	["military_radioman", "SWOP_Storm_stormtrooper"],
+	["military_medic", "SWOP_Storm_stormtrooper_Corp"],
 	["military_engineer", "SWOP_Storm_stormtrooper"],
-	["military_explosivesexpert", "SWOP_Snow_stormtrooper_flame"],
-	["military_grenadier", "SWOP_FO_Storm_stormtrooperInc"],
-	["military_lat", "SWOP_Storm_jumper"],
+	["military_explosivesexpert", "SWOP_Storm_stormtrooper"],
+	["military_grenadier", "SWOP_Storm_stormtrooper"],
+	["military_lat", "SWOP_Storm_stormtrooper_AA"],
 	["military_at", "SWOP_Storm_stormtrooper_AA"],
 	["military_aa", "SWOP_Storm_stormtrooper_AA"],
-	["military_machinegunner", "SWOP_FO_Storm_stormtrooperHeavy"],
-	["military_marksman", "SWOP_Storm_stormtrooper_dlt"],
+	["military_machinegunner", "SWOP_Storm_stormtrooper_dlt"],
+	["military_marksman", "SWOP_Storm_stormtrooper_t"],
 	["military_sniper", "SWOP_Scout_sniper"],
 
-	["elite_squadleader", "SWOP_imp_GrandAdmiral"],
-	["elite_rifleman", "SWOP_Spec_StormCommando"],
-	["elite_radioman", "SWOP_imp_Director"],
-	["elite_medic", "SWOP_Spec_shocktrooper_SL"],
-	["elite_engineer", "SWOP_IMPSF_Inferno_com"],
-	["elite_explosivesexpert", "SWOP_Spec_Commando"],
-	["elite_grenadier", "SWOP_Snow_stormtrooper_TL_jumper"],
-	["elite_lat", "B_soldier_LAT_F"],           ////// INCOMPLETE
-	["elite_at", "B_soldier_AT_F"],
-	["elite_aa", "B_soldier_AA_F"],
-	["elite_machinegunner", "SWOP_IMPSF_Inferno_heavy"],
-	["elite_marksman", "B_Recon_M_F"],
-	["elite_sniper", "B_sniper_F"],
+	["elite_squadleader", "SWOP_imp_DeathtrooperLeader"],
+	["elite_rifleman", "SWOP_imp_Deathtrooper"],
+	["elite_radioman", "SWOP_imp_Deathtrooper"],
+	["elite_medic", "SWOP_imp_DeathtrooperTD"],
+	["elite_engineer", "SWOP_imp_DeathtrooperTD"],
+	["elite_explosivesexpert", "SWOP_imp_DeathtrooperTD"],
+	["elite_grenadier", "SWOP_imp_Deathtrooper"],
+	["elite_lat", "SWOP_imp_DeathtrooperHB"],           
+	["elite_at", "SWOP_imp_DeathtrooperHB"],
+	["elite_aa", "SWOP_imp_DeathtrooperHB"],
+	["elite_machinegunner", "SWOP_imp_DeathtrooperHB"],
+	["elite_marksman", "SWOP_imp_DeathtrooperHB"],
+	["elite_sniper", "SWOP_imp_DeathtrooperHB"],
 
-	["sf_squadleader", "SWOP_imp_DeathtrooperLeader"],
-	["sf_rifleman", "SWOP_imp_Deathtrooper"],
-	["sf_radioman", "SWOP_imp_Deathtrooper"],
-	["sf_medic", "SWOP_imp_DeathtrooperTD"],
-	["sf_engineer", "SWOP_imp_DeathtrooperTD"],
-	["sf_explosivesexpert", "SWOP_imp_DeathtrooperTD"],
-	["sf_grenadier", "SWOP_imp_Deathtrooper"],
-	["sf_lat", "SWOP_imp_DeathtrooperHB"],
-	["sf_at", "SWOP_imp_DeathtrooperHB"],
-	["sf_aa", "SWOP_imp_DeathtrooperHB"],
-	["sf_machinegunner", "SWOP_imp_DeathtrooperHB"],
-	["sf_marksman", "SWOP_imp_DeathtrooperHB"],
-	["sf_sniper", "SWOP_imp_DeathtrooperHB"],
+	["sf_squadleader", "SWOP_IMPSF_Inferno_com"],
+	["sf_rifleman", "SWOP_IMPSF_Infernopilot"],
+	["sf_radioman", "SWOP_IMPSF_Infernopilot"],
+	["sf_medic", "SWOP_IMPSF_Inferno_spec"],
+	["sf_engineer", "SWOP_IMPSF_Inferno_spec"],
+	["sf_explosivesexpert", "SWOP_IMPSF_Inferno_spec"],
+	["sf_grenadier", "SWOP_IMPSF_Inferno_spec"],
+	["sf_lat", "SWOP_IMPSF_Inferno_heavy"],
+	["sf_at", "SWOP_IMPSF_Inferno_heavy"],
+	["sf_aa", "SWOP_IMPSF_Inferno_heavy"],
+	["sf_machinegunner", "SWOP_IMPSF_Inferno_heavy"],
+	["sf_marksman", "SWOP_IMPSF_Inferno_spec"],
+	["sf_sniper", "SWOP_IMPSF_Inferno_spec"],
 
-	["other_crew", "B_crew_F"],  ///////INCOMPLETE
+	["other_crew", "SWOP_Storm_crewman"],  ///////INCOMPLETE
 	["other_unarmed", "B_Survivor_F"],
-	["other_official", "B_officer_F"],
+	["other_official", "SWOP_Navy_GA"],
 	["other_traitor", "B_G_Soldier_F"],
-	["other_pilot", "B_Helipilot_F"],
-	["police_squadleader", "B_Soldier_F"],
-	["police_standard", "B_Soldier_F"]
+	["other_pilot", "SWOP_Navy_Pilot"],
+	["police_squadleader", "SWOP_Navy_Green_Cap"],
+	["police_standard", "SWOP_Navy_arm"]
 ]] call _fnc_saveToTemplate;
 
 
@@ -87,7 +87,7 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["B_T_Quadbike_01_F"]] call _fnc_saveToTemplate;  //////INCOMPLETE
+["vehiclesBasic", ["SW_SpeederBike"]] call _fnc_saveToTemplate;  //////INCOMPLETE
 ["vehiclesLightUnarmed", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed",["SW_SpeederBike", "SW_SpeederBikeIMPw"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehiclesTrucks", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
