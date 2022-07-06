@@ -46,6 +46,14 @@ switch (true) do {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using CUP trader stock.", servertime];
         [_traderX, "cup"] call HALs_store_fnc_addTrader;
     };
+    case (A3A_hasStarWars): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using StarWars trader stock.", servertime];
+        [_traderX, "starwars"] call HALs_store_fnc_addTrader;
+    };
+    case (A3A_hasWW2): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using WW2 trader stock.", servertime];
+        [_traderX, "ww2"] call HALs_store_fnc_addTrader;
+    };
     default  {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing vanilla trader.", servertime];
         [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
