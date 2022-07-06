@@ -235,6 +235,13 @@ class Params
 		texts[]={"Load From Save (Default - US Army)", "US Army", "Chernarus Defence Forces (CDF)"};
 		default = 9999;
      };
+	class starWarsOccupantFaction
+     {
+          title="Select Occupant Faction";
+		values[]={9999, 0, 1, 2, 3};
+		texts[]={"Load From Save (Default - Empire with crimelord invaders)", "Republic", "Separatists", "Empire (Crimelord invaders)", "Empire (Rebel invaders)"};
+		default = 9999;
+     };
      class Spacer231
      {
           title = "";
