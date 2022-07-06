@@ -2,6 +2,13 @@
 
 Title says it all, this is a modification of the Chernarus Antistasi PLUS mission, with a couple factions added:
 
+# How to add factions
+- add rebel, invader, and occupier templates to \Templates\NewTemplates
+- add init parameters in \functions\init\initParams.sqf and \MissionDescription\params.hpp
+- add mod detection in \Templates\detector.sqf
+- make it so it chooses teh right faction with \Templates\selector.sqf
+- there might be more we have to do, this is all I know so far
+
 ## Star Wars - Empire Era
 
 ### Occupant Faction: Empire [Opposition mod]
@@ -31,9 +38,3 @@ Note - the star wars mode could have either faction be the occupier or the invad
 ### Invading Faction: USA [VIOC, FOW mods]
 - Murica!
 
-### How to add factions
-- add rebel, invader, and occupier templates to \Templates\NewTemplates
-- add init parameters in \functions\init\initParams.sqf and \MissionDescription\params.hpp
-- add mod detection in \Templates\detector.sqf
-- make it so it chooses teh right faction with \Templates\selector.sqf
-- there might be more we have to do, this is all I know so far
