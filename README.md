@@ -6,7 +6,7 @@ Title says it all, this is a modification of the Chernarus Antistasi PLUS missio
 - add rebel, invader, and occupier templates to \Templates\NewTemplates
 - add init parameters in \functions\init\initParams.sqf and \MissionDescription\params.hpp
 - add mod detection in \Templates\detector.sqf
-- make it so it chooses teh right faction with \Templates\selector.sqf
+- make it so it chooses the right faction with \Templates\selector.sqf
 - there might be more we have to do, this is all I know so far
 
 ## Star Wars - Empire Era
