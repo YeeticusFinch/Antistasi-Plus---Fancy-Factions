@@ -59,13 +59,14 @@ private _activeEAW = false;
 private _activeGEIST = false;
 
 //Actual Detection
-//IFA Detection
+//IFA Detection (old)
+/*
 if (isClass (configFile >> "CfgPatches" >> "LIB_Core")) then {
     private _text = "IFA detected, but it is no longer supported, please remove this mod";
     systemChat _text;
     [1, _text, _fileName] call A3A_fnc_log;
     ["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
-};
+};*/
 
 if (isClass (configFile >> "CfgPatches" >> "vn_weapons")) then {
   A3A_hasVN = true;
