@@ -183,7 +183,7 @@ _loadoutData setVariable ["marksmanRifles", []];
 _loadoutData setVariable ["sniperRifles", []];
 _loadoutData setVariable ["lightATLaunchers", ["JLTS_RPS6"]];
 _loadoutData setVariable ["ATLaunchers", ["JLTS_RPS6"]];
-_loadoutData setVariable ["missileATLaunchers", [["3AS_PLX1_F", "", "", "", ["3AS_JLTS_MK39_AA"], [], ""],["swopHH12Rocket", "", "", "", ["hh12rocketmag"], [], ""]]];
+_loadoutData setVariable ["missileATLaunchers", [["3AS_PLX1_F", "", "", "", ["3AS_JLTS_MK43_AT"], [], ""],["swopHH12Rocket", "", "", "", ["hh12rocketmag"], [], ""]]];
 _loadoutData setVariable ["AALaunchers", [["3AS_PLX1_F", "", "", "", ["3AS_JLTS_MK39_AA"], [], ""],["swopHH12Rocket", "", "", "", ["hh12rocketmag"], [], ""]]];
 _loadoutData setVariable ["sidearms", []];
 
@@ -406,10 +406,6 @@ _eliteLoadoutData setVariable ["GLvests", ["SWOP_DeathGrarm"]];
 _eliteLoadoutData setVariable ["backpacks", ["CAA_InvisBag", "SWOP_B_AssaultPackPC_Base"]];
 _eliteLoadoutData setVariable ["helmets", ["SWOP_HelmDeath"]];
 _eliteLoadoutData setVariable ["binoculars", ["ElectroBinocularsB_F"]];
-_eliteLoadoutData setVariable ["ATLaunchers", ["JLTS_RPS6"]];
-_eliteLoadoutData setVariable ["missileATLaunchers", [
-	["swopHH12Rocket", "", "", "", ["hh12rocketmag"], [], ""]
-]];
 
 _eliteLoadoutData setVariable ["rifles", [
 ["e11_dt", "", "", "SWOP_e11_bl_Scope", [], [], ""],
