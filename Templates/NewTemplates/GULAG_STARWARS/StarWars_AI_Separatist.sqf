@@ -259,71 +259,51 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData setVariable ["uniforms", ["3AS_U_Rep_Katarn_Armor_Sev", "SWOP_Clonetrooper_RCsev_F_CombatUniform"]];
-_sfLoadoutData setVariable ["vests", ["3AS_V_Katarn_Vest_Demo", "3AS_V_Katarn_Vest_Tech", "3AS_V_Katarn_Vest_Tech_Foxtrot", "3AS_V_Katarn_Vest_Tech_Omega"]];
-_sfLoadoutData setVariable ["Hvests", ["SWOP_Clonetrooper_Katarn_armor"]];
-_sfLoadoutData setVariable ["backpacks", ["SWOP_B_RCsevBackpack_B", "SWOP_B_RCBackpack_B", "3AS_B_Katarn_Backpack_Sev", "3AS_B_Katarn_Backpack_Gregor"]];
-_sfLoadoutData setVariable ["helmets", ["3AS_H_Katarn_Helmet_Sev", "SWOP_ClonetrooperRCsev_helmet"]];
-_sfLoadoutData setVariable ["binoculars", ["JLTS_CloneBinocular_black"]];
+_sfLoadoutData setVariable ["uniforms", ["3AS_BX_DROID", "3AS_BX_DROID", "3AS_BX_DROID", "3AS_BX_DROID", "3AS_BX_DROID", "SWOP_C3PO_uniform"]];
+_sfLoadoutData setVariable ["vests", []];
+_sfLoadoutData setVariable ["Hvests", []];
+_sfLoadoutData setVariable ["backpacks", ["SWOP_B_Droid_heavy_backpack"]];
+_sfLoadoutData setVariable ["helmets", []];
+_sfLoadoutData setVariable ["binoculars", ["ElectroBinocularsB_F"]];
 
 
 _sfLoadoutData setVariable ["rifles", [
-["3AS_WestarM5_F", "", "acc_pointer_IR", "3AS_Optic_Scope_WestarM5", [], [], ""],
-["3AS_WestarM5_F", "", "acc_pointer_IR", "3AS_Optic_Scope_WestarM5", [], [], ""],
-["3AS_WestarM5_F", "", "acc_pointer_IR", "3AS_Optic_Scope_WestarM5", [], [], ""],
-["3AS_WestarM5_F", "", "acc_pointer_IR", "3AS_Optic_Scope_WestarM5", [], [], ""],
-["3AS_WestarM5_F", "", "acc_pointer_IR", "3AS_Optic_Scope_WestarM5", [], [], ""],
-["3AS_WestarM5_F", "", "acc_pointer_IR", "3AS_Optic_Scope_WestarM5", [], [], ""]
+["3AS_E5_F", "", "acc_flashlight", "", ["3AS_60Rnd_EM50_RedPlasma"], [], ""],
+["3AS_E5_F", "", "acc_pointer_ir", "", ["3AS_60Rnd_EM50_RedPlasma"], [], ""]
 ]];
 _sfLoadoutData setVariable ["carbines", [
-["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
-["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
-["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
-["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
-["JLTS_DP23", "", "", "", [], [], ""]
+["SWOP_E5M", "", "", "", ["SWOP_E5M_Mag", "SWOP_E5_UW_Mag"], [], ""],
+["SWOP_E5M", "", "", "", ["SWOP_E5M_Mag", "SWOP_E5_UW_Mag"], [], ""],
+["SWOP_E5M", "", "", "", ["SWOP_E5M_Mag", "SWOP_E5_UW_Mag"], [], ""],
+["SW_Scattergun", "", "", "", ["SW_Scattergun_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["grenadeLaunchers", [
-["3AS_DC17M_F", "", "", "", ["3AS_AntiArmour_mag"], [], ""],
-["3AS_WestarM5_GL", "", "acc_pointer_IR", "", [], ["3AS_6Rnd_HE_Grenade_shell", "3AS_6Rnd_HE_Grenade_shell"], ""]
+["HeavyRepeater", "", "", "", ["SWOP_HeavyRepeater_Mag"], ["SWOP_HeavyRepeaterConcussion_Mag"], ""],
+["relbyv10", "", "", "", ["relbyv10_Mag"], ["SWOP_relbyv10grenade_Mag", "1Rnd_HE_Grenade_shell"], ""]
 ]];
 _sfLoadoutData setVariable ["SMGs", [
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "3AS_optic_holo_DC15S", [], [], ""],
-["3AS_DC15S_F", "", "acc_pointer_IR", "3AS_optic_holo_DC15S", [], [], ""],
-["3AS_DC15S_F", "", "acc_pointer_IR", "3AS_optic_holo_DC15S", [], [], ""]
+["SWOP_EE4BlasterRifle", "", "", "", ["SWOP_EE4BlasterRifle_Mag"], [], ""],
+["SWOP_EE4BlasterRifle", "", "", "swop_ee4blaster_scope", ["SWOP_EE4BlasterRifle_Mag"], [], ""],
+["SWOP_palpatinegun", "", "", "", ["SWOP_palpatinegun_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
-["3AS_DL15L_F", "", "acc_flashlight", "3AS_Optic_DC15L", [], [], "3AS_Bipod_DC15L_f"],
-["3AS_DL15L_F", "", "acc_flashlight", "3AS_Optic_DC15L", [], [], "3AS_Bipod_DC15L_f"],
-["3AS_DL15L_F", "", "acc_pointer_IR", "3AS_Optic_DC15L", [], [], "3AS_Bipod_DC15L_f"],
-["3AS_DL15L_F", "", "acc_pointer_IR", "3AS_Optic_DC15L", [], [], "3AS_Bipod_DC15L_f"],
-["3AS_DL15L_F", "", "acc_pointer_IR", "3AS_Optic_DC15L", [], [], "3AS_Bipod_DC15L_f"],
-["3AS_DL15L_F", "", "acc_pointer_IR", "3AS_Optic_DC15L", [], [], "3AS_Bipod_DC15L_f"],
-["SWOP_Z6_Blaster", "", "", "", [], [], ""],
-["SWOP_Z6_Blaster", "", "", "", [], [], ""],
-["SWOP_Z6_Blaster", "", "", "", [], [], ""]
+["HeavyRepeater_Mod0", "", "", "", ["SWOP_HeavyRepeater_Mag"], ["SWOP_HeavyRepeaterConcussion_Mag"], ""],
+["E5C_F", "", "", "", ["3AS_130Rnd_EM50_RedPlasma"], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
-["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag", "3AS_5Rnd_EC80_mag", "3AS_AntiArmour_mag"], [], ""],
-["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag", "3AS_5Rnd_EC80_mag"], [], ""],
-["SWOP_DLT19DBlasterRifle", "", "", "", [], [], ""],
-["SWOP_DC17M_Sniper", "", "", "", [], [], ""]
+["3AS_Valken38X_F", "", "acc_pointer_ir", "", ["3AS_10Rnd_EC80_MAG"], [], ""],
+["JLTS_E5S", "", "", "", ["JLTS_E5S_mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
-["3AS_DC17M_F", "", "", "", ["3AS_5Rnd_EC80_mag"], [], ""],
-["3AS_DC17M_F", "", "", "", ["3AS_5Rnd_EC80_mag"], [], ""],
-["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""]
+["3AS_Valken38X_F", "", "acc_pointer_ir", "3as_optic_vk38x", ["3AS_10Rnd_EC80_MAG"], [], "3as_bipod_vk38x_f"],
+["SWOP_DTL20BlasterRifle", "", "", "swop_dlt20ascope", ["SWOP_DTL20BlasterRifle_Mag"], [], ""],
+["3AS_DymekSniperRifle_F", "", "acc_pointer_ir", "", ["3AS_10Rnd_EY80_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
-["swop_blue_lightsaber", "", "", "", [], [], ""],
-["JLTS_Glocko", "", "", "", [], [], ""],
-["3AS_DC17S_F", "", "acc_flashlight_pistol", "", [], [], ""],
-["3AS_DC17S_F", "", "acc_flashlight_pistol", "", [], [], ""],
-["3AS_DC17STest_F", "", "acc_flashlight_pistol", "", [], [], ""],
-["3AS_DC17STest_F", "", "acc_flashlight_pistol", "", [], [], ""],
-["3AS_pistol_DC15SA_F", "muzzle_snds_L", "", "", [], [], ""],
-["SWOP_DC15_shCG", "muzzle_snds_L", "", "", [], [], ""],
-["SWOP_DC15_shCG", "", "", "", [], [], ""]
+["JLTS_Glocko", "", "jlts_glocko_flashlight", "", [], [], ""],
+["SWOP_x8Pistol", "", "", "", [], [], ""],
+["SWOP_rk3", "", "", "", [], [], ""],
+["swop_white_lightsaber", "", "", "", [], [], ""]
 ]];
 /////////////////////////////////
 //    Military Loadout Data    //
