@@ -181,10 +181,10 @@ _loadoutData setVariable ["SMGs", []];
 _loadoutData setVariable ["machineGuns", []];
 _loadoutData setVariable ["marksmanRifles", []];
 _loadoutData setVariable ["sniperRifles", []];
-_loadoutData setVariable ["lightATLaunchers", []];
-_loadoutData setVariable ["ATLaunchers", []];
-_loadoutData setVariable ["missileATLaunchers", []];
-_loadoutData setVariable ["AALaunchers", []];
+_loadoutData setVariable ["lightATLaunchers", ["JLTS_RPS6"]];
+_loadoutData setVariable ["ATLaunchers", ["JLTS_RPS6"]];
+_loadoutData setVariable ["missileATLaunchers", [["swopHH12Rocket", "", "", "", ["hh12rocketmag"], [], ""]]];
+_loadoutData setVariable ["AALaunchers", [["JLTS_RPS6"],["swopHH12Rocket", "", "", "", ["hh12rocketmag"], [], ""]]];
 _loadoutData setVariable ["sidearms", []];
 
 _loadoutData setVariable ["ATMines", ["ATMine_Range_Mag"]];
