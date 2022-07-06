@@ -59,6 +59,26 @@ private _activeEAW = false;
 private _activeGEIST = false;
 
 //Actual Detection
+//3AS Detection
+if (isClass (configfile >> "CfgVehicles" >> "3AS_BTLB_Bomber")) then {
+	_active3AS = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | 3AS Detected.",servertime];
+};
+//SWOP Detection
+if (isClass (configfile >> "CfgVehicles" >> "SWOP_Storm_Cap")) then {
+	_activeSWOP = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | SWOP Detected.",servertime];
+};
+if (_activeSWOP || _active3AS) then {
+	if !(_activeSWOP && _active3AS) then {
+    private _text = "My comrade in gulag u dont have all the star wars mods needed. Get 3AS AND Opposition, then try again. Oh and make sure u load them, too.";
+    systemChat _text;
+    [1, _text, _fileName] call A3A_fnc_log;
+		["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+	} else {
+    A3A_hasStarWars = true;
+  };
+};
 //IFA Detection (old)
 /*
 if (isClass (configFile >> "CfgPatches" >> "LIB_Core")) then {
