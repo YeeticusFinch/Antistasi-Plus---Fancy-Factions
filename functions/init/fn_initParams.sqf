@@ -95,6 +95,8 @@ A3A_paramTable = [
     ["rhsOccupantFaction", "rhsOccupantFaction", ["server"], 0],
     ["threecbfOccupantFaction", "threecbfOccupantFaction", ["server"], 0],
     ["cupOccupantFaction", "cupOccupantFaction", ["server"], 0],
+    ["starWarsOccupantFaction", "starWarsOccupantFaction", ["server"], 0],
+    ["ww2OccupantFaction", "ww2OccupantFaction", ["server"], 0],    
     ["aiControlTime", "aiControlTime", [], 60],
     ["deathPenalty", "deathPenalty", [], 0.3],
     ["saveZeusBuildings", "saveZeusBuildings", [], true],
