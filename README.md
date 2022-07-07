@@ -14,7 +14,7 @@ Title says it all, this is a modification of the Chernarus Antistasi PLUS missio
 ## Star Wars - Empire Era
 
 ### Empire [Opposition mod]
-- Tie fighters, storm troopers, ATST's the whole Galactic Empire shebang
+- Tie fighters, storm troopers, the whole Galactic Empire shebang
 ### Criminals [Opposition mod]
 - Sail barges, Jaba the Hutt, bandits, and Mandalorians
 
