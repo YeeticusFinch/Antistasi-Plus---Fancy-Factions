@@ -1,6 +1,7 @@
-# Antistasi PLUS on Chernarus with Star Wars and WW2 Factions
+# Antistasi PLUS on Chernarus with Star Wars and WW2 Factions (WIP)
 
 Title says it all, this is a modification of the Chernarus Antistasi PLUS mission, with a couple factions added:
+This project is still very much a WORK IN PROGRESS
 
 # How to add factions
 - add rebel, invader, and occupier templates to \Templates\NewTemplates
