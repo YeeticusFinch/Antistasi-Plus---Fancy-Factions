@@ -11,16 +11,16 @@ Title says it all, this is a modification of the Chernarus Antistasi PLUS missio
 
 ## Star Wars - Empire Era
 
-### Occupant Faction: Empire [Opposition mod]
+### Empire [Opposition mod]
 - Tie fighters, storm troopers, ATST's the whole Galactic Empire shebang
-### Invading Faction: Criminals [Opposition mod]
+### Criminals [Opposition mod]
 - Sail barges, Jaba the Hutt, bandits, and Mandalorians
 
 ## Star Wars - Clone Wars Era
 
-### Occupant Faction: Republic [3AS and Opposition mods]
+### Republic [3AS and Opposition mods]
 - Clones, galactic marines, AT-TE's
-### Invading Faction: Separatists [3AS and Opposition mods]
+### Separatists [3AS and Opposition mods]
 - It's just all droids lol
 
 Note - the star wars mode could have either faction be the occupier or the invader
