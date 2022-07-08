@@ -2,8 +2,8 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "NATO"] call _fnc_saveToTemplate;
-["spawnMarkerName", "NATO support corridor"] call _fnc_saveToTemplate;
+["name", "CIS"] call _fnc_saveToTemplate;
+["spawnMarkerName", "CIS support corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
 ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] call _fnc_saveToTemplate;
@@ -69,11 +69,11 @@
 	["sf_marksman", "3AS_BX_DROID_F"],
 	["sf_sniper", "3AS_BX_DROID_F"],
 
-	["other_crew", "3AS_U_CIV_Heavy"],
+	["other_crew", "3AS_U_CIS_Heavy"],
 	["other_unarmed", "3AS_U_CIS_Medic"],
 	["other_official", "SWOP_imp_darthSidius"],
 	["other_traitor", "3AS_U_CIS_Medic"],
-	["other_pilot", "3AS_LPB1_CLD_PIL_V3_F"],
+	["other_pilot", "3AS_CIS_TS_F"],
 	["police_squadleader", "3AS_U_CIS_Officer"],
 	["police_standard", "3AS_U_CIS_Light"]
 ]] call _fnc_saveToTemplate;
@@ -87,55 +87,54 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["B_T_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["B_T_MRAP_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed",["B_T_LSV_01_AT_F", "B_T_MRAP_01_gmg_F"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
-["vehiclesTrucks", ["B_T_Truck_01_covered_F", "B_T_Truck_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["B_T_Truck_01_cargo_F", "B_T_Truck_01_flatbed_F"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["B_T_Truck_01_ammo_F"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["B_T_Truck_01_Repair_F"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["B_T_Truck_01_fuel_F"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["B_T_Truck_01_medical_F"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["B_T_APC_Wheeled_01_cannon_F", "B_T_APC_Tracked_01_CRV_F", "B_T_APC_Tracked_01_rcws_F"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["B_T_MBT_01_cannon_F", "B_T_MBT_01_TUSK_F", "B_T_AFV_Wheeled_01_cannon_F", "B_T_AFV_Wheeled_01_up_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesBasic", []] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", []] call _fnc_saveToTemplate;
+["vehiclesLightArmed",["3AS_Advanced_DSD"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+["vehiclesTrucks", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["3as_SAC_Trade", "3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["3as_MTT", "3as_n99"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["3AS_AAT_Geonosis","3AS_AAT_Arid", "3AS_Advanced_DSD", "3AS_AAT", "3AS_Hailfire_AT", "3AS_Hailfire_Rocket"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["B_T_APC_Tracked_01_AA_F"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["B_T_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["3as_n99"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_03_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["3AS_Hailfire_SAM"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
-["vehiclesTransportBoats", ["B_T_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["B_T_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate;
-["vehiclesAmphibious", ["B_T_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
+["vehiclesGunBoats", []] call _fnc_saveToTemplate;
+["vehiclesAmphibious", ["3as_n99"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["B_Plane_CAS_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["B_Plane_Fighter_01_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", ["B_T_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["3AS_Vulture_CAS_F", "swop_hbomber"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["3AS_Vulture_AA_F", "3AS_Tri_Fighter_dynamicLoadout"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["B_Heli_Light_01_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["B_Heli_Transport_03_F", "B_Heli_Transport_03_unarmed_F", "B_Heli_Transport_01_F"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["B_Heli_Attack_01_dynamicLoadout_F", "B_Heli_Light_01_dynamicLoadout_F"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["3AS_HMP_Transport"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["3AS_HMP_Transport"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["3AS_HMP_Gunship"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [
-["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]],
-["B_T_MBT_01_mlrs_F",["12Rnd_230mm_rockets"]]
+["3AS_Hailfire_Rocket",["12Rnd_230mm_rockets"]]
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", ["B_UAV_02_dynamicLoadout_F", "B_T_UAV_03_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate;
+["uavsAttack", []] call _fnc_saveToTemplate;
+["uavsPortable", ["3as_CIS_ScavDroid"]] call _fnc_saveToTemplate;
 
-["vehiclesMilitiaLightArmed", ["B_LSV_01_armed_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["B_Truck_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["B_LSV_01_unarmed_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["B_APC_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["B_AFV_Wheeled_01_cannon_F"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["3AS_Advanced_DSD"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["3as_n99"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", ["3AS_AAT"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_covered_F", "B_GEN_Van_02_transport_F"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["B_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
-["staticAT", ["B_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAA", ["B_static_AA_F"]] call _fnc_saveToTemplate;
-["staticMortars", ["B_Mortar_01_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["3as_ParticleCannon"]] call _fnc_saveToTemplate;
+["staticAT", ["3AS_FieldCannon"]] call _fnc_saveToTemplate;
+["staticAA", ["3as_FlakCannon"]] call _fnc_saveToTemplate;
+["staticMortars", ["CIS_Mortar"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
@@ -156,17 +155,17 @@
 ["playerDefaultLoadout", []] call _fnc_saveToTemplate;
 ["pvpLoadouts", [
 		//Team Leader
-		["vanilla_blufor_teamLeader"] call A3A_fnc_getLoadout,
+		["SWOP_CIS_geon_elite"] call A3A_fnc_getLoadout,
 		//Medic
 		["vanilla_blufor_medic"] call A3A_fnc_getLoadout,
 		//Autorifleman
-		["vanilla_blufor_machineGunner"] call A3A_fnc_getLoadout,
+		["SWOP_CIS_geon_mg"] call A3A_fnc_getLoadout,
 		//Marksman
-		["vanilla_blufor_marksman"] call A3A_fnc_getLoadout,
+		["SWOP_CIS_geon_1"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
-		["vanilla_blufor_AT"] call A3A_fnc_getLoadout,
+		["SWOP_CIS_geon_1"] call A3A_fnc_getLoadout,
 		//AT2
-		["vanilla_blufor_rifleman"] call A3A_fnc_getLoadout
+		["SWOP_CIS_geon_1"] call A3A_fnc_getLoadout
 	]
 ] call _fnc_saveToTemplate;
 
@@ -185,27 +184,27 @@ _loadoutData setVariable ["machineGuns", []];
 _loadoutData setVariable ["marksmanRifles", []];
 _loadoutData setVariable ["sniperRifles", []];
 _loadoutData setVariable ["lightATLaunchers", [
-	["launch_MRAWS_sand_F", "", "acc_pointer_IR", "", ["MRAWS_HE_F", "MRAWS_HEAT55_F"], [], ""],
-	["launch_MRAWS_sand_F", "", "acc_pointer_IR", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
-	["launch_MRAWS_sand_F", "", "acc_pointer_IR", "", ["MRAWS_HEAT_F", "MRAWS_HE_F"], [], ""],
-	["launch_MRAWS_sand_rail_F", "", "acc_pointer_IR", "", ["MRAWS_HE_F", "MRAWS_HEAT55_F"], [], ""],
-	["launch_MRAWS_sand_rail_F", "", "acc_pointer_IR", "", ["MRAWS_HEAT_F", "MRAWS_HEAT55_F"], [], ""],
-	["launch_MRAWS_sand_rail_F", "", "acc_pointer_IR", "", ["MRAWS_HEAT_F", "MRAWS_HE_F"], [], ""]
+	["JLTS_RPS6", "", "", "", [], [], ""]
 ]];
-_loadoutData setVariable ["ATLaunchers", []];
-_loadoutData setVariable ["missileATLaunchers", []];
+_loadoutData setVariable ["ATLaunchers", [
+	["JLTS_RPS6", "", "", "", [], [], ""],
+	["3AS_E60R_F", "", "acc_pointer_IR", "", [], [], ""]
+]];
+_loadoutData setVariable ["missileATLaunchers", [
+	["3AS_E60R_F", "", "acc_pointer_IR", "", [], [], ""]
+]];
 _loadoutData setVariable ["AALaunchers", [
-	["launch_B_Titan_F", "", "acc_pointer_IR", "", ["Titan_AA"], [], ""]
+	["3AS_E60R_F", "", "acc_pointer_IR", "", [], [], ""]
 ]];
 _loadoutData setVariable ["sidearms", []];
 
 _loadoutData setVariable ["ATMines", ["ATMine_Range_Mag"]];
 _loadoutData setVariable ["APMines", ["APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag"]];
-_loadoutData setVariable ["lightExplosives", ["DemoCharge_Remote_Mag"]];
-_loadoutData setVariable ["heavyExplosives", ["SatchelCharge_Remote_Mag"]];
+_loadoutData setVariable ["lightExplosives", ["3AS_DetPack"]];
+_loadoutData setVariable ["heavyExplosives", ["RTX_RemoteMagazine"]];
 
-_loadoutData setVariable ["antiInfantryGrenades", ["HandGrenade", "MiniGrenade"]];
-_loadoutData setVariable ["antiTankGrenades", []];
+_loadoutData setVariable ["antiInfantryGrenades", ["SWOP_SCAR_DioxisGM", "swop_mag_incendiary", "swop_mag_gimpact", "SWOP_termDet_G"]];
+_loadoutData setVariable ["antiTankGrenades", ["SWOP_SCAR_EMP_GrenadeGM", "SWOP_termDet_Gm"]];
 _loadoutData setVariable ["smokeGrenades", ["SmokeShell"]];
 _loadoutData setVariable ["signalsmokeGrenades", ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"]];
 
@@ -215,18 +214,18 @@ _loadoutData setVariable ["signalsmokeGrenades", ["SmokeShellYellow", "SmokeShel
 _loadoutData setVariable ["maps", ["ItemMap"]];
 _loadoutData setVariable ["watches", ["ItemWatch"]];
 _loadoutData setVariable ["compasses", ["ItemCompass"]];
-_loadoutData setVariable ["radios", ["ItemRadio"]];
+_loadoutData setVariable ["radios", ["JLTS_droid_comlink"]];
 _loadoutData setVariable ["gpses", ["ItemGPS"]];
 _loadoutData setVariable ["NVGs", ["NVGoggles"]];
-_loadoutData setVariable ["binoculars", ["Binocular"]];
-_loadoutData setVariable ["Rangefinder", ["Rangefinder"]];
+_loadoutData setVariable ["binoculars", ["JLTS_DroidBinocular"]];
+_loadoutData setVariable ["Rangefinder", ["JLTS_DroidBinocular"]];
 
 _loadoutData setVariable ["uniforms", []];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["Hvests", []];
 _loadoutData setVariable ["GLvests", []];
 _loadoutData setVariable ["backpacks", []];
-_loadoutData setVariable ["longRangeRadios", ["B_RadioBag_01_wdl_F"]];
+_loadoutData setVariable ["longRangeRadios", ["JLTS_B1_antenna"]];
 _loadoutData setVariable ["helmets", []];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
@@ -262,9 +261,9 @@ private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData setVariable ["uniforms", ["3AS_BX_DROID", "3AS_BX_DROID", "3AS_BX_DROID", "3AS_BX_DROID", "3AS_BX_DROID", "SWOP_C3PO_uniform"]];
 _sfLoadoutData setVariable ["vests", []];
 _sfLoadoutData setVariable ["Hvests", []];
-_sfLoadoutData setVariable ["backpacks", ["SWOP_B_Droid_heavy_backpack"]];
+_sfLoadoutData setVariable ["backpacks", ["JLTS_B1_backpack"]];
 _sfLoadoutData setVariable ["helmets", []];
-_sfLoadoutData setVariable ["binoculars", ["ElectroBinocularsB_F"]];
+_sfLoadoutData setVariable ["binoculars", ["JLTS_DroidBinocular"]];
 
 
 _sfLoadoutData setVariable ["rifles", [
@@ -272,38 +271,30 @@ _sfLoadoutData setVariable ["rifles", [
 ["3AS_E5_F", "", "acc_pointer_ir", "", ["3AS_60Rnd_EM50_RedPlasma"], [], ""]
 ]];
 _sfLoadoutData setVariable ["carbines", [
-["SWOP_E5M", "", "", "", ["SWOP_E5M_Mag", "SWOP_E5_UW_Mag"], [], ""],
-["SWOP_E5M", "", "", "", ["SWOP_E5M_Mag", "SWOP_E5_UW_Mag"], [], ""],
-["SWOP_E5M", "", "", "", ["SWOP_E5M_Mag", "SWOP_E5_UW_Mag"], [], ""],
+["3AS_E5_F", "", "acc_flashlight", "", ["3AS_60Rnd_EM50_RedPlasma"], [], ""],
+["3AS_E5_F", "", "acc_pointer_ir", "", ["3AS_60Rnd_EM50_RedPlasma"], [], ""]
 ["SW_Scattergun", "", "", "", ["SW_Scattergun_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["grenadeLaunchers", [
-["HeavyRepeater", "", "", "", ["SWOP_HeavyRepeater_Mag"], ["SWOP_HeavyRepeaterConcussion_Mag"], ""],
-["relbyv10", "", "", "", ["relbyv10_Mag"], ["SWOP_relbyv10grenade_Mag", "1Rnd_HE_Grenade_shell"], ""]
+["3AS_Flamer_Base", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["SMGs", [
-["SWOP_EE4BlasterRifle", "", "", "", ["SWOP_EE4BlasterRifle_Mag"], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "swop_ee4blaster_scope", ["SWOP_EE4BlasterRifle_Mag"], [], ""],
 ["SWOP_palpatinegun", "", "", "", ["SWOP_palpatinegun_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
-["HeavyRepeater_Mod0", "", "", "", ["SWOP_HeavyRepeater_Mag"], ["SWOP_HeavyRepeaterConcussion_Mag"], ""],
 ["E5C_F", "", "", "", ["3AS_130Rnd_EM50_RedPlasma"], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
-["3AS_Valken38X_F", "", "acc_pointer_ir", "", ["3AS_10Rnd_EC80_MAG"], [], ""],
 ["JLTS_E5S", "", "", "", ["JLTS_E5S_mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
-["3AS_Valken38X_F", "", "acc_pointer_ir", "3as_optic_vk38x", ["3AS_10Rnd_EC80_MAG"], [], "3as_bipod_vk38x_f"],
-["SWOP_DTL20BlasterRifle", "", "", "swop_dlt20ascope", ["SWOP_DTL20BlasterRifle_Mag"], [], ""],
+["JLTS_E5S", "", "", "", ["JLTS_E5S_mag"], [], ""],
 ["3AS_DymekSniperRifle_F", "", "acc_pointer_ir", "", ["3AS_10Rnd_EY80_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
 ["JLTS_Glocko", "", "jlts_glocko_flashlight", "", [], [], ""],
 ["SWOP_x8Pistol", "", "", "", [], [], ""],
-["SWOP_rk3", "", "", "", [], [], ""],
-["swop_white_lightsaber", "", "", "", [], [], ""]
+["SWOP_rk3", "", "", "", [], [], ""]
 ]];
 /////////////////////////////////
 //    Military Loadout Data    //
