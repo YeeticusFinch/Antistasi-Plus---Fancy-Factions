@@ -12,8 +12,8 @@
 ["vehicleLightUnarmed", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
 ["vehicleLightArmed", "SW_SpeederBikeR"] call _fnc_saveToTemplate;
 ["vehicleTruck", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
-["vehicleAT", "*placeholder*"] call _fnc_saveToTemplate; //is there a way to script mounted guns onto normally unarmed vehicles? cause we might need that
-["vehicleAA", "*placeholder*"] call _fnc_saveToTemplate;
+["vehicleAT", "not supported"] call _fnc_saveToTemplate; //is there a way to script mounted guns onto normally unarmed vehicles? cause we might need that
+["vehicleAA", "not supported"] call _fnc_saveToTemplate;
 
 ["vehicleBoat", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
 ["vehicleRepair", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
@@ -27,7 +27,7 @@
 ["vehicleCivTruck", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
 ["vehicleCivHeli", "Swop_Uwing"] call _fnc_saveToTemplate;
 ["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
-["vehicleCivSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
+["vehicleCivSupply", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
 
 ["staticMG", "Hoth_Minigun"] call _fnc_saveToTemplate;
 ["staticAT", "Hoth_Dishturret"] call _fnc_saveToTemplate;
