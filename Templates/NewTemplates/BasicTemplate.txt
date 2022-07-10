@@ -165,7 +165,7 @@ _loadoutData setVariable ["machineGuns", []];
 _loadoutData setVariable ["marksmanRifles", []];
 _loadoutData setVariable ["sniperRifles", []];
 _loadoutData setVariable ["lightATLaunchers", [
-	["REPLACE", "", "", "", [], [], ""]      
+	["REPLACE", "", "", "", [], [], ""]       //Format: ["weapon", "muzzle", "flashlight/laser pointer", "sights", ["ammo"], [], "underbarrel"]  
 ]];
 _loadoutData setVariable ["ATLaunchers", [
 	["REPLACE", "", "", "", [], [], ""]
@@ -238,9 +238,11 @@ _sfLoadoutData setVariable ["GLvests", ["REPLACE"]];         //Grenade Launcher 
 _sfLoadoutData setVariable ["offvests", ["REPLACE"]];        //Officer vests
 _sfLoadoutData setVariable ["backpacks", ["REPLACE"]];       //Backpacks
 _sfLoadoutData setVariable ["helmets", ["REPLACE"]];         //Helmets
+_sfLoadoutData setVariable ["offhelmets", ["REPLACE"]];	     //Helmets but for officers
+_sfLoadoutData setVariable ["medhelmets", ["REPLACE"]];      //Helmets but for medics
 _sfLoadoutData setVariable ["binoculars", ["REPLACE"]];      //Binoculars if for some reason you want theris to be different
 _sfLoadoutData setVariable ["rifles", [
-["REPLACE", "", "", "", [], [], ""]   //Set their guns with ["GUN", "MUZZLE", "FLASHLIGHT/LASER", "SIGHT", ["PRIMARY AMMO"], ["SECONDARY AMMO"], "BIPOD/GRIP"]
+["REPLACE", "", "", "", [], [], ""]   //Set their guns with ["GUN", "MUZZLE", "FLASHLIGHT/LASER", "SIGHT", ["PRIMARY AMMO"], ["SECONDARY AMMO"], "UNDERBARREL(bipod,grip,etc)"]
 ]];
 _sfLoadoutData setVariable ["carbines", [
 ["REPLACE", "", "", "", [], [], ""]
@@ -272,147 +274,134 @@ _militaryLoadoutData setVariable ["uniforms", ["REPLACE"]];
 _militaryLoadoutData setVariable ["meduniforms", ["REPLACE"]];
 _militaryLoadoutData setVariable ["offuniforms", ["REPLACE"]];
 _militaryLoadoutData setVariable ["offvests", ["REPLACE"]];
-_militaryLoadoutData setVariable ["vests", []];
+_militaryLoadoutData setVariable ["vests", ["REPLACE"]];
 _militaryLoadoutData setVariable ["Hvests", ["REPLACE"]];
 _militaryLoadoutData setVariable ["GLvests", ["REPLACE"]];
-_militaryLoadoutData setVariable [offvests", ["REPLACE"]];
+_militaryLoadoutData setVariable ["offvests", ["REPLACE"]];
 _militaryLoadoutData setVariable ["backpacks", ["REPLACE"]];
 _militaryLoadoutData setVariable ["helmets", ["REPLACE"]];
+_militaryLoadoutData setVariable ["offhelmets", ["REPLACE"]];
+_militaryLoadoutData setVariable ["medhelmets", ["REPLACE"]];
 _militaryLoadoutData setVariable ["binoculars", ["REPLACE"]];
 
 _militaryLoadoutData setVariable ["rifles", [
-["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_flashlight", "3as_optic_reflex_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_flashlight", "3as_optic_reflex_dc15c", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["carbines", [
-["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["grenadeLaunchers", [
-["3AS_DC15C_GL", "", "acc_pointer_ir", "3as_optic_acog_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["3AS_DC15C_GL", "", "acc_pointer_ir", "3as_optic_reflex_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["3AS_DC15C_GL", "", "acc_flashlight", "3as_optic_reflex_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["SMGs", [
-["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["machineGuns", [
-["3AS_DC15L_F", "", "acc_pointer_IR", "3as_optic_dc15l", [], [], "3as_bipod_dc15l_f"],
-["3AS_DC15L_F", "", "acc_flashlight", "", [], [], "3as_bipod_dc15l_f"]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["marksmanRifles", [
-["3AS_DC15A_F", "", "acc_pointer_ir", "3as_optic_lescope_dc15a", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["sniperRifles", [
-["3AS_Valken38X_F", "", "acc_pointer_ir", "3as_optic_vk38x", [], [], "3as_bipod_vk38x_f"]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["sidearms", [
-["3AS_DC17S_F", "", "acc_flashlight_pistol", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 ///////////////////////////////
 //    Police Loadout Data    //
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_policeLoadoutData setVariable ["uniforms", ["JLTS_CloneArmor_SC"]];
-_policeLoadoutData setVariable ["vests", ["JLTS_CloneVestKama"]];
-_policeLoadoutData setVariable ["helmets", ["JLTS_CloneHelmetSC_SC"]];
+_policeLoadoutData setVariable ["uniforms", ["REPLACE"]];
+_policeLoadoutData setVariable ["offuniforms", ["REPLACE"]];
+_policeLoadoutData setVariable ["vests", ["REPLACE"]];
+_policeLoadoutData setVariable ["Hvests", ["REPLACE"]];
+_policeLoadoutData setVariable ["helmets", ["REPLACE"]];
 _policeLoadoutData setVariable ["smgs", [
-["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
-_policeLoadoutData setVariable ["sidearms", ["3AS_DC17S_F"]];
+_policeLoadoutData setVariable ["sidearms", ["REPLACE"]];
 
 ////////////////////////////////
 //    Militia Loadout Data    //
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData setVariable ["uniforms", ["JLTS_CloneArmor_212"]];
-_militiaLoadoutData setVariable ["meduniforms", ["JLTS_CloneArmor_212_medic"]];
-_militiaLoadoutData setVariable ["offvests", ["JLTS_CloneVestCommander_212"]];
-_militiaLoadoutData setVariable ["vests", []];
-_militiaLoadoutData setVariable ["Hvests", ["JLTS_CloneVestKama"]];
-_militiaLoadoutData setVariable ["backpacks", ["JLTS_Clone_backpack"]];
-_militiaLoadoutData setVariable ["helmets", ["JLTS_CloneHelmetP2_212"]];
+_militiaLoadoutData setVariable ["uniforms", ["REPLACE"]];
+_militiaLoadoutData setVariable ["meduniforms", ["REPLACE"]];
+_militiaLoadoutData setVariable ["offuniforms", ["REPLACE"]];
+_militiaLoadoutData setVariable ["offvests", ["REPLACE"]];
+_militiaLoadoutData setVariable ["vests", ["REPLACE"]];
+_militiaLoadoutData setVariable ["Hvests", ["REPLACE"]];
+_militiaLoadoutData setVariable ["backpacks", ["REPLACE"]];
+_militiaLoadoutData setVariable ["helmets", ["REPLACE"]];
+_militiaLoadoutData setVariable ["offhelmets", ["REPLACE"]];
+_militiaLoadoutData setVariable ["medhelmets", ["REPLACE"]];
 
 _militiaLoadoutData setVariable ["rifles", [
-["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_flashlight", "3as_optic_reflex_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_flashlight", "3as_optic_reflex_dc15c", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
-["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["3AS_DC15C_GL", "", "acc_pointer_ir", "3as_optic_acog_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["3AS_DC15C_GL", "", "acc_pointer_ir", "3as_optic_reflex_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["3AS_DC15C_GL", "", "acc_flashlight", "3as_optic_reflex_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["smgs", [
-["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
-["3AS_DC15L_F", "", "acc_pointer_IR", "3as_optic_dc15l", [], [], "3as_bipod_dc15l_f"],
-["3AS_DC15L_F", "", "acc_flashlight", "", [], [], "3as_bipod_dc15l_f"]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["marksmanRifles", [
-["3AS_DC15A_F", "", "acc_pointer_ir", "3as_optic_lescope_dc15a", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["sniperRifles", [
-["3AS_Valken38X_F", "", "acc_pointer_ir", "3as_optic_vk38x", [], [], "3as_bipod_vk38x_f"]
+["REPLACE", "", "", "", [], [], ""]
 ]];
-_militiaLoadoutData setVariable ["sidearms", ["3AS_DC17S_F"]];
+_militiaLoadoutData setVariable ["sidearms", ["REPLACE"]];
 
 /////////////////////////////////
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["offuniforms", ["SWOP_Galacticmarines_lt_F_CombatUniform"]];
-_eliteLoadoutData setVariable ["uniforms", ["SWOP_Galacticmarines_trooper_F_CombatUniform"]];
-_eliteLoadoutData setVariable ["offvests", ["SWOP_gmarinesarmorL"]];
-_eliteLoadoutData setVariable ["vests", ["SWOP_gmarinesarmor"]];
-_eliteLoadoutData setVariable ["Hvests", ["SWOP_gmarinesarmor"]];
-_eliteLoadoutData setVariable ["GLvests", ["SWOP_gmarinesarmor"]];
-_eliteLoadoutData setVariable ["backpacks", ["SWOP_B_ImSnowBackpack_Base"]];
-_eliteLoadoutData setVariable ["helmets", []];
+_eliteLoadoutData setVariable ["offuniforms", ["REPLACE"]];
+_eliteLoadoutData setVariable ["meduniforms", ["REPLACE"]];
+_eliteLoadoutData setVariable ["uniforms", ["REPLACE"]];
+_eliteLoadoutData setVariable ["offvests", ["REPLACE"]];
+_eliteLoadoutData setVariable ["vests", ["REPLACE"]];
+_eliteLoadoutData setVariable ["Hvests", ["REPLACE"]];
+_eliteLoadoutData setVariable ["GLvests", ["REPLACE"]];
+_eliteLoadoutData setVariable ["backpacks", ["REPLACE"]];
+_eliteLoadoutData setVariable ["helmets", ["REPLACE"]];
+_eliteLoadoutData setVariable ["offhelmets", ["REPLACE"]];
+_eliteLoadoutData setVariable ["medhelmets", ["REPLACE"]];
 ]];
 
 _eliteLoadoutData setVariable ["rifles", [
-["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_flashlight", "3as_optic_reflex_dc15c", [], [], ""],
-["3AS_DC15C_F", "", "acc_flashlight", "3as_optic_reflex_dc15c", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["carbines", [
-["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["grenadeLaunchers", [
-["sw_rebelflame", "", "", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["SMGs", [
-["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["machineGuns", [
-["3AS_DC15L_F", "", "acc_pointer_IR", "3as_optic_dc15l", [], [], "3as_bipod_dc15l_f"],
-["3AS_DC15L_F", "", "acc_flashlight", "", [], [], "3as_bipod_dc15l_f"]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["marksmanRifles", [
-["3AS_DC15A_F", "", "acc_pointer_ir", "3as_optic_lescope_dc15a", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sniperRifles", [
-["3AS_Valken38X_F", "", "acc_pointer_ir", "3as_optic_vk38x", [], [], "3as_bipod_vk38x_f"]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sidearms", [
-["3AS_DC17S_F", "", "acc_flashlight_pistol", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 
 //////////////////////////
@@ -420,15 +409,15 @@ _eliteLoadoutData setVariable ["sidearms", [
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData setVariable ["uniforms", ["3as_ATRT_Driver_Uniform"]];
-_crewLoadoutData setVariable ["vests", []];
-_crewLoadoutData setVariable ["helmets", ["3as_ATRT_Helmet"]];
+_crewLoadoutData setVariable ["uniforms", ["REPLACE"]];
+_crewLoadoutData setVariable ["vests", ["REPLACE"]];
+_crewLoadoutData setVariable ["helmets", ["REPLACE"]];
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData setVariable ["uniforms", ["JLTS_CloneArmor"]];
-_pilotLoadoutData setVariable ["vests", []];
-_pilotLoadoutData setVariable ["helmets", ["3as_P2_Pilot_helmet"]];
+_pilotLoadoutData setVariable ["uniforms", ["REPLACE"]];
+_pilotLoadoutData setVariable ["vests", ["REPLACE"]];
+_pilotLoadoutData setVariable ["helmets", ["REPLACE"]];
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
 
@@ -443,7 +432,7 @@ _pilotLoadoutData setVariable ["helmets", ["3as_P2_Pilot_helmet"]];
 //However, these exist in case you really do want to do a lot of custom alterations.
 
 private _squadLeaderTemplate = {
-	["helmets"] call _fnc_setHelmet;
+	[["offhelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
 	[["offvests", "vests"] call _fnc_fallback] call _fnc_setVest;
 	[["offuniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
@@ -523,7 +512,7 @@ private _radiomanTemplate = {
 };
 
 private _medicTemplate = {
-	["helmets"] call _fnc_setHelmet;
+	[["medhelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
 	[["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
 	[["meduniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
