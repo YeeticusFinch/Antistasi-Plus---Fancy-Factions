@@ -259,11 +259,10 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData setVariable ["uniforms", ["3AS_U_Rep_Katarn_Armor_Sev", "SWOP_Clonetrooper_RCsev_F_CombatUniform"]];
-_sfLoadoutData setVariable ["vests", ["3AS_V_Katarn_Vest_Demo", "3AS_V_Katarn_Vest_Tech", "3AS_V_Katarn_Vest_Tech_Foxtrot", "3AS_V_Katarn_Vest_Tech_Omega"]];
-_sfLoadoutData setVariable ["Hvests", ["SWOP_Clonetrooper_Katarn_armor"]];
-_sfLoadoutData setVariable ["backpacks", ["SWOP_B_RCsevBackpack_B", "SWOP_B_RCBackpack_B", "3AS_B_Katarn_Backpack_Sev", "3AS_B_Katarn_Backpack_Gregor"]];
-_sfLoadoutData setVariable ["helmets", ["3AS_H_Katarn_Helmet_Sev", "SWOP_ClonetrooperRCsev_helmet"]];
+_sfLoadoutData setVariable ["uniforms", ["3AS_U_Rep_Katarn_Armor_Sev"]];
+_sfLoadoutData setVariable ["vests", ["SWOP_Clonetrooper_Katarn_armor"]];
+_sfLoadoutData setVariable ["backpacks", ["3AS_B_Katarn_Backpack_Sev"]];
+_sfLoadoutData setVariable ["helmets", ["3AS_H_Katarn_Helmet_Sev"]];
 _sfLoadoutData setVariable ["binoculars", ["JLTS_CloneBinocular_black"]];
 
 
@@ -280,14 +279,15 @@ _sfLoadoutData setVariable ["carbines", [
 ["JLTS_DP23", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["grenadeLaunchers", [
-["3AS_DC17M_F", "", "", "", ["3AS_AntiArmour_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag", "3AS_AntiArmour_mag"], [], ""],
 ["3AS_WestarM5_GL", "", "acc_pointer_IR", "", [], ["3AS_6Rnd_HE_Grenade_shell", "3AS_6Rnd_HE_Grenade_shell"], ""]
 ]];
 _sfLoadoutData setVariable ["SMGs", [
-["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""],
-["3AS_DC15S_F", "", "acc_flashlight", "3AS_optic_holo_DC15S", [], [], ""],
-["3AS_DC15S_F", "", "acc_pointer_IR", "3AS_optic_holo_DC15S", [], [], ""],
-["3AS_DC15S_F", "", "acc_pointer_IR", "3AS_optic_holo_DC15S", [], [], ""]
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
+["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
+["JLTS_DP23", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
 ["3AS_DC15L_F", "", "acc_flashlight", "3AS_Optic_DC15L", [], [], "3AS_Bipod_DC15L_f"],
@@ -303,11 +303,10 @@ _sfLoadoutData setVariable ["machineGuns", [
 _sfLoadoutData setVariable ["marksmanRifles", [
 ["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag", "3AS_5Rnd_EC80_mag", "3AS_AntiArmour_mag"], [], ""],
 ["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag", "3AS_5Rnd_EC80_mag"], [], ""],
-["SWOP_DLT19DBlasterRifle", "", "", "", [], [], ""],
 ["SWOP_DC17M_Sniper", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
-["3AS_DC17M_F", "", "", "", ["3AS_5Rnd_EC80_mag"], [], ""],
+["SWOP_DC17M_Sniper", "", "", "", [], [], ""],
 [3AS_Valken38X_F", "", "", "3as_optic_vk38x", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
@@ -322,61 +321,46 @@ _sfLoadoutData setVariable ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData setVariable ["uniforms", ["U_B_CombatUniform_mcam_wdl_f", "U_B_CombatUniform_tshirt_mcam_wdL_f"]];
-_militaryLoadoutData setVariable ["vests", ["V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl"]];
-_militaryLoadoutData setVariable ["Hvests", ["V_PlateCarrierSpec_wdl"]];
-_militaryLoadoutData setVariable ["GLvests", ["V_PlateCarrierGL_wdl"]];
-_militaryLoadoutData setVariable ["backpacks", ["B_AssaultPack_wdl_F", "B_Kitbag_rgr", "B_Carryall_wdl_F", "B_TacticalPack_oli"]];
-_militaryLoadoutData setVariable ["helmets", ["H_HelmetB_light_wdl", "H_HelmetB_plain_wdl", "H_HelmetSpecB_wdl"]];
-_militaryLoadoutData setVariable ["missileATLaunchers", [
-	["launch_B_Titan_short_F", "", "acc_pointer_IR", "", ["Titan_AT"], [], ""]
-]];
+_militaryLoadoutData setVariable ["uniforms", ["JLTS_CloneArmor_501"]];
+_militaryLoadoutData setVariable ["meduniforms", ["JLTS_CloneArmor_501_medic"]];
+_militaryLoadoutData setVariable ["offvests", ["JLTS_CloneVestCommander_501"]];
+_militaryLoadoutData setVariable ["vests", []];
+_militaryLoadoutData setVariable ["Hvests", ["JLTS_CloneVestKama"]];
+_militaryLoadoutData setVariable ["GLvests", ["JLTS_CloneVestKama"]];
+_militaryLoadoutData setVariable ["backpacks", ["JLTS_Clone_backpack"]];
+_militaryLoadoutData setVariable ["helmets", ["JLTS_CloneHelmetP2_501"]];
 
 _militaryLoadoutData setVariable ["rifles", [
-["arifle_MX_Black_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""],
-["arifle_MX_Black_F", "", "acc_pointer_IR", "optic_MRCO", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""],
-["arifle_MX_Black_F", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""],
-["arifle_MX_Black_F", "", "acc_pointer_IR", "optic_ACO_grn", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""]
+["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
+["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
+["3AS_DC15C_F", "", "acc_flashlight", "3as_optic_reflex_dc15c", [], [], ""],
+["3AS_DC15C_F", "", "acc_flashlight", "3as_optic_reflex_dc15c", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["carbines", [
-["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_ACO_grn", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_Aco", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_ACO_grn", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], ""]
+["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
+["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["grenadeLaunchers", [
-["arifle_MX_GL_Black_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["arifle_MX_GL_Black_F", "", "acc_pointer_IR", "optic_MRCO", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["arifle_MX_GL_Black_F", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["arifle_MX_GL_Black_F", "", "acc_pointer_IR", "optic_ACO_grn", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+["3AS_DC15C_GL", "", "acc_pointer_ir", "3as_optic_acog_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
+["3AS_DC15C_GL", "", "acc_pointer_ir", "3as_optic_reflex_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
+["3AS_DC15C_GL", "", "acc_flashlight", "3as_optic_reflex_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militaryLoadoutData setVariable ["SMGs", [
-["SMG_01_F", "", "", "optic_Holosight", [], [], ""],
-["SMG_01_F", "", "", "optic_Yorris", [], [], ""],
-["SMG_01_F", "", "", "optic_Aco_smg", [], [], ""],
-["SMG_02_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", [], [], ""],
-["SMG_02_F", "", "acc_pointer_IR", "optic_Yorris", [], [], ""],
-["SMG_02_F", "", "acc_pointer_IR", "optic_Aco_smg", [], [], ""]
+["3AS_DC15S_F", "", "acc_pointer_IR", "3as_optic_holo_dc15s", [], [], ""],
+["3AS_DC15S_F", "", "acc_flashlight", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["machineGuns", [
-["LMG_Mk200_black_F", "", "acc_pointer_IR", "optic_ACO_grn", ["200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Tracer_Red"], [], "bipod_01_F_blk"],
-["LMG_Mk200_black_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Tracer_Red"], [], "bipod_01_F_blk"],
-["LMG_Mk200_black_F", "", "acc_pointer_IR", "optic_Aco", ["200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Tracer_Red"], [], "bipod_01_F_blk"],
-["arifle_MX_SW_Black_F", "", "acc_pointer_IR", "optic_ACO_grn", ["100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag_tracer"], [], "bipod_01_F_blk"],
-["arifle_MX_SW_Black_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag_tracer"], [], "bipod_01_F_blk"],
-["arifle_MX_SW_Black_F", "", "acc_pointer_IR", "optic_Aco", ["100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag_tracer"], [], "bipod_01_F_blk"]
+["3AS_DC15L_F", "", "acc_pointer_IR", "3as_optic_dc15l", [], [], "3as_bipod_dc15l_f"],
+["3AS_DC15L_F", "", "acc_flashlight", "", [], [], "3as_bipod_dc15l_f"]
 ]];
 _militaryLoadoutData setVariable ["marksmanRifles", [
-["arifle_MXM_Black_F", "", "acc_pointer_IR", "optic_SOS", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], "bipod_01_F_snd"],
-["arifle_MXM_Black_F", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_mag_Tracer"], [], "bipod_01_F_snd"]
+["3AS_DC15A_F", "", "acc_pointer_ir", "3as_optic_lescope_dc15a", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["sniperRifles", [
-["srifle_LRR_F", "", "", "optic_SOS", [], [], ""],
-["srifle_LRR_F", "", "", "optic_LRPS_tna_F", [], [], ""]
+["3AS_Valken38X_F", "", "acc_pointer_ir", "3as_optic_vk38x", [], [], "3as_bipod_vk38x_f"]
 ]];
 _militaryLoadoutData setVariable ["sidearms", [
-["hgun_P07_blk_F", "", "", "", [], [], ""],
-["hgun_ACPC2_F", "", "acc_flashlight_pistol", "", [], [], ""]
+["3AS_DC17S_F", "", "acc_flashlight_pistol", "", [], [], ""]
 ]];
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -538,8 +522,8 @@ _pilotLoadoutData setVariable ["helmets", ["H_CrewHelmetHeli_B", "H_PilotHelmetH
 
 private _squadLeaderTemplate = {
 	["helmets"] call _fnc_setHelmet;
-	[["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
-	["uniforms"] call _fnc_setUniform;
+	[["offvests", "vests"] call _fnc_fallback] call _fnc_setVest;
+	[["offuniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
 	["backpacks"] call _fnc_setBackpack;
 
@@ -619,7 +603,7 @@ private _radiomanTemplate = {
 private _medicTemplate = {
 	["helmets"] call _fnc_setHelmet;
 	[["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
-	["uniforms"] call _fnc_setUniform;
+	[["meduniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
   	[selectRandom ["carbines", "smgs"]] call _fnc_setPrimary;
 	["primary", 6] call _fnc_addMagazines;
