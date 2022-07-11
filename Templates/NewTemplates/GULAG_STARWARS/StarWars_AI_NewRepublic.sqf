@@ -280,8 +280,8 @@ _sfLoadoutData setVariable ["SMGs", [
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
 ["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""]
-["SWOP_Z6", "", "", "swop_rt97cblaster_scope", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""],
+["SWOP_Z6", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
 ["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""]
@@ -317,8 +317,8 @@ _militaryLoadoutData setVariable ["SMGs", [
 ]];
 _militaryLoadoutData setVariable ["machineGuns", [
 ["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""]
-["SWOP_Z6", "", "", "swop_rt97cblaster_scope", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""],
+["SWOP_Z6", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["marksmanRifles", [
 ["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""]
@@ -348,80 +348,94 @@ _policeLoadoutData setVariable ["sidearms", ["SWOP_a180Pistol"]];
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData setVariable ["uniforms", ["SWOP_RebM_F_CombatUniform",]];
-_militiaLoadoutData setVariable ["meduniforms", ["REPLACE"]];
-_militiaLoadoutData setVariable ["offuniforms", ["REPLACE"]];
-_militiaLoadoutData setVariable ["offvests", ["REPLACE"]];
-_militiaLoadoutData setVariable ["vests", ["REPLACE"]];
-_militiaLoadoutData setVariable ["Hvests", ["REPLACE"]];
-_militiaLoadoutData setVariable ["backpacks", ["REPLACE"]];
-_militiaLoadoutData setVariable ["helmets", ["REPLACE"]];
-_militiaLoadoutData setVariable ["offhelmets", ["REPLACE"]];
-_militiaLoadoutData setVariable ["medhelmets", ["REPLACE"]];
+_militiaLoadoutData setVariable ["uniforms", ["SWOP_RebM_F_CombatUniform", "SWOP_RebMS_F_CombatUniform", "SWOP_RebMR_F_CombatUniform", "SWOP_RebMI_F_CombatUniform", "SWOP_RebMK_F_CombatUniform", "SWOP_Kota_F_CombatUniform", "SWOP_RebDB_F_CombatUniform"]];
+_militiaLoadoutData setVariable ["vests", ["SWOP_RebSumkBron"]];
+_militiaLoadoutData setVariable ["Hvests", ["SWOP_RebSumkBronFull"]];
+_militiaLoadoutData setVariable ["backpacks", ["SWOP_B_WoodBackpack_Base"]];
+_militiaLoadoutData setVariable ["helmets", ["SWOP_rebhelmMAG", "SWOP_rebFEChelmDes", "SWOP_rebHUSMag", "SWOP_RebhelmBorn", "SWOP_RebhelmBL"]];
+_militiaLoadoutData setVariable ["offhelmets", ["SWOP_rebHGuardBlack"]];
 
 _militiaLoadoutData setVariable ["rifles", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_A280BlasterRifle", "", "", "swop_a280blaster_scope", [], [], ""],
+["SWOP_A280BlasterRifle", "", "", "", [], [], ""],
+["SWOP_e11", "", "", "swop_e11_bl_scope", [], [], ""],
+["SWOP_e11", "", "", "", [], [], ""],
+["SWOP_EE3BlasterRifle", "", "", "swop_ee3blaster_scope", [], [], ""],
+["SWOP_EE3BlasterRifle", "", "", "", [], [], ""],
+["relbyv10", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_A280BlasterRifle", "", "", "swop_a280blaster_scope", [], [], ""],
+["SWOP_A280BlasterRifle", "", "", "", [], [], ""],
+["SWOP_e11", "", "", "swop_e11_bl_scope", [], [], ""],
+["SWOP_e11", "", "", "", [], [], ""],
+["SWOP_DH17BlasterRifle", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["REPLACE", "", "", "", [], [], ""]
+["sw_rebelflame", "", "", "", [], [], ""],
+["JLTS_DP23", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["smgs", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_DH17BlasterRifle", "", "", "", [], [], ""],
+["JLTS_DP23", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
+["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""],
+["SWOP_DLT19BlasterRifle", "", "", "", [], [], ""],
+["SWOP_Z6", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["marksmanRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""],
+["SWOP_E17DBlasterRifle", "", "", "", [], [], ""],
+["SWOP_E11SBlasterRifle", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["sniperRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""],
+["SWOP_E17DBlasterRifle", "", "", "", [], [], ""],
+["SWOP_E11SBlasterRifle", "", "", "", [], [], ""]
 ]];
-_militiaLoadoutData setVariable ["sidearms", ["REPLACE"]];
+_militiaLoadoutData setVariable ["sidearms", ["SWOP_a180Pistol"]];
 
 /////////////////////////////////
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["offuniforms", ["REPLACE"]];
-_eliteLoadoutData setVariable ["meduniforms", ["REPLACE"]];
-_eliteLoadoutData setVariable ["uniforms", ["REPLACE"]];
-_eliteLoadoutData setVariable ["offvests", ["REPLACE"]];
-_eliteLoadoutData setVariable ["vests", ["REPLACE"]];
-_eliteLoadoutData setVariable ["Hvests", ["REPLACE"]];
-_eliteLoadoutData setVariable ["GLvests", ["REPLACE"]];
-_eliteLoadoutData setVariable ["backpacks", ["REPLACE"]];
-_eliteLoadoutData setVariable ["helmets", ["REPLACE"]];
-_eliteLoadoutData setVariable ["offhelmets", ["REPLACE"]];
-_eliteLoadoutData setVariable ["medhelmets", ["REPLACE"]];
+_eliteLoadoutData setVariable ["uniforms", ["SWOP_Reb_f_WW_Chewbacca1_CombatUniform", "SWOP_Reb_f_WW_Chewbacca3_CombatUniform", "SWOP_Reb_f_WW_Chewbacca5_CombatUniform"]];
+_eliteLoadoutData setVariable ["vests", ["SWOP_Vestwookie", "SWOP_Vestwookie4"]];
+_eliteLoadoutData setVariable ["Hvests", ["SWOP_Vestwookie2", "SWOP_Vestwookie6", "SWOP_Vestwookie7", "SWOP_Vestwookie9"]];
+_eliteLoadoutData setVariable ["backpacks", ["CAA_InvisBag"]];
+_eliteLoadoutData setVariable ["helmets", []];
+_loadoutData setVariable ["lightATLaunchers", [
+["Rocketwookie_F", "", "", "", ["RocketWookieHEAT_mag"], [], ""]
+]];
+_loadoutData setVariable ["ATLaunchers", [
+["Rocketwookie_F", "", "", "", ["RocketWookieHEAT_mag"], [], ""]
 ]];
 
 _eliteLoadoutData setVariable ["rifles", [
-["REPLACE", "", "", "", [], [], ""]
+["swop_Bowcaster", "", "", "", ["SWOP_bowcasterbuckshot_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterCharge_Mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["carbines", [
-["REPLACE", "", "", "", [], [], ""]
+["swop_Bowcaster", "", "", "", ["SWOP_bowcasterbuckshot_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterCharge_Mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["grenadeLaunchers", [
-["REPLACE", "", "", "", [], [], ""]
+["sw_rebelflame", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["SMGs", [
-["REPLACE", "", "", "", [], [], ""]
+["swop_Bowcaster", "", "", "", ["SWOP_bowcasterbuckshot_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterslug_Mag", "SWOP_bowcasterCharge_Mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["machineGuns", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_wookieBlasterCarbine", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["marksmanRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_wookieBlasterRifle", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sniperRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_wookieBlasterRifle", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sidearms", [
-["REPLACE", "", "", "", [], [], ""]
+["SWOP_wookiepistol", "", "", "", [], [], ""]
 ]];
 
 //////////////////////////
@@ -429,15 +443,15 @@ _eliteLoadoutData setVariable ["sidearms", [
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData setVariable ["uniforms", ["REPLACE"]];
-_crewLoadoutData setVariable ["vests", ["REPLACE"]];
-_crewLoadoutData setVariable ["helmets", ["REPLACE"]];
+_crewLoadoutData setVariable ["uniforms", ["SWOP_RebC_F_CombatUniform"]];
+_crewLoadoutData setVariable ["vests", ["RebSumkBron"]];
+_crewLoadoutData setVariable ["helmets", ["SWOP_RebHGuardBlue"]];
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData setVariable ["uniforms", ["REPLACE"]];
-_pilotLoadoutData setVariable ["vests", ["REPLACE"]];
-_pilotLoadoutData setVariable ["helmets", ["REPLACE"]];
+_pilotLoadoutData setVariable ["uniforms", ["SWOP_Rebpil_F_CombatUniform"]];
+_pilotLoadoutData setVariable ["vests", []];
+_pilotLoadoutData setVariable ["helmets", ["SWOP_RebPilH"]];
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
 
