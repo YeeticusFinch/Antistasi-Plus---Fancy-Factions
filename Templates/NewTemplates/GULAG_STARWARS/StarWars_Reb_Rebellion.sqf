@@ -68,7 +68,7 @@
 private _initialRebelEquipment = [
 "SWOP_DL44Pistol", "SWOP_a180Pistol","JLTS_Glocko",
 "JLTS_Glocko_mag","SWOP_a180Pistol_mag", "SWOP_DL44Pistol_mag",
-"swop_mag_incendiary", "swop_SmokeShell",
+"swop_mag_incendiary", "swop_SmokeShell","swop_dl44_scope",
 "B_FieldPack_cbr", "B_FieldPack_oli",
 "SWOP_RemBron2","Binocular","Laserbatteries"];
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
