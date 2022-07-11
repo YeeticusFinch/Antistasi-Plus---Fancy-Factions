@@ -273,7 +273,6 @@ private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militaryLoadoutData setVariable ["uniforms", ["REPLACE"]];
 _militaryLoadoutData setVariable ["meduniforms", ["REPLACE"]];
 _militaryLoadoutData setVariable ["offuniforms", ["REPLACE"]];
-_militaryLoadoutData setVariable ["offvests", ["REPLACE"]];
 _militaryLoadoutData setVariable ["vests", ["REPLACE"]];
 _militaryLoadoutData setVariable ["Hvests", ["REPLACE"]];
 _militaryLoadoutData setVariable ["GLvests", ["REPLACE"]];
