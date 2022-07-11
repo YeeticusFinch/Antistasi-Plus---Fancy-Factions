@@ -13,69 +13,69 @@
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_squadleader", "SWOP_Band_Rod_serg"],
-	["militia_rifleman", "SWOP_Band_Rod_a280"],
-	["militia_radioman", "SWOP_Band_Rod_smug"],
-	["militia_medic", "SWOP_Band_Rod_med"],
-	["militia_engineer", "SWOP_Band_Rod_smug"],
-	["militia_explosivesexpert", "SWOP_Band_Rod_a280"],
-	["militia_grenadier", "SWOP_Band_Rod_a280"],
-	["militia_lat", "SWOP_Band_week_aa"],
-	["militia_at", "SWOP_Band_week_aa"],
-	["militia_aa", "SWOP_Band_week_aa"],
-	["militia_machinegunner", "SWOP_Band_Rod_assault"],
-	["militia_marksman", "SWOP_Band_Rod_sniper"],
-	["militia_sniper", "SWOP_Band_Rod_sniper"],
+	["militia_squadleader", "SWOP_Rebel_wood_serg"],
+	["militia_rifleman", "SWOP_Rebel_wood_a280"],
+	["militia_radioman", "SWOP_Rebel_wood_a280"],
+	["militia_medic", "SWOP_Rebel_wood_med"],
+	["militia_engineer", "SWOP_Rebel_wood_med"],
+	["militia_explosivesexpert", "SWOP_Rebel_wood_demolisher"],
+	["militia_grenadier", "SWOP_Rebel_Scarif_Flamethrower"],
+	["militia_lat", "SWOP_Rebel_wood_aa"],
+	["militia_at", "SWOP_Rebel_wood_aa"],
+	["militia_aa", "SWOP_Rebel_wood_aa"],
+	["militia_machinegunner", "SWOP_Rebel_wood_mg"],
+	["militia_marksman", "SWOP_Rebel_wood_sniper"],
+	["militia_sniper", "SWOP_Rebel_wood_sniper"],
 
-	["military_squadleader", "SWOP_Band_week_serg"],
-	["military_rifleman", "SWOP_Band_week_a280"],
-	["military_radioman", "SWOP_Band_week_smug"],
-	["military_medic", "SWOP_Band_week_smug"],
-	["military_engineer", "SWOP_Band_week_a280"],
-	["military_explosivesexpert", "SWOP_Band_week_a280"],
-	["military_grenadier", "SWOP_Band_week_a280"],
-	["military_lat", "SWOP_Band_week_aa"],
-	["military_at", "SWOP_Band_week_aa"],
-	["military_aa", "SWOP_Band_week_aa"],
-	["military_machinegunner", "SWOP_Band_week_assault"],
-	["military_marksman", "SWOP_Band_week_sniper"],
-	["military_sniper", "SWOP_Band_week_sniper"],
+	["military_squadleader", "SWOP_Rebel_wood_serg"],
+	["military_rifleman", "SWOP_Rebel_wood_a280"],
+	["military_radioman", "SWOP_Rebel_wood_a280"],
+	["military_medic", "SWOP_Rebel_wood_med"],
+	["military_engineer", "SWOP_Rebel_wood_med"],
+	["military_explosivesexpert", "SWOP_Rebel_wood_demolisher"],
+	["military_grenadier", "SWOP_Rebel_Scarif_Flamethrower"],
+	["military_lat", "SWOP_Rebel_wood_aa"],
+	["military_at", "SWOP_Rebel_wood_aa"],
+	["military_aa", "SWOP_Rebel_wood_aa"],
+	["military_machinegunner", "SWOP_Rebel_wood_mg"],
+	["military_marksman", "SWOP_Rebel_wood_sniper"],
+	["military_sniper", "SWOP_Rebel_wood_sniper"],
 
-	["elite_squadleader", "SWOP_Band_Trando_serg"],
-	["elite_rifleman", "SWOP_Band_Trando_a280"],
-	["elite_radioman", "SWOP_Band_Trando_smug"],
-	["elite_medic", "SWOP_Band_Trando_smug"],
-	["elite_engineer", "SWOP_Band_Trando_a280"],
-	["elite_explosivesexpert", "SWOP_Band_Trando_a280"],
-	["elite_grenadier", "SWOP_Band_Trando_a280"],
-	["elite_lat", "SWOP_Band_Trando_aa"],
-	["elite_at", "SWOP_Band_Trando_aa"],
-	["elite_aa", "SWOP_Band_Trando_aa"],
-	["elite_machinegunner", "SWOP_Band_Trando_assault"],
-	["elite_marksman", "SWOP_Band_Trando_sniper"],
-	["elite_sniper", "SWOP_Band_Trando_sniper"],
+	["elite_squadleader", "SWOP_Chewbacca"],
+	["elite_rifleman", "SWOP_Chewbacca"],
+	["elite_radioman", "SWOP_Chewbacca"],
+	["elite_medic", "SWOP_Chewbacca"],
+	["elite_engineer", "SWOP_Chewbacca"],
+	["elite_explosivesexpert", "SWOP_Chewbacca"],
+	["elite_grenadier", "SWOP_Chewbacca"],
+	["elite_lat", "SWOP_Chewbacca"],
+	["elite_at", "SWOP_Chewbacca"],
+	["elite_aa", "SWOP_Chewbacca"],
+	["elite_machinegunner", "SWOP_Chewbacca"],
+	["elite_marksman", "SWOP_Chewbacca"],
+	["elite_sniper", "SWOP_Chewbacca"],
 
-	["sf_squadleader", "SWOP_Mando_True_serg"],
-	["sf_rifleman", "SWOP_Mando_True_sold"],
-	["sf_radioman", "SWOP_Mando_True_sold"],
-	["sf_medic", "SWOP_Mando_True_sold"],
-	["sf_engineer", "SWOP_Mando_True_sold"],
-	["sf_explosivesexpert", "SWOP_Mando_True_sold"],
-	["sf_grenadier", "SWOP_Mando_True_sold"],
-	["sf_lat", "SWOP_Mando_True_AT"],
-	["sf_at", "SWOP_Mando_True_AT"],
-	["sf_aa", "SWOP_Mando_True_AT"],
-	["sf_machinegunner", "SWOP_Mando_True_mg"],
-	["sf_marksman", "SWOP_Mando_True_sniper"],
-	["sf_sniper", "SWOP_Mando_True_sniper"],
+	["sf_squadleader", "SWOP_Rebel_Scarif_Leader"],
+	["sf_rifleman", "SWOP_Rebel_Scarif_T1"],
+	["sf_radioman", "SWOP_Rebel_Scarif_RO"],
+	["sf_medic", "SWOP_Rebel_Scarif_Medic"],
+	["sf_engineer", "SWOP_Rebel_Scarif_AT"],
+	["sf_explosivesexpert", "SWOP_Rebel_Scarif_T1"],
+	["sf_grenadier", "SWOP_Rebel_Scarif_Flamethrower"],
+	["sf_lat", "SWOP_Rebel_Scarif_AT"],
+	["sf_at", "SWOP_Rebel_Scarif_AT"],
+	["sf_aa", "SWOP_Rebel_Scarif_AT"],
+	["sf_machinegunner", "SWOP_Rebel_Scarif_T1RB"],
+	["sf_marksman", "SWOP_Rebel_Scarif_TD"],
+	["sf_sniper", "SWOP_Rebel_Scarif_TD"],
 
-	["other_crew", "SWOP_Band_Rod_smug"],
-	["other_unarmed", "SWOP_Band_Rod_smug"],
-	["other_official", "SWOP_Mando_True_Bobba"],
-	["other_traitor", "SWOP_Band_Rod_smug"],
-	["other_pilot", "SWOP_Band_Rod_smug"],
-	["police_squadleader", "SWOP_Band_week_serg"],
-	["police_standard", "SWOP_Band_week_a280"]
+	["other_crew", "SWOP_Rebel_navy_pil"],
+	["other_unarmed", "SWOP_Rebel_wood_a280"],
+	["other_official", "SWOP_Rebel_navy_of"],
+	["other_traitor", "SWOP_Rebel_navy_of"],
+	["other_pilot", "SWOP_Rebel_navy_pil"],
+	["police_squadleader", "SWOP_Rebel_cloud_serg"],
+	["police_standard", "SWOP_Rebel_cloud_a280"]
 ]] call _fnc_saveToTemplate;
 
 
@@ -86,34 +86,34 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["SWOP_scavengerspeeder"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["SW_SpeederBikeR"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["SWOP_scavengerspeeder", "O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["O_SWOP_Skif_1", "O_SWOP_Skif_1", "O_SWOP_Skif_1", "O_SWOP_Skif_1"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
-["vehiclesTrucks", ["O_SWOP_Skif_1","O_SWOP_Khetanna_1","SWOP_O_sandcrawler"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["O_SWOP_Skif_1","O_SWOP_Khetanna_1","SWOP_O_sandcrawler"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["O_SWOP_Khetanna_1","SWOP_O_sandcrawler"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["SWOP_O_sandcrawler"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["SW_SpeederBikeR"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+["vehiclesTrucks", ["O_SWOP_landspeeder_1", "O_SWOP_HoverT_2"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["O_SWOP_HoverTa_2","O_SWOP_HoverTf_2","O_SWOP_HoverTr_2"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["O_SWOP_HoverTa_2","O_SWOP_HoverTf_2","O_SWOP_HoverTr_2"]] call _fnc_saveToTemplate;
 ["vehiclesAA", []] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["O_SWOP_Khetanna_1"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["O_SWOP_HoverTa_2"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
 ["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 
-["vehiclesTransportBoats", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
-["vehiclesAmphibious", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
+["vehiclesAmphibious", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["swop_yw"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["3as_Z95_green"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["swop_yw","swop_xw"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["swop_aw","swop_xw"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["swop_MF"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", []] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["Swop_Uwing"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["Swop_Uwing"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["Swop_Uwing","swop_MF"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", []] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [
@@ -121,18 +121,18 @@
 ]] call _fnc_saveToTesmplate;
 
 ["uavsAttack", []] call _fnc_saveToTemplate;
-["uavsPortable", []] call _fnc_saveToTemplate;
+["uavsPortable", ["Swop_Rebel_Dio_Droid"]] call _fnc_saveToTemplate;
 
 
-["vehiclesMilitiaLightArmed", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["O_SWOP_Skif_1","O_SWOP_Khetanna_1","SWOP_O_sandcrawler"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["O_SWOP_Khetanna_1"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["SWOP_O_sandcrawler"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["SW_SpeederBikeR"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["O_SWOP_landspeeder_1", "O_SWOP_HoverT_2"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["O_SWOP_HoverTa_2"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", ["O_SWOP_HoverTa_2"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["EWEBSWBF"]] call _fnc_saveToTemplate;
+["staticMGs", ["Hoth_Minigun"]] call _fnc_saveToTemplate;
 ["staticAT", ["Hoth_Dishturret"]] call _fnc_saveToTemplate;
 ["staticAA", ["NavyGunR"]] call _fnc_saveToTemplate;
 ["staticMortars", ["O_Mortar_01_F"]] call _fnc_saveToTemplate;
@@ -156,19 +156,19 @@
 ["playerDefaultLoadout", []] call _fnc_saveToTemplate;
 ["pvpLoadouts", [
 	//Team Leader
-	["SWOP_Mando_True_serg"] call A3A_fnc_getLoadout,
+	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
 	//Medic
-	["SWOP_Mando_True_sold"] call A3A_fnc_getLoadout,
+	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
 	//Autorifleman
-	["SWOP_Mando_True_mg"] call A3A_fnc_getLoadout,
+	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
 	//Marksman
-	["SWOP_Mando_True_sniper"] call A3A_fnc_getLoadout,
+	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
 	//Anti-tank Scout
-	["SWOP_Mando_True_AT"] call A3A_fnc_getLoadout,
+	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
 	//AT2
-	["SWOP_Mando_True_AT"] call A3A_fnc_getLoadout
+	["SWOP_Chewbacca"] call A3A_fnc_getLoadout
 ]] call _fnc_saveToTemplate;
-["pvpVehicles", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
+["pvpVehicles", ["O_SWOP_HoverTa_2"]] call _fnc_saveToTemplate;
 
 
 
@@ -187,13 +187,13 @@ _loadoutData setVariable ["lightATLaunchers", [
 ["RocketL_F", "", "", "", ["Rocket_F"], [], ""]
 ]];
 _loadoutData setVariable ["ATLaunchers", [
-["RocketL_F", "", "", "", ["Rocket_F"], [], ""]
+["swopHH12Rocket", "", "", "", ["hh12rocketmag"], [], ""]
 ]];
 _loadoutData setVariable ["missileATLaunchers", [
-["RocketL_F", "", "", "", ["Rocket_F"], [], ""]
+["3AS_PLX1_F", "", "", "", ["3AS_JLTS_MK43_AT"], [], ""]
 ]];
 _loadoutData setVariable ["AALaunchers", [
-["RocketL_F", "", "", "", ["Rocket_F"], [], ""]
+["3AS_PLX1_F", "", "", "", ["3AS_JLTS_MK39_AA"], [], ""]
 ]];
 _loadoutData setVariable ["sidearms", []];
 
@@ -255,196 +255,189 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
 ///////////////////////////////////////
-
+//Set the default guns and gear for the 4 standard unit types, starting with SF, then Military, Militia, Police, and lastly Elite
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData setVariable ["uniforms", ["SWOP_mando_green2_CombatUniform"]];
-_sfLoadoutData setVariable ["backpacks", ["SWOP_B_WoodBackpack_Base"]];			//this line determines backpacks for special forces -- Example: ["B_AssaultPack_mcamo","B_Kitbag_mcamo"] -- Array, can contain multiple assets
-_sfLoadoutData setVariable ["helmets", ["SWOP_Mando_HelmGreen2"]];				//this line determines helmets for special forces -- Example: ["H_HelmetB_camo","H_HelmetB_desert"] -- Array, can contain multiple assets
-_sfLoadoutData setVariable ["vests", ["SWOP_VestKamaMando_black"]];
-
-
-//SF Weapons
+//If you don't plan on using, say, officer vests, then delete the parameter. Leaving offvests blank would set officers to not have a vest.
+//Deleting it would make it choose from the vests parameter instead. Same goes for all the others.
+_sfLoadoutData setVariable ["uniforms", ["SWOP_RebSc_G_CombatUniform"]];        //Default uniforms
+_sfLoadoutData setVariable ["offuniforms", ["SWOP_RebSc_Bl_CombatUniform"]];     //Officer uniforms (leave blank and officer will use default)
+_sfLoadoutData setVariable ["meduniforms", ["SWOP_RebSc_F_CombatUniform"]];     //Medic uniforms (leave blank and medic will use default)
+_sfLoadoutData setVariable ["vests", ["SWOP_ScaVestSG"]];           //Default vests
+_sfLoadoutData setVariable ["GLvests", ["SWOP_ScaVestG"]];         //Grenade Launcher vests
+_sfLoadoutData setVariable ["backpacks", ["SWOP_B_BrownBackpack_Base"]];       //Backpacks
+_sfLoadoutData setVariable ["helmets", ["SWOP_RebHscarifBlue"]];         //Helmets
 _sfLoadoutData setVariable ["rifles", [
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE3BlasterRifle", "", "", "", [], [], ""],
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE3BlasterRifle", "", "", "swop_ee3blaster_scope", [], [], ""]
+["SWOP_A280BlasterRifle", "", "", "swop_a280blaster_scope", [], [], ""]   //Set their guns with ["GUN", "MUZZLE", "FLASHLIGHT/LASER", "SIGHT", ["PRIMARY AMMO"], ["SECONDARY AMMO"], "UNDERBARREL(bipod,grip,etc)"]
 ]];
 _sfLoadoutData setVariable ["carbines", [
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE3BlasterRifle", "", "", "", [], [], ""],
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE3BlasterRifle", "", "", "swop_ee3blaster_scope", [], [], ""]
+["SWOP_A280BlasterRifle", "", "", "swop_a280blaster_scope", [], [], ""]  
 ]];
 _sfLoadoutData setVariable ["grenadeLaunchers", [
-["fettflame", "", "", "", [], [], ""]
+["sw_rebelflame", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["SMGs", [
-["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["SWOP_DH17BlasterRifle", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
 ["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", swop_rt97cblaster_scope"", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""]
+["SWOP_Z6", "", "", "swop_rt97cblaster_scope", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
-["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
+["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
-["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
+["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
-["SWOP_Westar35Pistol", "", "", "", [], [], ""]
+["SWOP_a180Pistol", "", "", "", [], [], ""]
 ]];
-
 /////////////////////////////////
 //    Military Loadout Data    //
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData setVariable ["uniforms", ["SWOP_Mercenario1_f_WW_weequay_CombatUniform"]];
-_militaryLoadoutData setVariable ["vests", ["SWOP_RebSumkBronFull"]];
+_militaryLoadoutData setVariable ["uniforms", ["SWOP_RebW_F_CombatUniform"]];
+_militaryLoadoutData setVariable ["vests", ["SWOP_RebSumkBron"]];
+_militaryLoadoutData setVariable ["Hvests", ["SWOP_RebSumkBronFull"]];
 _militaryLoadoutData setVariable ["backpacks", ["SWOP_B_WoodBackpack_Base"]];
-_militaryLoadoutData setVariable ["helmets", ["SWOP_RebHscarifGreen"]];
+_militaryLoadoutData setVariable ["helmets", ["SWOP_RebhelmGr"]];
 
 _militaryLoadoutData setVariable ["rifles", [
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""]
+["SWOP_A280BlasterRifle", "", "", "swop_a280blaster_scope", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["carbines", [
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""]
+["SWOP_A280BlasterRifle", "", "", "swop_a280blaster_scope", [], [], ""]  
 ]];
 _militaryLoadoutData setVariable ["grenadeLaunchers", [
-["SWOP_WESTARM5_GL", "", "", "", [], ["WestarM5Grenade_Mag"], ""],
 ["sw_rebelflame", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["SMGs", [
-["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["SWOP_DH17BlasterRifle", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["machineGuns", [
 ["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", swop_rt97cblaster_scope"", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""]
+["SWOP_Z6", "", "", "swop_rt97cblaster_scope", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["marksmanRifles", [
-["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
+["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["sniperRifles", [
-["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
+["SWOP_DLT19XBlasterRifle", "", "", "", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["sidearms", [
-["SWOP_DT12Pistol", "", "", "", [], [], ""]
+["SWOP_a180Pistol", "", "", "", [], [], ""]
 ]];
 ///////////////////////////////
 //    Police Loadout Data    //
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_policeLoadoutData setVariable ["uniforms", ["SWOP_Mercenario1_f_WW_weequay_CombatUniform"]];
-_policeLoadoutData setVariable ["vests", ["SWOP_RebSumkBronFull"]];
-_policeLoadoutData setVariable ["helmets", ["SWOP_RebHscarifGreen"]];
+_policeLoadoutData setVariable ["uniforms", ["SWOP_RebC_F_CombatUniform"]];
+_policeLoadoutData setVariable ["vests", ["SWOP_RebSumkBron"]];
+_policeLoadoutData setVariable ["Hvests", ["SWOP_RebSumkBronFull"]];
+_policeLoadoutData setVariable ["helmets", ["SWOP_RebHGuardBlue"]];
 _policeLoadoutData setVariable ["smgs", [
-["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["SWOP_DH17BlasterRifle", "", "", "", [], [], ""]
 ]];
-_policeLoadoutData setVariable ["sidearms", [
-["SWOP_DT12Pistol", "", "", "", [], [], ""]
-]];
+_policeLoadoutData setVariable ["sidearms", ["SWOP_a180Pistol"]];
 
 ////////////////////////////////
 //    Militia Loadout Data    //
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData setVariable ["uniforms", ["SWOP_GreClothes_FR_CombatUniform"]];
-_militiaLoadoutData setVariable ["vests", ["SWOP_RebSumkBronFull"]];
-_militiaLoadoutData setVariable ["backpacks", ["SWOP_B_WoodBackpack_Base"]];
-_militiaLoadoutData setVariable ["helmets", ["SWOP_RebFEChelmGre"]];
+_militiaLoadoutData setVariable ["uniforms", ["SWOP_RebM_F_CombatUniform",]];
+_militiaLoadoutData setVariable ["meduniforms", ["REPLACE"]];
+_militiaLoadoutData setVariable ["offuniforms", ["REPLACE"]];
+_militiaLoadoutData setVariable ["offvests", ["REPLACE"]];
+_militiaLoadoutData setVariable ["vests", ["REPLACE"]];
+_militiaLoadoutData setVariable ["Hvests", ["REPLACE"]];
+_militiaLoadoutData setVariable ["backpacks", ["REPLACE"]];
+_militiaLoadoutData setVariable ["helmets", ["REPLACE"]];
+_militiaLoadoutData setVariable ["offhelmets", ["REPLACE"]];
+_militiaLoadoutData setVariable ["medhelmets", ["REPLACE"]];
+
 _militiaLoadoutData setVariable ["rifles", [
-["SWOP_DH17BlasterRifle", "", "", "", [], [], ""],
-["SWOP_DH17BlasterRifle", "", "", "swop_dh17blaster_scope", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
-["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["sw_rebelflame", "", "", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
-_militiaLoadoutData setVariable ["SMGs", [
-["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+_militiaLoadoutData setVariable ["smgs", [
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
-["SWOP_DLT19BlasterRifle", "", "", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["marksmanRifles", [
-["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["sniperRifles", [
-["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
-_militiaLoadoutData setVariable ["sidearms", [
-["SWOP_DT12Pistol", "", "", "", [], [], ""]
-]];
+_militiaLoadoutData setVariable ["sidearms", ["REPLACE"]];
 
 /////////////////////////////////
-//    Elite Loadout Data       //
+//    Elite Loadout Data    //
 /////////////////////////////////
-
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["uniforms", ["SWOP_Trando_GB_CombatUniform"]];
-_eliteLoadoutData setVariable ["vests", ["SWOP_RebSumkBronFull"]];
-_eliteLoadoutData setVariable ["backpacks", ["SWOP_B_WoodBackpack_Base"]];
-_eliteLoadoutData setVariable ["helmets", ["SWOP_RebHscarifGreen", "H_HelmetLeaderO_ocamo"]];
+_eliteLoadoutData setVariable ["offuniforms", ["REPLACE"]];
+_eliteLoadoutData setVariable ["meduniforms", ["REPLACE"]];
+_eliteLoadoutData setVariable ["uniforms", ["REPLACE"]];
+_eliteLoadoutData setVariable ["offvests", ["REPLACE"]];
+_eliteLoadoutData setVariable ["vests", ["REPLACE"]];
+_eliteLoadoutData setVariable ["Hvests", ["REPLACE"]];
+_eliteLoadoutData setVariable ["GLvests", ["REPLACE"]];
+_eliteLoadoutData setVariable ["backpacks", ["REPLACE"]];
+_eliteLoadoutData setVariable ["helmets", ["REPLACE"]];
+_eliteLoadoutData setVariable ["offhelmets", ["REPLACE"]];
+_eliteLoadoutData setVariable ["medhelmets", ["REPLACE"]];
+]];
 
 _eliteLoadoutData setVariable ["rifles", [
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE3BlasterRifle", "", "", "", [], [], ""],
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE3BlasterRifle", "", "", "swop_ee3blaster_scope", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["carbines", [
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE3BlasterRifle", "", "", "", [], [], ""],
-["SWOP_A180BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE3BlasterRifle", "", "", "swop_ee3blaster_scope", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["grenadeLaunchers", [
-["SWOP_WESTARM5_GL", "", "", "", [], ["WestarM5Grenade_Mag"], ""],
-["sw_rebelflame", "", "", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["SMGs", [
-["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["machineGuns", [
-["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", swop_rt97cblaster_scope"", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["marksmanRifles", [
-["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sniperRifles", [
-["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
+["REPLACE", "", "", "", [], [], ""]
 ]];
-_eliteLoadoutData setVariable ["sidearms", ["SWOP_DT12Pistol"]];
-
+_eliteLoadoutData setVariable ["sidearms", [
+["REPLACE", "", "", "", [], [], ""]
+]];
 
 //////////////////////////
 //    Misc Loadouts     //
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData setVariable ["uniforms", ["SWOP_GreClothes_smug_FR_CombatUniform"]];
-_crewLoadoutData setVariable ["vests", ["SWOP_RebSumkBron"]];
-_crewLoadoutData setVariable ["helmets", []];
+_crewLoadoutData setVariable ["uniforms", ["REPLACE"]];
+_crewLoadoutData setVariable ["vests", ["REPLACE"]];
+_crewLoadoutData setVariable ["helmets", ["REPLACE"]];
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData setVariable ["uniforms", ["SWOP_GreClothes_smug_FR_CombatUniform"]];
-_pilotLoadoutData setVariable ["vests", ["SWOP_RebSumkBron"]];
-_pilotLoadoutData setVariable ["helmets", []];
-
+_pilotLoadoutData setVariable ["uniforms", ["REPLACE"]];
+_pilotLoadoutData setVariable ["vests", ["REPLACE"]];
+_pilotLoadoutData setVariable ["helmets", ["REPLACE"]];
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
 
@@ -459,8 +452,8 @@ _pilotLoadoutData setVariable ["helmets", []];
 //However, these exist in case you really do want to do a lot of custom alterations.
 
 private _squadLeaderTemplate = {
-	["helmets"] call _fnc_setHelmet;
-	[["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
+	[["offhelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
+	[["offvests", "vests"] call _fnc_fallback] call _fnc_setVest;
 	[["offuniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
 	["backpacks"] call _fnc_setBackpack;
@@ -539,11 +532,10 @@ private _radiomanTemplate = {
 };
 
 private _medicTemplate = {
-	["helmets"] call _fnc_setHelmet;
+	[["medhelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
 	[["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
-	["uniforms"] call _fnc_setUniform;
+	[["meduniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
-
   	[selectRandom ["carbines", "smgs"]] call _fnc_setPrimary;
 	["primary", 6] call _fnc_addMagazines;
 
@@ -591,7 +583,7 @@ private _grenadierTemplate = {
 
 private _explosivesExpertTemplate = {
 	["helmets"] call _fnc_setHelmet;
-	[["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
+	[["GLvests", "vests"] call _fnc_fallback] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
 
@@ -794,7 +786,7 @@ private _sniperTemplate = {
 
 
 	["sniperRifles"] call _fnc_setPrimary;
-	["primary", 6] call _fnc_addMagazines;
+	["primary", 7] call _fnc_addMagazines;
 
 	["sidearms"] call _fnc_setHandgun;
 	["handgun", 2] call _fnc_addMagazines;
@@ -906,6 +898,7 @@ private _unitTypes = [
 ];
 
 [_prefix, _unitTypes, _sfLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+
 /*{
 	params ["_name", "_loadoutTemplate"];
 	private _loadouts = [_sfLoadoutData, _loadoutTemplate] call _fnc_buildLoadouts;
@@ -935,6 +928,28 @@ private _unitTypes = [
 ];
 
 [_prefix, _unitTypes, _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+
+///////////////////////
+//  Elite Units   //
+///////////////////////
+private _prefix = "elite";
+private _unitTypes = [
+	["SquadLeader", _squadLeaderTemplate],
+	["Rifleman", _riflemanTemplate],
+	["Radioman", _radiomanTemplate],
+	["Medic", _medicTemplate, [["medic", true]]],
+	["Engineer", _engineerTemplate, [["engineer", true]]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]]],
+	["Grenadier", _grenadierTemplate],
+	["LAT", _latTemplate],
+	["AT", _atTemplate],
+	["AA", _aaTemplate],
+	["MachineGunner", _machineGunnerTemplate],
+	["Marksman", _marksmanTemplate],
+	["Sniper", _sniperTemplate]
+];
+
+[_prefix, _unitTypes, _eliteLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
 ////////////////////////
 //    Police Units    //
@@ -968,28 +983,6 @@ private _unitTypes = [
 ];
 
 [_prefix, _unitTypes, _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
-
-///////////////////////
-//  Elite Units   //
-///////////////////////
-private _prefix = "elite";
-private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["Radioman", _radiomanTemplate],
-	["Medic", _medicTemplate, [["medic", true]]],
-	["Engineer", _engineerTemplate, [["engineer", true]]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]]],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate]
-];
-
-[_prefix, _unitTypes, _eliteLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
 //////////////////////
 //    Misc Units    //
