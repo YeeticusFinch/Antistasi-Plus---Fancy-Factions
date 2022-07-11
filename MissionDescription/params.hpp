@@ -235,6 +235,20 @@ class Params
 		texts[]={"Load From Save (Default - US Army)", "US Army", "Chernarus Defence Forces (CDF)"};
 		default = 9999;
      };
+	class Spacer696969
+     {
+          title = "";
+          values[] = {""};
+          texts[] = {""};
+          default = "";
+     };
+	class Spacer69420
+     {
+          title = "STAR WARS SETTINGS";
+          values[] = {""};
+          texts[] = {""};
+          default = "";
+     };
 	class starWarsOccupantFaction
      {
           title="Select Occupant Faction";
