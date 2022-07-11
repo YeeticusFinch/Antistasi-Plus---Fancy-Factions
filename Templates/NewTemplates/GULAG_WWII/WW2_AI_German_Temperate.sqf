@@ -217,7 +217,7 @@ _loadoutData setVariable ["radios", ["ItemRadio"]];
 _loadoutData setVariable ["gpses", []];
 _loadoutData setVariable ["NVGs", []];
 _loadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
-_loadoutData setVariable ["Rangefinder", ["Rangefinder"]];
+_loadoutData setVariable ["Rangefinder", []];
 
 _loadoutData setVariable ["uniforms", []];
 _loadoutData setVariable ["vests", []];
@@ -265,8 +265,6 @@ _sfLoadoutData setVariable ["offvests", ["V_LIB_GER_VestUnterofficer"]];
 _sfLoadoutData setVariable ["backpacks", ["B_LIB_GER_Tonister34_cowhide", "B_LIB_GER_A_frame"]];
 _sfLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet_WSSgT2"]];
 _sfLoadoutData setVariable ["medhelmets", ["H_LIB_GER_Helmet_W02CR1x3x5"]];
-_sfLoadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
-
 
 _sfLoadoutData setVariable ["rifles", [
 ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57", "LIB_10Rnd_792x57", "LIB_10Rnd_792x57"], [], ""],
