@@ -53,6 +53,27 @@ A3A_Reb_template = switch(true) do {
         };
         "3CBFactions"
     };
+    case (A3A_hasStarWars): {
+        switch(starWarsOccupantFaction) do {
+            case(3): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_Crimelords.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Star Wars crimelords as rebels", _filename] call A3A_fnc_log;
+            };
+            case(2): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_Rebels.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Star Wars rebels as rebels (go figure)", _filename] call A3A_fnc_log;
+            };
+            case(1): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_CWPartisans.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Clone Wars Partisans as rebels", _filename] call A3A_fnc_log;
+            };
+            case(0): {
+               ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_CWPartisans.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+               [2, "Using Clone Wars Partisans as rebels", _filename] call A3A_fnc_log; 
+            };
+        };
+        "StarWars"
+    };
     case (A3A_hasRHS): {
         switch(true) do {
             case (_terrainName in tropicalMaps): {
@@ -130,6 +151,27 @@ A3A_Occ_template = switch(true) do {
         ["Templates\NewTemplates\GM_3CBF\GM_3CBF_AI_NATO.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using GM_3CBF NATO Cold War Template", _filename] call A3A_fnc_log;
         "3CBFactions_GM"
+    };
+    case (A3A_hasStarWars): {
+        switch(starWarsOccupantFaction) do {
+            case(3): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Empire.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Star Wars Empire as occupiers", _filename] call A3A_fnc_log;
+            };
+            case(2): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Empire.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Star Wars Empire as occupiers", _filename] call A3A_fnc_log;
+            };
+            case(1): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Republic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Clone Wars era Republic as occupiers", _filename] call A3A_fnc_log;
+            };
+            case(0): {
+               ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Separatist.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+               [2, "Using Clone Wars era Separatists as occupiers", _filename] call A3A_fnc_log; 
+            };
+        };
+        "StarWars"
     };
     case (A3A_has3CBFactions): {
         switch(threecbfOccupantFaction) do {
@@ -297,6 +339,27 @@ A3A_Inv_template = switch(true) do{
         };
         "3CBFactions"
     };
+    case (A3A_hasStarWars): {
+        switch(starWarsOccupantFaction) do {
+            case(3): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_NewRepublic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Star Wars New Republic as invaders", _filename] call A3A_fnc_log;
+            };
+            case(2): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Crimelords.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Star Wars Crimelords as invaders", _filename] call A3A_fnc_log;
+            };
+            case(1): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Republic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Clone Wars era Separatists as invaders", _filename] call A3A_fnc_log;
+            };
+            case(0): {
+               ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Separatist.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+               [2, "Using Clone Wars era Republic as invaders", _filename] call A3A_fnc_log; 
+            };
+        };
+        "StarWars"
+    };
     case (A3A_hasRHS): {
         switch(true) do {
             case (_terrainName in _temperateMaps);
@@ -423,6 +486,11 @@ A3A_Civ_template = switch(true) do {
     case (A3A_hasRHS): {
         ["Templates\NewTemplates\RHS\RHS_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using RHS Civ Template", _filename] call A3A_fnc_log;
+        "RHS"
+    };
+    case (A3A_hasStarWars): {
+        ["Templates\NewTemplates\GULAG_STARWARS\StarWars_civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Star Wars Civ Template", _filename] call A3A_fnc_log;
         "RHS"
     };
     case (A3A_hasVN): {
