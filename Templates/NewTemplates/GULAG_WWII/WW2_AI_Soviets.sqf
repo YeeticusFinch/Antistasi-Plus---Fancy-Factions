@@ -230,41 +230,36 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 //If you don't plan on using, say, officer vests, then delete the parameter. Leaving offvests blank would set officers to not have a vest.
 //Deleting it would make it choose from the vests parameter instead. Same goes for all the others.
-_sfLoadoutData setVariable ["uniforms", ["REPLACE"]];        //Default uniforms
-_sfLoadoutData setVariable ["offuniforms", ["REPLACE"]];     //Officer uniforms (leave blank and officer will use default)
-_sfLoadoutData setVariable ["meduniforms", ["REPLACE"]];     //Medic uniforms (leave blank and medic will use default)
-_sfLoadoutData setVariable ["vests", ["REPLACE"]];           //Default vests
-_sfLoadoutData setVariable ["Hvests", ["REPLACE"]];          //Heavy vests
-_sfLoadoutData setVariable ["GLvests", ["REPLACE"]];         //Grenade Launcher vests
-_sfLoadoutData setVariable ["offvests", ["REPLACE"]];        //Officer vests
-_sfLoadoutData setVariable ["backpacks", ["REPLACE"]];       //Backpacks
-_sfLoadoutData setVariable ["helmets", ["REPLACE"]];         //Helmets
-_sfLoadoutData setVariable ["offhelmets", ["REPLACE"]];	     //Helmets but for officers
-_sfLoadoutData setVariable ["medhelmets", ["REPLACE"]];      //Helmets but for medics
-_sfLoadoutData setVariable ["binoculars", ["REPLACE"]];      //Binoculars if for some reason you want theris to be different
+_sfLoadoutData setVariable ["uniforms", ["U_LIB_NKVD_Starshina"]];        //Default uniforms
+_sfLoadoutData setVariable ["offuniforms", ["U_LIB_NKVD_StLeutenant"]];     //Officer uniforms
+_sfLoadoutData setVariable ["vests", ["V_LIB_SOV_RA_MosinBelt"]];           //Default vests
+_sfLoadoutData setVariable ["offvests", ["V_LIB_SOV_OfficerVest"]];        //Officer vests
+_sfLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel"]];       //Backpacks
+_sfLoadoutData setVariable ["helmets", ["H_LIB_NKVD_PrivateCap"]];         //Helmets
+_sfLoadoutData setVariable ["offhelmets", ["H_LIB_NKVD_OfficerCap"]];	     //Helmets but for officers
 _sfLoadoutData setVariable ["rifles", [
-["REPLACE", "", "", "", [], [], ""]   //Set their guns with ["GUN", "MUZZLE", "FLASHLIGHT/LASER", "SIGHT", ["PRIMARY AMMO"], ["SECONDARY AMMO"], "UNDERBARREL(bipod,grip,etc)"]
+["LIB_SVT_40", "", "", "", [], [], ""]   //Set their guns with ["GUN", "MUZZLE", "FLASHLIGHT/LASER", "SIGHT", ["PRIMARY AMMO"], ["SECONDARY AMMO"], "UNDERBARREL(bipod,grip,etc)"]
 ]];
 _sfLoadoutData setVariable ["carbines", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_PPSh41_m", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["grenadeLaunchers", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130", "lib_acc_gl_dyakonov_empty", "", "", ["LIB_5Rnd_762x54", "LIB_5Rnd_762x54", "LIB_1Rnd_G_DYAKONOV"], [], ""]
 ]];
 _sfLoadoutData setVariable ["SMGs", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_PPSh41_m", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_DP28", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130PU", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130PU", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_TT33", "", "", "", [], [], ""]
 ]];
 /////////////////////////////////
 //    Military Loadout Data    //
