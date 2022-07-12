@@ -135,25 +135,25 @@
 ["baggedAA", [["B_HMG_01_support_F", "B_AA_01_weapon_F"]]] call _fnc_saveToTemplate;
 ["baggedMortars", [["B_Mortar_01_support_F", "B_Mortar_01_weapon_F"]]] call _fnc_saveToTemplate; 			//this line determines bagged static mortars -- Example: ["baggedMortars", [["B_Mortar_01_weapon_F", "B_Mortar_01_support_F"]]] -- Array, can contain multiple assets
 
-["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate; //AT mines (left the default values)
-["minefieldAPERS", ["APERSMine", "APERSBoundingMine_Range_Mag"]] call _fnc_saveToTemplate; //Anti-personnel mines (left th edefault values)
+["minefieldAT", ["LIB_TM44_MINE_mag"]] call _fnc_saveToTemplate; //AT mines (left the default values)
+["minefieldAPERS", ["LIB_pomzec_MINE_mag", "LIB_M3_MINE_mag"]] call _fnc_saveToTemplate; //Anti-personnel mines (left th edefault values)
 ["playerDefaultLoadout", []] call _fnc_saveToTemplate;
 ["pvpLoadouts", [
 		//Team Leader
-		["REPLACE"] call A3A_fnc_getLoadout,  //Loadouts for pvp players that join the government faction
+		["LIB_NKVD_first_lieutenant"] call A3A_fnc_getLoadout,  //Loadouts for pvp players that join the government faction
 		//Medic
-		["REPLACE"] call A3A_fnc_getLoadout,
+		["LIB_NKVD_rifleman"] call A3A_fnc_getLoadout,
 		//Autorifleman
-		["REPLACE"] call A3A_fnc_getLoadout,
+		["LIB_NKVD_smgunner"] call A3A_fnc_getLoadout,
 		//Marksman
-		["REPLACE"] call A3A_fnc_getLoadout,
+		["LIB_NKVD_rifleman"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
-		["REPLACE"] call A3A_fnc_getLoadout,
+		["LIB_NKVD_rifleman"] call A3A_fnc_getLoadout,
 		//AT2
-		["REPLACE"] call A3A_fnc_getLoadout
+		["LIB_NKVD_rifleman"] call A3A_fnc_getLoadout
 	]
 ] call _fnc_saveToTemplate;
-["pvpVehicles", ["REPLACE"]] call _fnc_saveToTemplate;  //Vehicles that the pvp players can spawn in to hunt down rebels
+["pvpVehicles", ["NORTH_SOV_41_T26_M33_OT"]] call _fnc_saveToTemplate;  //Vehicles that the pvp players can spawn in to hunt down rebels
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
@@ -178,11 +178,11 @@ _loadoutData setVariable ["AALaunchers", [
 	["REPLACE", "", "", "", [], [], ""]
 ]];
 _loadoutData setVariable ["sidearms", []];
-_loadoutData setVariable ["ATMines", ["ATMine_Range_Mag"]];
-_loadoutData setVariable ["APMines", ["APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag"]];
-_loadoutData setVariable ["lightExplosives", ["DemoCharge_Remote_Mag"]];
-_loadoutData setVariable ["heavyExplosives", ["SatchelCharge_Remote_Mag"]];
-_loadoutData setVariable ["antiInfantryGrenades", ["HandGrenade", "MiniGrenade"]];
+_loadoutData setVariable ["ATMines", ["LIB_TM44_MINE_mag"]];
+_loadoutData setVariable ["APMines", ["LIB_pomzec_MINE_mag", "LIB_M3_MINE_mag"]];
+_loadoutData setVariable ["lightExplosives", ["LIB_Ladung_Small_MINE_mag"]];
+_loadoutData setVariable ["heavyExplosives", ["LIB_Ladung_Big_MINE_mag"]];
+_loadoutData setVariable ["antiInfantryGrenades", ["LIB_Rg42", "MiniGrenade"]];
 _loadoutData setVariable ["antiTankGrenades", []];
 _loadoutData setVariable ["smokeGrenades", ["SmokeShell"]];
 _loadoutData setVariable ["signalsmokeGrenades", ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"]];
@@ -190,16 +190,16 @@ _loadoutData setVariable ["maps", ["ItemMap"]];
 _loadoutData setVariable ["watches", ["ItemWatch"]];
 _loadoutData setVariable ["compasses", ["ItemCompass"]];
 _loadoutData setVariable ["radios", ["ItemRadio"]];
-_loadoutData setVariable ["gpses", ["ItemGPS"]];
-_loadoutData setVariable ["NVGs", ["NVGoggles"]];
-_loadoutData setVariable ["binoculars", ["Binocular"]];
-_loadoutData setVariable ["Rangefinder", ["Rangefinder"]];
+_loadoutData setVariable ["gpses", []];
+_loadoutData setVariable ["NVGs", []];
+_loadoutData setVariable ["binoculars", ["LIB_Binocular_SU"]];
+_loadoutData setVariable ["Rangefinder", ["LIB_Binocular_SU"]];
 _loadoutData setVariable ["uniforms", []];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["Hvests", []];
 _loadoutData setVariable ["GLvests", []];
 _loadoutData setVariable ["backpacks", []];
-_loadoutData setVariable ["longRangeRadios", ["B_RadioBag_01_wdl_F"]];
+_loadoutData setVariable ["longRangeRadios", ["B_LIB_SOV_RA_Radio"]];
 _loadoutData setVariable ["helmets", []];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
