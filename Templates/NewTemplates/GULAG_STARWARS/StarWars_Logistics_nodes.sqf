@@ -253,49 +253,6 @@ A3A_logistics_vehicleHardpoints = [
     ["SW_SpeederBike" call A3A_fnc_classNameToModel, [
         [1,             [-0.258, -1.196, 0.825],     []]
     ]];
-
-        //Small Truck
-    ["3as_RTT" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],       []],
-        [1,             [0,-2.49,-0.921],        [7, 8]]
-        ]],
-
-        //Van Transport
-    ["O_SWOP_HoverT_2" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],       [1, 2]],
-        [1,             [0,-2.49,-0.921],        [3, 4]],
-        [1,             [0,-1.245,-0.921],       [5, 6]],
-        [1,             [0,-2.49,-0.921],        [7, 8]]
-    ]],
-    ["O_SWOP_HoverTa_2" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],       [5, 6]],
-        [1,             [0,-2.49,-0.921],         [7, 8]]
-    ]],
-    ["O_SWOP_HoverTr_2" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],       [5, 6]],
-        [1,             [0,-2.49,-0.921],         [7, 8]]
-    ]],
-    ["O_SWOP_HoverTf_2" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],        [5, 6]],
-        [1,             [0,-2.49,-0.921],        [7, 8]]
-    ]],
-    ["O_SWOP_HoverT_1" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],       [5, 6]],
-        [1,             [0,-2.49,-0.921],        [7, 8]]
-    ]],
-    ["O_SWOP_HoverTa_1" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],       [5, 6]],
-        [1,             [0,-2.49,-0.921],         [7, 8]]
-    ]],
-    ["O_SWOP_HoverTf_1" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],        [5, 6]],
-        [1,             [0,-2.49,-0.921],         [7, 8]]
-    ]],
-    ["O_SWOP_HoverTr_1" call A3A_fnc_classNameToModel, [
-        [1,             [0,-1.245,-0.921],        [5, 6]],
-        [1,             [0,-2.49,-0.921],         [7, 8]]
-    ]],
-
     //Boats
     //Motorboat civilian
     ["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, [
