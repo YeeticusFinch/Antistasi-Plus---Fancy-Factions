@@ -281,6 +281,23 @@ A3A_logistics_vehicleHardpoints = [
 
 //Offsets for adding new statics/boxes to the JNL script.
 A3A_logistics_attachmentOffset = [
+    ["AItur_base" call A3A_fnc_classNameToModel,                               [-0.5, 0.0, 0.99],          [1, 0, 0],                   1,      100],
+    ["HighTur" call A3A_fnc_classNameToModel,                                  [-0.5, 0.0, 0.99],          [1, 0, 0],                  10,      250],
+    ["Hoth_Minigun" call A3A_fnc_classNameToModel,                             [-0.5, 0.0, 0.99],          [1, 0, 0],                   2,      100],
+    ["Hoth_Dishturret" call A3A_fnc_classNameToModel,                          [-0.5, 0.0, 0.99],          [1, 0, 0],                   2,      100],
+    ["Imperial_TurboLaser2" call A3A_fnc_classNameToModel,                     [-0.5, 0.0, 0.99],          [1, 0, 0],                  60,      500],
+    ["EWEBSWBF" call A3A_fnc_classNameToModel,                                 [-0.5, 0.0, 0.99],          [1, 0, 0],                   3,      100],
+    ["3as_CIS_Mortar" call A3A_fnc_classNameToModel,                           [-0.5, 0.0, 0.99],          [0, 1, 0],                   2,      100],
+    ["3as_FlakCannon" call A3A_fnc_classNameToModel,                           [-0.5, 0.0, 0.99],          [1, 0, 0],                  30,      500],
+    ["3as_ParticleCannon" call A3A_fnc_classNameToModel,                       [-0.5, 0.0, 0.99],          [1, 0, 0],                  10,      250],
+    ["3AS_FieldCannon" call A3A_fnc_classNameToModel,                          [-0.5, 0.0, 0.99],          [1, 0, 0],                  20,      250],
+    ["3AS_HeavyRepeater_Unarmoured" call A3A_fnc_classNameToModel,             [-0.5, 0.0, 0.99],          [1, 0, 0],                   2,      100],
+    ["3AS_HeavyRepeater_Armoured" call A3A_fnc_classNameToModel,               [-0.5, 0.0, 0.99],          [1, 0, 0],                   2,      100],
+    ["3AS_Republic_Mortar" call A3A_fnc_classNameToModel,                      [-0.5, 0.0, 0.99],          [0, 1, 0],                   2,      100],
+    ["3AS_StationaryTurret" call A3A_fnc_classNameToModel,                     [-0.5, 0.0, 0.99],          [1, 0, 0],                   4,      100],
+    ["3as_XX10" call A3A_fnc_classNameToModel,                                 [-0.5, 0.0, 0.99],          [1, 0, 0],                  60,      500],
+    ["3as_XX9" call A3A_fnc_classNameToModel,                                  [-0.5, 0.0, 0.99],          [1, 0, 0],                  60,      250],
+
     //weapons                                                                 //location                  //rotation                  //size    //recoil            //description
     ["B_static_AT_F" call A3A_fnc_classNameToModel,                             [-0.5, 0.0, 0.99],          [1, 0, 0],                  2,      250],               //AT titan, facing to the right
     ["B_static_AA_F" call A3A_fnc_classNameToModel,                             [-0.5, 0.0, 0.99],          [1, 0, 0],                  2,      250],               //AA titan, facing to the right
@@ -331,4 +348,22 @@ A3A_logistics_weapons = [
     ["B_Mortar_01_F" call A3A_fnc_classNameToModel,["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, "B_Boat_Transport_01_F" call A3A_fnc_classNameToModel, "C_Boat_Transport_02_F" call A3A_fnc_classNameToModel]],
     ["B_HMG_02_high_F" call A3A_fnc_classNameToModel,[]],
     ["B_HMG_02_F" call A3A_fnc_classNameToModel,[]]
+    
+    //star wars
+    ["AItur_base" call A3A_fnc_classNameToModel,[]],
+    ["HighTur" call A3A_fnc_classNameToModel,[]],
+    ["Hoth_Minigun" call A3A_fnc_classNameToModel,[]],
+    ["Hoth_Dishturret" call A3A_fnc_classNameToModel,[]],
+    ["Imperial_TurboLaser2" call A3A_fnc_classNameToModel,[]],
+    ["EWEBSWBF" call A3A_fnc_classNameToModel,[]],
+    ["3as_CIS_Mortar" call A3A_fnc_classNameToModel,[]],
+    ["3as_FlakCannon" call A3A_fnc_classNameToModel,[]],
+    ["3as_ParticleCannon" call A3A_fnc_classNameToModel,[]],
+    ["3AS_FieldCannon" call A3A_fnc_classNameToModel,[]],
+    ["3AS_HeavyRepeater_Unarmoured" call A3A_fnc_classNameToModel,[]],
+    ["3AS_HeavyRepeater_Armoured" call A3A_fnc_classNameToModel,[]],
+    ["3AS_Republic_Mortar" call A3A_fnc_classNameToModel,[]],
+    ["3AS_StationaryTurret" call A3A_fnc_classNameToModel,[]],
+    ["3as_XX10" call A3A_fnc_classNameToModel,[]],
+    ["3as_XX9" call A3A_fnc_classNameToModel,[]],
 ];
