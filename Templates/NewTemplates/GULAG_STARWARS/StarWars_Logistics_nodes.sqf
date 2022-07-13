@@ -237,6 +237,22 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [0.349, 0.482, 2.382],     []],
         [1,             [0.349, 1.153, 2.382],     []]
     ]];
+    
+    ["SW_SpeederBike" call A3A_fnc_classNameToModel, [
+        [1,             [-0.258, -1.196, 0.825],     []]
+    ]];
+    ["SW_SpeederBikeIMPw" call A3A_fnc_classNameToModel, [
+        [1,             [-0.258, -1.196, 0.825],     []]
+    ]];
+    ["SW_SpeederBikeR" call A3A_fnc_classNameToModel, [
+        [1,             [-0.258, -1.196, 0.825],     []]
+    ]];
+    ["SW_SpeederBikeCIV" call A3A_fnc_classNameToModel, [
+        [1,             [-0.258, -1.196, 0.825],     []]
+    ]];
+    ["SW_SpeederBike" call A3A_fnc_classNameToModel, [
+        [1,             [-0.258, -1.196, 0.825],     []]
+    ]];
 
         //Small Truck
     ["3as_RTT" call A3A_fnc_classNameToModel, [
