@@ -3,8 +3,8 @@
 A3A_logistics_vehicleHardpoints = [
     ["O_SWOP_landspeeder_1" call A3A_fnc_classNameToModel, [
         // always 1,    location                locked seats
-        [1,             [-0.05,-1.3,-0.683],     []],
-        [1,             [-0.05,-2.3,-0.683],     []]
+        [1,             [0,-0.159,1.55],     []],
+        [1,             [0,0.554,1.55],     []]
     ]],
     ["O_SWOP_Skif_1" call A3A_fnc_classNameToModel, [
         // always 1,    location                locked seats
