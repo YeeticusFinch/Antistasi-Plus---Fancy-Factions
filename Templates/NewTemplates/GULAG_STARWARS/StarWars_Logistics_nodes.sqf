@@ -3,6 +3,7 @@
 A3A_logistics_vehicleHardpoints = [
     ["O_SWOP_landspeeder_1" call A3A_fnc_classNameToModel, [
         // always 1,    location                locked seats
+        [1,             [-0.05,-1.3,-0.683],     []],
         [1,             [-0.05,-2.3,-0.683],     []]
     ]],
     ["O_SWOP_Skif_1" call A3A_fnc_classNameToModel, [
@@ -19,6 +20,8 @@ A3A_logistics_vehicleHardpoints = [
 
         //Van Transport
     ["O_SWOP_HoverT_2" call A3A_fnc_classNameToModel, [
+        [1,             [0,-1.245,-0.921],       [1, 2]],
+        [1,             [0,-2.49,-0.921],        [3, 4]],
         [1,             [0,-1.245,-0.921],       [5, 6]],
         [1,             [0,-2.49,-0.921],        [7, 8]]
     ]],
@@ -93,7 +96,7 @@ A3A_logistics_attachmentOffset = [
     //medium sized crates
     ["Box_NATO_AmmoVeh_F" call A3A_fnc_classNameToModel,                        [0,0,0.85],                 [1,0,0],                    2],                         //Vehicle ammo create
     ["Land_PaperBox_01_open_boxes_F" call A3A_fnc_classNameToModel,             [0,0,0.85],                 [1,0,0],                    2],                         //Stef test supplybox
-    ["Land_FoodSacks_01_cargo_brown_F" call A3A_fnc_classNameToModel,           [0,0,0.6],                 [1,0,0],                    2],                         //New city supplies crate
+    ["Land_FoodSacks_01_cargo_brown_F" call A3A_fnc_classNameToModel,           [0,0,0.6],                  [1,0,0],                    2],                         //New city supplies crate
     ["Land_PlasticCase_01_medium_F" call A3A_fnc_classNameToModel,              [0,0,0.85],                 [1,0,0],                    2],                         //Stef test Devin crate1                         //Stef test Devin crate2
     ["Box_IED_Exp_F" call A3A_fnc_classNameToModel,                             [0,0,0.85],                 [1,0,0],                    2],                         //Stef test Devin crate3
     ["B_supplyCrate_F" call A3A_fnc_classNameToModel,                           [0, 0, 0.95],               [1,0,0],                    2],                         //Ammodrop crate
