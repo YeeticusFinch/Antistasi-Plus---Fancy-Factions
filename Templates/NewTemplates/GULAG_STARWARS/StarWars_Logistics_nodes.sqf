@@ -191,6 +191,15 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
     ]];
+    
+    // LIUV
+    ["SWOP_LIUV" call A3A_fnc_classNameToModel, [
+        [1,             [0, -1.065, 2.1],     []],
+        [1,             [0, -0.388, 2.1],     []],
+        [1,             [0, 0.275, 2.1],     []],
+        [1,             [0, 0.942, 2.1],     []],
+        [1,             [0, 1.613, 2.1],     []]
+    ]];
 
         //Small Truck
     ["3as_RTT" call A3A_fnc_classNameToModel, [
