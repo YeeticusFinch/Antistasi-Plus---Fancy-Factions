@@ -98,7 +98,7 @@ diag_log ["!CARLS FANCY DEBUG! CALLED INIT FUNCS"];
 //Initialise variables needed by the mission.
 _nul = call A3A_fnc_initVar;
 call A3A_fnc_logistics_initNodes;
-diag_log ["!CARLS FANCY DEBUG! called logistics init Nodes"]; // Getting stuck after this line
+diag_log ["!CARLS FANCY DEBUG! called logistics init Nodes"];
 
 savingServer = true;
 [2,format ["%1 server version: %2", ["SP","MP"] select isMultiplayer, localize "STR_antistasi_credits_generic_version_text"],_fileName] call A3A_fnc_log;
@@ -125,8 +125,8 @@ waitUntil {({(isPlayer _x) and (!isNull _x) and (_x == _x)} count allUnits) == (
 [] spawn A3A_fnc_modBlacklist;
 diag_log ["!CARLS FANCY DEBUG! called mod blacklist"];
 
-call A3A_fnc_initGarrisons;
-diag_log ["!CARLS FANCY DEBUG! CALLED INIT GARRISONS"]; // Getting stuck before this line
+call A3A_fnc_initGarrisons; // !!!!!!!!!!!!!! GETTING STUCK HERE
+diag_log ["!CARLS FANCY DEBUG! CALLED INIT GARRISONS"];
 
 diag_log ["!CARLS FANCY DEBUG! do we have a last save?"];
 if (loadLastSave) then {
