@@ -98,15 +98,18 @@ diag_log ["!CARLS FANCY DEBUG! CALLED INIT FUNCS"];
 //Initialise variables needed by the mission.
 _nul = call A3A_fnc_initVar;
 call A3A_fnc_logistics_initNodes;
-diag_log ["!CARLS FANCY DEBUG! called logistics init Nodes"];
+diag_log ["!CARLS FANCY DEBUG! called logistics init Nodes"]; // Getting stuck after this line
 
 savingServer = true;
 [2,format ["%1 server version: %2", ["SP","MP"] select isMultiplayer, localize "STR_antistasi_credits_generic_version_text"],_fileName] call A3A_fnc_log;
 [2,format ["%1 Antistasi Plus server version: %2", ["SP","MP"] select isMultiplayer, localize "STR_antistasi_plus_credits_generic_version_text"],_fileName] call A3A_fnc_log;
 if (A3A_hasACEMedical) then { call A3A_fnc_initACEUnconsciousHandler };
 call A3A_fnc_loadNavGrid;
+diag_log ["!CARLS FANCY DEBUG! called load nav grid"];
 call A3A_fnc_initZones;
+diag_log ["!CARLS FANCY DEBUG! called init zones"];
 if (gameMode != 1) then {			// probably shouldn't be here...
+	diag_log ["!CARLS FANCY DEBUG! gamemode != 1"];
 	Occupants setFriend [Invaders,1];
 	Invaders setFriend [Occupants,1];
 	if (gameMode == 3) then {"CSAT_carrier" setMarkerAlpha 0};
@@ -115,12 +118,15 @@ if (gameMode != 1) then {			// probably shouldn't be here...
 ["Initialize"] call BIS_fnc_dynamicGroups;//Exec on Server
 hcArray = [];
 
+diag_log ["!CARLS FANCY DEBUG! waiting until playableunits > 0"];
 waitUntil {count (call A3A_fnc_playableUnits) > 0};
+diag_log ["!CARLS FANCY DEBUG! waiting until count all units == count playableunits"];
 waitUntil {({(isPlayer _x) and (!isNull _x) and (_x == _x)} count allUnits) == (count (call A3A_fnc_playableUnits))};
 [] spawn A3A_fnc_modBlacklist;
+diag_log ["!CARLS FANCY DEBUG! called mod blacklist"];
 
 call A3A_fnc_initGarrisons;
-diag_log ["!CARLS FANCY DEBUG! CALLED INIT GARRISONS"];
+diag_log ["!CARLS FANCY DEBUG! CALLED INIT GARRISONS"]; // Getting stuck before this line
 
 diag_log ["!CARLS FANCY DEBUG! do we have a last save?"];
 if (loadLastSave) then {
