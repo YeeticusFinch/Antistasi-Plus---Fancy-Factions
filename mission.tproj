@@ -1862,9 +1862,6 @@
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initServer.sqf" FileName="functions\init\fn_initServer.sqf">
                 <SubNodes />
               </ProjectNodeViewModel>
-              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initServer.sqfc" FileName="functions\init\fn_initServer.sqfc">
-                <SubNodes />
-              </ProjectNodeViewModel>
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initSpawnPlaces.sqf" FileName="functions\init\fn_initSpawnPlaces.sqf">
                 <SubNodes />
               </ProjectNodeViewModel>
@@ -2924,9 +2921,6 @@
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_returnSavedStat.sqf" FileName="functions\Save\fn_returnSavedStat.sqf">
                 <SubNodes />
               </ProjectNodeViewModel>
-              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_returnSavedStat.sqfc" FileName="functions\Save\fn_returnSavedStat.sqfc">
-                <SubNodes />
-              </ProjectNodeViewModel>
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_saveLoop.sqf" FileName="functions\Save\fn_saveLoop.sqf">
                 <SubNodes />
               </ProjectNodeViewModel>
@@ -2952,9 +2946,6 @@
                 <SubNodes />
               </ProjectNodeViewModel>
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_varNameToSaveName.sqf" FileName="functions\Save\fn_varNameToSaveName.sqf">
-                <SubNodes />
-              </ProjectNodeViewModel>
-              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_varNameToSaveName.sqfc" FileName="functions\Save\fn_varNameToSaveName.sqfc">
                 <SubNodes />
               </ProjectNodeViewModel>
             </SubNodes>
@@ -7203,6 +7194,9 @@
                 <SubNodes />
               </ProjectNodeViewModel>
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_usaf_teamLeader.sqf" FileName="Templates\Loadouts\rhs_usaf_teamLeader.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="SWOP_CIS_geon_elite.sqf" FileName="Templates\Loadouts\SWOP_CIS_geon_elite.sqf">
                 <SubNodes />
               </ProjectNodeViewModel>
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vanilla_blufor_AT.sqf" FileName="Templates\Loadouts\vanilla_blufor_AT.sqf">
