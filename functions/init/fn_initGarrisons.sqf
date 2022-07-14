@@ -3,19 +3,23 @@
 scriptName "fn_initGarrisons";
 private _fileName = "fn_initGarrisons";
 [2,"InitGarrisons started",_fileName] call A3A_fnc_log;
+diag_log ["!CARLS FANCY DEBUG! starting init garrisions"];
 
 _fnc_initMarker =
 {
+	diag_log ["!CARLS FANCY DEBUG! garrissons init marker"];
 	params ["_mrkCSAT", "_target", "_mrkType", "_mrkText", ["_useSideName", false]];
 
 	{
 		private _pos = getMarkerPos _x;
 		private _mrk = createMarker [format ["Dum%1", _x], _pos];
+		diag_log ["!CARLS FANCY DEBUG! created marker"];
 		//TODO Multilanguage variable insted text
 		_mrk setMarkerShape "ICON";
 
 		if (_useSideName) then
 		{
+			diag_log ["!CARLS FANCY DEBUG! use side name"];
 			killZones setVariable [_x, [], true];
 			server setVariable [_x, 0, true];
 
@@ -24,16 +28,19 @@ _fnc_initMarker =
 		}
 		else
 		{
+			diag_log ["!CARLS FANCY DEBUG! else if not use side name"];
 			_mrk setMarkerText _mrkText;
 		};
 
 		if (_x in airportsX) then
 		{
+			diag_log ["!CARLS FANCY DEBUG! x in airports"];
 			private _flagType = if (_x in _mrkCSAT) then {flagCSATmrk} else {flagNATOmrk};
 			_mrk setMarkerType _flagType;
 		}
 		else
 		{
+			diag_log ["!CARLS FANCY DEBUG! x NOT in airports"];
 			_mrk setMarkerType _mrkType;
 		};
 
@@ -55,21 +62,26 @@ _fnc_initMarker =
 
 _fnc_initGarrison =
 {
+	diag_log ["!CARLS FANCY DEBUG! fnc init garrisons"];
 	params ["_markerArray", "_type"];
 	private ["_side", "_groupsRandom", "_garrNum", "_garrison", "_marker"];
 	{
+	    diag_log ["!CARLS FANCY DEBUG! private side groupsRandom"];
 	    _marker = _x;
 		_garrNum = [_marker] call A3A_fnc_garrisonSize;
 		_side = sidesX getVariable [_marker, sideUnknown];
-
+		
+		diag_log ["!CARLS FANCY DEBUG! location switch and if statements"];
 		switch (true) do {
 		    case (gameMode == 4 && {_side == Invaders}): {
                 if !(_type in ["Airport", "Outpost", "MilitaryBase"]) then {
                     private _squads = [_side, "SQUAD"] call SCRT_fnc_unit_getGroupSet;
                     private _fiaSquads = groupsWAMSquad;
                     _groupsRandom = _squads + _fiaSquads;
+		    diag_log ["!CARLS FANCY DEBUG! !airport outpost or military base"];
                 }
                 else {
+		    diag_log ["!CARLS FANCY DEBUG! !not airport, not outpost, and not military base"];
                     private _squads = [Invaders, "SQUAD"] call SCRT_fnc_unit_getGroupSet;
                     private _mids = [Invaders, "MID"] call SCRT_fnc_unit_getGroupSet;
                     _groupsRandom = _squads + _mids;
@@ -82,11 +94,13 @@ _fnc_initGarrison =
             };
             default {
                 if !(_type in ["Airport", "Outpost", "MilitaryBase"]) then {
+		    diag_log ["!CARLS FANCY DEBUG! default !not airport, not outpost, and not military base"];
                     private _squads = [Occupants, "SQUAD"] call SCRT_fnc_unit_getGroupSet;
                     private _fiaSquads = groupsFIASquad;
                     _groupsRandom = _squads + _fiaSquads;
                 }
                 else {
+		    diag_log ["!CARLS FANCY DEBUG! default !not airport, not outpost, and not military base"];
                     private _squads = [Occupants, "SQUAD"] call SCRT_fnc_unit_getGroupSet;
                     private _mids = [Occupants, "MID"] call SCRT_fnc_unit_getGroupSet;
                     _groupsRandom = _squads + _mids;
@@ -94,7 +108,7 @@ _fnc_initGarrison =
             };
 		};
 
-
+		diag_log ["!CARLS FANCY DEBUG! garrison = []"];
 		_garrison = [];
 		while {count _garrison < _garrNum} do
 		{
@@ -102,6 +116,8 @@ _fnc_initGarrison =
 		};
 		_garrison resize _garrNum;
 		garrison setVariable [_marker, _garrison, true];
+		
+		diag_log ["!CARLS FANCY DEBUG! garrison set variable"];
 
 	} forEach _markerArray;
 };
@@ -118,7 +134,9 @@ if (debug) then
 
 if (gameMode == 1) then
 {
+	diag_log ["!CARLS FANCY DEBUG! gamemode == 1"];
 	_controlsNATO = controlsX;
+	diag_log ["!CARLS FANCY DEBUG! switch of worldNames, worldname is " + worldName];
 	switch (toLower worldName) do {
 		case "tanoa": {
 			_mrkCSAT = ["airport_1", "seaport_5", "outpost_10", "control_20"];
@@ -140,6 +158,7 @@ if (gameMode == 1) then
 			_mrkCSAT = ["outpost_3"];
 		};
 		case "cup_chernarus_a3": {
+			diag_log ["!CARLS FANCY DEBUG! cup_chernarus_a3 found!!!"];
 			_mrkCSAT = ["airport_3","outpost_24","outpost_20", "outpost_23", "outpost_20","seaport_5","control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
             _controlsCSAT = ["control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
 		};
@@ -198,8 +217,10 @@ if (gameMode == 1) then
 }
 else
 {
+	diag_log ["!CARLS FANCY DEBUG! some random else statement"];
 	if (gameMode == 4) then
 	{
+		diag_log ["!CARLS FANCY DEBUG! gamemode == 4"];
 		_mrkCSAT = markersX - ["Synd_HQ"];
 		_controlsCSAT = controlsX;
 	}
@@ -210,6 +231,7 @@ else
 	};
 };
 
+diag_log ["!CARLS FANCY DEBUG! setting occupant and invader variables"];
 {sidesX setVariable [_x, Occupants, true]} forEach _controlsNATO;
 {sidesX setVariable [_x, Invaders, true]} forEach _controlsCSAT;
 
@@ -226,6 +248,7 @@ if (toLower worldName in ["enoch", "vn_khe_sanh"]) then {
 
 if (!(isNil "loadLastSave") && {loadLastSave}) exitWith {};
 
+diag_log ["!CARLS FANCY DEBUG! setting carrier markers"];
 //Set carrier markers to the same as airbases below.
 if (isServer) then {"NATO_carrier" setMarkertype flagNATOmrk};
 if (isServer) then {"CSAT_carrier" setMarkertype flagCSATmrk};
@@ -234,6 +257,7 @@ if (debug) then {
     diag_log format ["%1: [Antistasi] | DEBUG | initGarrisons.sqf | Setting up Airbase stuff.", servertime];
 };
 
+diag_log ["!CARLS FANCY DEBUG! starting airport garrisons"];
 [airportsX, "Airport"] call _fnc_initGarrison;					//Old system
 [airportsX, "Airport", [0,0,0]] call A3A_fnc_createGarrison;	//New system
 
@@ -241,6 +265,7 @@ if (debug) then {
     diag_log format ["%1: [Antistasi] | DEBUG | initGarrisons.sqf | Setting up Resource stuff.", servertime];
 };
 
+diag_log ["!CARLS FANCY DEBUG! starting resource garrisons"];
 [resourcesX, "Resource"] call _fnc_initGarrison;			//Old system
 [resourcesX, "Other", [0,0,0]] call A3A_fnc_createGarrison;	//New system
 
@@ -248,6 +273,7 @@ if (debug) then {
     diag_log format ["%1: [Antistasi] | DEBUG | initGarrisons.sqf | Setting up Factory stuff.", servertime];
 };
 
+diag_log ["!CARLS FANCY DEBUG! starting factory garrisons"];
 [factories, "Factory"] call _fnc_initGarrison;
 [factories, "Other", [0,0,0]] call A3A_fnc_createGarrison;
 
@@ -255,6 +281,7 @@ if (debug) then {
     diag_log format ["%1: [Antistasi] | DEBUG | initGarrisons.sqf | Setting up Outpost stuff.", servertime];
 };
 
+diag_log ["!CARLS FANCY DEBUG! starting outpost garissons"];
 [outposts, "Outpost"] call _fnc_initGarrison;
 [outposts, "Outpost", [1,1,0]] call A3A_fnc_createGarrison;
 
@@ -262,6 +289,7 @@ if (debug) then {
     diag_log format ["%1: [Antistasi] | DEBUG | initGarrisons.sqf | Setting up Seaport stuff.", servertime];
 };
 
+diag_log ["!CARLS FANCY DEBUG! starting seaport and other garrisons"];
 [seaports, "Seaport"] call _fnc_initGarrison;
 [seaports, "Other", [1,0,0]] call A3A_fnc_createGarrison;
 
@@ -269,6 +297,7 @@ if (debug) then {
 	diag_log format ["%1: [Antistasi] | DEBUG | initGarrisons.sqf | Setting up Military Base stuff.", servertime];
 };
 
+diag_log ["!CARLS FANCY DEBUG! starting military base garrisons"];
 [milbases, "MilitaryBase"] call _fnc_initGarrison;
 [milbases, "MilitaryBase", [0,0,0]] call A3A_fnc_createGarrison;
 
@@ -278,3 +307,4 @@ if (debug) then {
 publicVariable "controlsX";		// because it adds to the array
 
 [2,"InitGarrisons completed",_fileName] call A3A_fnc_log;
+diag_log ["!CARLS FANCY DEBUG! finished garrisons!!!!!"];
