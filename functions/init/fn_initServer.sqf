@@ -102,21 +102,26 @@ waitUntil {({(isPlayer _x) and (!isNull _x) and (_x == _x)} count allUnits) == (
 call A3A_fnc_initGarrisons;
 
 if (loadLastSave) then {
+	diag_log ["!CARLS FANCY DEBUG! loading last save"];
 	[] call A3A_fnc_loadServer;
 //	waitUntil {!isNil"statsLoaded"};
 	if (!isNil "as_fnc_getExternalMemberListUIDs") then {
+		diag_log ["!CARLS FANCY DEBUG! get external member list uids, membersX = []"];
 		membersX = [];
 		{membersX pushBackUnique _x} forEach (call as_fnc_getExternalMemberListUIDs);
+		diag_log ["!CARLS FANCY DEBUG! publicVariable membersX 0"];
 		publicVariable "membersX";
 	};
 	if (membershipEnabled and (membersX isEqualTo [])) then {
 		[petros,"hint","Membership is enabled but members list is empty. Current players will be added to the member list", "Membership"] remoteExec ["A3A_fnc_commsMP"];
 		[2,"Previous data loaded",_fileName] call A3A_fnc_log;
 		[2,"Membership enabled, adding current players to list",_fileName] call A3A_fnc_log;
+		diag_log ["!CARLS FANCY DEBUG! membersX is empty array, membersX = []"];
 		membersX = [];
 		{
 			membersX pushBack (getPlayerUID _x);
 		} forEach (call A3A_fnc_playableUnits);
+		diag_log ["!CARLS FANCY DEBUG! publicVariable membersX 1"];
 		publicVariable "membersX";
 	};
 	theBoss = objNull;
@@ -129,6 +134,7 @@ if (loadLastSave) then {
 }
 else {
 	theBoss = objNull;
+	diag_log ["!CARLS FANCY DEBUG! else, membersX = []"];
 	membersX = [];
 	if (!isNil "as_fnc_getExternalMemberListUIDs") then {
 		{membersX pushBackUnique _x} forEach (call as_fnc_getExternalMemberListUIDs);
@@ -146,6 +152,7 @@ else {
 		if (membershipEnabled) then {membersX pushBackUnique (getPlayerUID theBoss)};
 	};
 	publicVariable "theBoss";
+	diag_log ["!CARLS FANCY DEBUG! publicVariable membersX 2"];
 	publicVariable "membersX";
 };
 
