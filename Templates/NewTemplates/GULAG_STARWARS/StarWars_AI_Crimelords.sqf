@@ -164,7 +164,7 @@
 	//Anti-tank Scout
 	["SWOP_Mando_True_AT"] call A3A_fnc_getLoadout,
 	//AT2
-	["SWOP_Mando_True_AT"] call A3A_fnc_getLoadout
+	["SWOP_Mando_Protectors_AT"] call A3A_fnc_getLoadout
 ]] call _fnc_saveToTemplate;
 ["pvpVehicles", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
 

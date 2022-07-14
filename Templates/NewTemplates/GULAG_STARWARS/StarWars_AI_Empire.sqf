@@ -159,11 +159,11 @@
 		//Autorifleman
 		["SWOP_imp_DeathtrooperHB"] call A3A_fnc_getLoadout,
 		//Marksman
-		["SWOP_imp_DeathtrooperHB"] call A3A_fnc_getLoadout,
+		["SWOP_imp_DeathtrooperTD"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
-		["SWOP_imp_Deathtrooper"] call A3A_fnc_getLoadout,
+		["SWOP_Spec_Shadow_jumper"] call A3A_fnc_getLoadout, // Give deathtrooper shit, but keep jumppack because that's cool
 		//AT2
-		["SWOP_imp_Deathtrooper"] call A3A_fnc_getLoadout
+		["SWOP_Spec_Shadow_H"] call A3A_fnc_getLoadout // Give deathtrooper shit
 	]
 ] call _fnc_saveToTemplate;
 
