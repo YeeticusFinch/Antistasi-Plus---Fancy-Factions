@@ -156,17 +156,17 @@
 ["playerDefaultLoadout", []] call _fnc_saveToTemplate;
 ["pvpLoadouts", [
 	//Team Leader
-	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
+	["SWOP_Chewbacca"] call A3A_fnc_getLoadout, // make it wookie
 	//Medic
-	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
+	["SWOP_Rebel_navy_med"] call A3A_fnc_getLoadout, // make it wookie
 	//Autorifleman
-	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
+	["SWOP_Rebel_navy_mg"] call A3A_fnc_getLoadout, // make it wookie
 	//Marksman
-	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
+	["SWOP_Rebel_navy_sniper"] call A3A_fnc_getLoadout, // make it wookie
 	//Anti-tank Scout
-	["SWOP_Chewbacca"] call A3A_fnc_getLoadout,
+	["SWOP_Rebel_navy_jumper"] call A3A_fnc_getLoadout, // make it wookie, give it jump pack
 	//AT2
-	["SWOP_Chewbacca"] call A3A_fnc_getLoadout
+	["SWOP_Rebel_navy_serg"] call A3A_fnc_getLoadout // make it wookie
 ]] call _fnc_saveToTemplate;
 ["pvpVehicles", ["O_SWOP_HoverTa_2"]] call _fnc_saveToTemplate;
 
