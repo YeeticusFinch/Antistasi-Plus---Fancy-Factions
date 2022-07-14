@@ -11,6 +11,8 @@ vehicleBox allowDamage false;
 mapX allowDamage false;
 teamPlayer = side group petros; 				// moved here because it must be initialized before accessing any saved vars
 
+diag_log ["!CARLS FANCY DEBUG! CALLED INIT SERVER"];
+
 //Disable VN music
 if (isClass (configFile/"CfgVehicles"/"vn_module_dynamicradiomusic_disable")) then {
     A3A_VN_MusicModule = (createGroup sideLogic) createUnit ["vn_module_dynamicradiomusic_disable", [worldSize, worldSize,0], [],0,"NONE"];
