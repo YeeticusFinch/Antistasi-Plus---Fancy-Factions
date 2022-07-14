@@ -160,13 +160,13 @@
 		//Medic
 		["SWOP_GMARINES_Trooper_Medic"] call A3A_fnc_getLoadout,
 		//Autorifleman
-		["SWOP_GMARINES_Trooper"] call A3A_fnc_getLoadout,
+		["SWOP_GMARINES_Trooper_LMG"] call A3A_fnc_getLoadout,
 		//Marksman
-		["SWOP_GMARINES_Trooper"] call A3A_fnc_getLoadout,
+		["SWOP_GMARINES_Trooper_sniper"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
 		["SWOP_GMARINES_TrooperAT"] call A3A_fnc_getLoadout,
 		//AT2
-		["SWOP_GMARINES_Trooper"] call A3A_fnc_getLoadout
+		["SWOP_GMARINES_TrooperAT2"] call A3A_fnc_getLoadout
 	]
 ] call _fnc_saveToTemplate;
 
