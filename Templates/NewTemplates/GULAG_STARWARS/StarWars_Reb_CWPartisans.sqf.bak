@@ -2,38 +2,38 @@
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "Rebel Alliance"] call _fnc_saveToTemplate;
+["name", "Clone Wars partisans"] call _fnc_saveToTemplate; //Doesn't have to be the faction's official name
 
-["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
-["flagTexture", "\A3\Data_F\Flags\Flag_rcrystal_CO.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "RedCrystal"] call _fnc_saveToTemplate;
+["flag", "Flag_NATO_F"] call _fnc_saveToTemplate; //Flag
+["flagTexture", "\A3\Data_F\Flags\Flag_rcrystal_CO.paa"] call _fnc_saveToTemplate; //Path to flag texture
+["flagMarkerType", "RedCrystal"] call _fnc_saveToTemplate;      //Flag marker that will appear on the map
 
-["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "SW_SpeederBikeR"] call _fnc_saveToTemplate;
-["vehicleTruck", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
-["vehicleAT", "not supported"] call _fnc_saveToTemplate; //is there a way to script mounted guns onto normally unarmed vehicles? cause we might need that
-["vehicleAA", "not supported"] call _fnc_saveToTemplate;
+["vehicleBasic", "O_SWOP_Skif_1"] call _fnc_saveToTemplate; //replace with basic quadbike if u want
+["vehicleLightUnarmed", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate; //Essentially the Toyota Hilux equivalent for your faction
+["vehicleLightArmed", "3AS_BARC"] call _fnc_saveToTemplate;  //Basic technical
+["vehicleTruck", "3as_RTT"] call _fnc_saveToTemplate;       //The Big Boi Trucks
+["vehicleAT", "not supported"] call _fnc_saveToTemplate;          //Technical with AT weapon
+["vehicleAA", "not supported"] call _fnc_saveToTemplate;          //Technical or truck with AA weapon
 
-["vehicleBoat", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
-["vehicleRepair", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
-["vehicleFuel", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
+["vehicleBoat", "O_SWOP_Skif_1"] call _fnc_saveToTemplate;        //Boat
+["vehicleRepair", "O_SWOP_Skif_1"] call _fnc_saveToTemplate;      //Repair truck
+["vehicleFuel", "O_SWOP_Skif_1"] call _fnc_saveToTemplate;        //Fuel truck
 
-["vehiclePlane", "swop_xw"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "swop_MF"] call _fnc_saveToTemplate;
-["vehicleHeli", "Swop_Uwing"] call _fnc_saveToTemplate;
+["vehiclePlane", "SWOP_yw"] call _fnc_saveToTemplate;       //Basic plane that will spawn after calling airstrikes n stuff
+["vehiclePayloadPlane", "SWOP_Patrol_LAAT_Police"] call _fnc_saveToTemplate; //I think this is for supply drop missions? idk
+["vehicleHeli", "SWOP_LAAT_Mk1"] call _fnc_saveToTemplate;        //Helicopter
 
-["vehicleCivCar", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
+["vehicleCivCar", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate; //Civilian vehicles u can buy
+["vehicleCivTruck", "O_SWOP_Khetanna_1"] call _fnc_saveToTemplate;
 ["vehicleCivHeli", "Swop_Uwing"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
+["vehicleCivBoat", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
 ["vehicleCivSupply", "O_SWOP_landspeeder_1"] call _fnc_saveToTemplate;
 
-["staticMG", "Hoth_Minigun"] call _fnc_saveToTemplate;
-["staticAT", "Hoth_Dishturret"] call _fnc_saveToTemplate;
-["staticAA", "HighTur"] call _fnc_saveToTemplate;
-["staticMortar", "I_G_Mortar_01_F"] call _fnc_saveToTemplate;
-["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
+["staticMG", "3AS_StationaryTurret"] call _fnc_saveToTemplate;        //Rebel static weapons
+["staticAT", "3as_FieldCannon"] call _fnc_saveToTemplate;
+["staticAA", "3as_FlakCannon"] call _fnc_saveToTemplate;
+["staticMortar", "I_G_Mortar_01_F"] call _fnc_saveToTemplate; //this is the default mortar, feel free to change it
+["staticMortarMagHE", "8Rnd_82mm_Mo_shells"]  call _fnc_saveToTemplate;  //And the mortar's ammo
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 
 //Static weapon definitions
@@ -43,10 +43,10 @@
 ["baggedMortars", [["I_Mortar_01_weapon_F","I_Mortar_01_support_F"]]] call _fnc_saveToTemplate;
 
 
-["mineAT", ["ATMine_Range_Mag"]] call _fnc_saveToTemplate;
+["mineAT", ["ATMine_Range_Mag"]] call _fnc_saveToTemplate;    //Which mines will spawn when u say to place a minefield
 ["mineAPERS", ["APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "APERSTripMine_Wire_Mag"]] call _fnc_saveToTemplate;
 
-["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
+["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;    //If u wanna breach vehicles
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
 ///////////////////////////
@@ -54,7 +54,10 @@
 ///////////////////////////
 
 ["uniforms", [
-"SWOP_RebW_F_CombatUniform"
+"SWOP_Trando_green_CombatUniform",
+"SWOP_Mercenario1_f_WW_weequay_CombatUniform",
+"SWOP_GreClothes_FR_CombatUniform",
+"SWOP_RebWdark_F_CombatUniform"
 ]] call _fnc_saveToTemplate;
 
 ["headgear", [
@@ -65,13 +68,18 @@
     "H_Cap_oli",
 ]] call _fnc_saveToTemplate;
 
+
 private _initialRebelEquipment = [
+"SWOP_Trando_green_CombatUniform",
+"SWOP_Mercenario1_f_WW_weequay_CombatUniform",
+"SWOP_GreClothes_FR_CombatUniform",
+"SWOP_RebWdark_F_CombatUniform",                               //Add all the stuff that starts off unlocked. This includes guns, ammo, vests, uniforms, backpacks, binoculars, radio,
 "SWOP_DL44Pistol", "SWOP_a180Pistol","JLTS_Glocko",
 "JLTS_Glocko_mag","SWOP_a180Pistol_mag", "SWOP_DL44Pistol_mag",
 "swop_mag_incendiary", "swop_SmokeShell","swop_dl44_scope",
 "B_FieldPack_cbr", "B_FieldPack_oli",
-"SWOP_RemBron2","Binocular","Laserbatteries"];
-if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
+"SWOP_RemBron2","Binocular","Laserbatteries"];];  //If it should start off unlocked, then put it here                          
+if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};   
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "tf_anprc155"};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "TFAR_anprc155"};
@@ -102,19 +110,19 @@ lootCrate = "Box_Syndicate_Ammo_F";
 rallyPoint = "B_RadioBag_01_wdl_F";
 
 //black market stuff
-shop_UAV = ["SWOP_Rebel_Dio_Droid"];
-shop_AA = ["3AS_RX200_Base"];
-shop_MRAP = ["3as_RTT"];
-shop_wheel_apc = ["O_SWOP_HoverTa_2", "O_SWOP_HoverTf_2"];
-shop_track_apc = ["O_SWOP_HoverTa_2"];
-shop_heli = ["Swop_Uwing"];
-shop_tank = ["3as_ATTE_Base"];
-shop_plane = ["swop_xw", "swop_yw", "swop_aw", "swop_Vwing"];
+shop_UAV = ["3as_uas2"];     //Military vehicles that u can buy off the black market
+shop_AA = ["3AS_Rx200_Base"];
+shop_MRAP = ["3AS_BarcSideCar"];
+shop_wheel_apc = ["3AS_ATJT_Base"];
+shop_track_apc = ["3as_RTT"];
+shop_heli = ["3AS_Patrol_LAAT_Imperial"];
+shop_tank = ["3as_Jug", "3as_saber_m1"];
+shop_plane = ["3as_Z95_green", "SWOP_yw"];
 
-additionalShopLight = ["3AS_Barc"];
+additionalShopLight = [];
 additionalShopAtgmVehicles = [];
 additionalShopManpadsVehicles = [];
-additionalShopArtillery = ["3as_AV7", "3as_ATAP_Base"];
+additionalShopArtillery = [];
 
 //military building models (common for all sides)
 smallBunker = "Land_BagBunker_Small_F";

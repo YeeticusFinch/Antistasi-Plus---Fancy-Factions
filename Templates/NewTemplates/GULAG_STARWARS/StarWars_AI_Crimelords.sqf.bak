@@ -285,7 +285,7 @@ _sfLoadoutData setVariable ["SMGs", [
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
 ["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", swop_rt97cblaster_scope"", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
 ["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
@@ -323,7 +323,7 @@ _militaryLoadoutData setVariable ["SMGs", [
 ]];
 _militaryLoadoutData setVariable ["machineGuns", [
 ["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", swop_rt97cblaster_scope"", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["marksmanRifles", [
 ["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]
@@ -419,7 +419,7 @@ _eliteLoadoutData setVariable ["SMGs", [
 ]];
 _eliteLoadoutData setVariable ["machineGuns", [
 ["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", swop_rt97cblaster_scope"", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["marksmanRifles", [
 ["SWOP_E17DBlasterRifle", "", "", "", [], [], ""]

@@ -319,7 +319,7 @@ _militaryLoadoutData setVariable ["rifles", [
 ]];
 _militaryLoadoutData setVariable ["carbines", [
 ["3AS_E5_F", "", "acc_flashlight", "", ["3AS_60Rnd_EM50_RedPlasma"], [], ""],
-["3AS_E5_F", "", "acc_pointer_ir", "", ["3AS_60Rnd_EM50_RedPlasma"], [], ""],
+["3AS_E5_F", "", "acc_pointer_ir", "", ["3AS_60Rnd_EM50_RedPlasma"], [], ""]
 ["SW_Scattergun", "", "", "", ["SW_Scattergun_Mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["grenadeLaunchers", [

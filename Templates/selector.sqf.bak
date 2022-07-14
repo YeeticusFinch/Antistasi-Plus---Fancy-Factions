@@ -60,7 +60,7 @@ A3A_Reb_template = switch(true) do {
                 [2, "Using Star Wars crimelords as rebels", _filename] call A3A_fnc_log;
             };
             case(2): {
-                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_Rebellion.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_Rebels.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Star Wars rebels as rebels (go figure)", _filename] call A3A_fnc_log;
             };
             case(1): {

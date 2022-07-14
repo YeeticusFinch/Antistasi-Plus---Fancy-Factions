@@ -33,7 +33,7 @@
 ["staticAT", "Hoth_Dishturret"] call _fnc_saveToTemplate;
 ["staticAA", "HighTur"] call _fnc_saveToTemplate;
 ["staticMortar", "I_G_Mortar_01_F"] call _fnc_saveToTemplate;
-["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
+["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] ] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 
 //Static weapon definitions

@@ -323,7 +323,7 @@ _militaryLoadoutData setVariable ["machineGuns", [
 ["SWOP_DLT19BlasterRifle", "", "", "", [], [], ""],
 ["SWOP_DLT19BlasterRifle", "", "", "", [], [], ""],
 ["SWOP_rt97cBlasterRifle", "", "", "", [], [], ""],
-["SWOP_rt97cBlasterRifle", "", "", swop_rt97cblaster_scope"", [], [], ""]
+["SWOP_rt97cBlasterRifle", "", "", "swop_rt97cblaster_scope", [], [], ""]
 ]];
 _militaryLoadoutData setVariable ["marksmanRifles", [
 ["SWOP_T21BlasterRifle", "", "", "", [], [], ""],
