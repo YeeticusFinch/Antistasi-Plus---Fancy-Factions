@@ -162,11 +162,11 @@
 		//Autorifleman
 		["SWOP_GMARINES_Trooper"] call A3A_fnc_getLoadout,
 		//Marksman
-		["SWOP_GMARINES_Trooper"] call A3A_fnc_getLoadout,
+		["SWOP_GMARINES_Trooper_Elite"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
-		["SWOP_GMARINES_TrooperAT"] call A3A_fnc_getLoadout,
+		["SWOP_GMARINES_TrooperAT"] call A3A_fnc_getLoadout, // give jet pack
 		//AT2
-		["SWOP_GMARINES_Trooper"] call A3A_fnc_getLoadout
+		["SWOP_GMARINES_Flame"] call A3A_fnc_getLoadout // galactic marine with flamethrower
 	]
 ] call _fnc_saveToTemplate;
 

@@ -161,11 +161,11 @@
 		//Autorifleman
 		["SWOP_CIS_geon_mg"] call A3A_fnc_getLoadout,
 		//Marksman
-		["SWOP_CIS_geon_1"] call A3A_fnc_getLoadout,
+		["SWOP_CIS_geon_2"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
-		["SWOP_CIS_geon_1"] call A3A_fnc_getLoadout,
+		["SWOP_CIS_geon_3"] call A3A_fnc_getLoadout,
 		//AT2
-		["SWOP_CIS_geon_1"] call A3A_fnc_getLoadout
+		["SWOP_CIS_geon_work"] call A3A_fnc_getLoadout // give wings
 	]
 ] call _fnc_saveToTemplate;
 
