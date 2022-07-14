@@ -117,7 +117,6 @@
 ["vehiclesHelisAttack", []] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [
-[]
 ]] call _fnc_saveToTesmplate;
 
 ["uavsAttack", []] call _fnc_saveToTemplate;
