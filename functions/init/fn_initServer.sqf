@@ -18,6 +18,8 @@ if (isClass (configFile/"CfgVehicles"/"vn_module_dynamicradiomusic_disable")) th
     A3A_VN_MusicModule = (createGroup sideLogic) createUnit ["vn_module_dynamicradiomusic_disable", [worldSize, worldSize,0], [],0,"NONE"];
 };
 
+diag_log ["!CARLS FANCY DEBUG! disabled vn music"];
+
 //Load server id
 serverID = profileNameSpace getVariable ["ss_ServerID",nil];
 if(isNil "serverID") then {
@@ -26,6 +28,7 @@ if(isNil "serverID") then {
 };
 publicVariable "serverID";
 
+diag_log ["!CARLS FANCY DEBUG! loaded server id"];
 
 // Read loadLastSave param directly
 loadLastSave = if ("loadSave" call BIS_fnc_getParamValue == 1) then {true} else {false};
@@ -33,12 +36,16 @@ loadLastSave = if ("loadSave" call BIS_fnc_getParamValue == 1) then {true} else 
 // Maintain a profilenamespace array called antistasiPlusSavedGames
 // Each entry is an array: [campaignID, mapname, "Blufor"|"Greenfor"]
 
+diag_log ["!CARLS FANCY DEBUG! starting campaignID thing"];
+
 campaignID = profileNameSpace getVariable ["ss_CampaignID",""];
 call
 {
 	// If the legacy campaign ID is valid for this map/mode, just use that
 	if (loadLastSave && !isNil {["membersX"] call A3A_fnc_returnSavedStat}) exitWith {
+		diag_log ["!CARLS FANCY DEBUG! legacy campaign ID is valid"];
 		[2, "Loading last campaign, ID " + campaignID, _filename] call A3A_fnc_log;
+		diag_log ["!CARLS FANCY DEBUG! fnc log legacy campaign id"];
 	};
 
 	// Otherwise, check through the saved game list for matches and build existing ID list
@@ -50,37 +57,48 @@ call
 		{
 			if ((worldName == _x select 1) && (_gametype == _x select 2)) then {
 				campaignID = _x select 0;			// found a match
+				diag_log ["!CARLS FANCY DEBUG! found a match! " + campaignID];
 			};
 			_existingIDs pushBack (_x select 0);
 		};
 	} forEach _saveList;
 
+	diag_log ["!CARLS FANCY DEBUG! looking for valid save"];
+
 	// If valid save found, exit with that
 	if (loadLastSave && !isNil {["membersX"] call A3A_fnc_returnSavedStat}) exitWith {
+		diag_log ["!CARLS FANCY DEBUG! found valid save"];
 		[2, "Loading campaign from saved list, ID " + campaignID, _filename] call A3A_fnc_log;
+		diag_log ["!CARLS FANCY DEBUG! valid save a3a_fnc_log"];
 	};
 
+	diag_log ["!CARLS FANCY DEBUG! starting new campaign"];
 	// Otherwise start a new campaign
 	loadLastSave = false;
 	while {campaignID in _existingIDs} do {
 		campaignID = str(floor(random(90000) + 10000));		// guaranteed five digits
 	};
 	[2, "Creating new campaign with ID " + campaignID, _fileName] call A3A_fnc_log;
+	diag_log ["!CARLS FANCY DEBUG! created new campaign with id " + campaignID];
 };
 publicVariable "loadLastSave";
 publicVariable "campaignID";
+diag_log ["!CARLS FANCY DEBUG! public variable shit"];
 
 // Now load all other parameters, loading from save if available
 call A3A_fnc_initParams;
+diag_log ["!CARLS FANCY DEBUG! CALLED INIT PARAMS"];
 
 setTimeMultiplier settingsTimeMultiplier;
 
 //JNA, JNL and UPSMON. Shouldn't have any Antistasi dependencies except on parameters.
 call A3A_fnc_initFuncs;
+diag_log ["!CARLS FANCY DEBUG! CALLED INIT FUNCS"];
 
 //Initialise variables needed by the mission.
 _nul = call A3A_fnc_initVar;
 call A3A_fnc_logistics_initNodes;
+diag_log ["!CARLS FANCY DEBUG! called logistics init Nodes"];
 
 savingServer = true;
 [2,format ["%1 server version: %2", ["SP","MP"] select isMultiplayer, localize "STR_antistasi_credits_generic_version_text"],_fileName] call A3A_fnc_log;
@@ -102,7 +120,9 @@ waitUntil {({(isPlayer _x) and (!isNull _x) and (_x == _x)} count allUnits) == (
 [] spawn A3A_fnc_modBlacklist;
 
 call A3A_fnc_initGarrisons;
+diag_log ["!CARLS FANCY DEBUG! CALLED INIT GARRISONS"];
 
+diag_log ["!CARLS FANCY DEBUG! do we have a last save?"];
 if (loadLastSave) then {
 	diag_log ["!CARLS FANCY DEBUG! loading last save"];
 	[] call A3A_fnc_loadServer;
@@ -166,6 +186,7 @@ if !(loadLastSave) then {
 	[2,"Initial arsenal unlocks completed",_fileName] call A3A_fnc_log;
 };
 call A3A_fnc_createPetros;
+diag_log ["!CARLS FANCY DEBUG! created petros"];
 
 [petros,"hint","Server load finished", "Server Information"] remoteExec ["A3A_fnc_commsMP", 0];
 
@@ -200,10 +221,11 @@ addMissionEventHandler ["EntityKilled", {
 	};
 }];
 
+diag_log ["!CARLS FANCY DEBUG! server init should be done by now"];
 serverInitDone = true; publicVariable "serverInitDone";
 [2,"Setting serverInitDone as true",_fileName] call A3A_fnc_log;
 
-
+diag_log ["!CARLS FANCY DEBUG! HQ placement shit"];
 [2, "Waiting for HQ placement", _fileName] call A3A_fnc_log;
 waitUntil {sleep 1;!(isNil "placementDone")};
 [2, "HQ Placed, continuing init", _fileName] call A3A_fnc_log;
@@ -218,6 +240,7 @@ if (areRandomEventsEnabled) then {
 };
 
 if (!loadLastSave) then {
+	diag_log ["!CARLS FANCY DEBUG! no last save to load"];
 	switch (gameMode) do {
 		case 3: {
 			areInvadersDefeated = true;
