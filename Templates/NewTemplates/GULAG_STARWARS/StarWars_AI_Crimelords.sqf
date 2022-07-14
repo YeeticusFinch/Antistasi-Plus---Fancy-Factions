@@ -116,9 +116,7 @@
 ["vehiclesHelisTransport", ["Swop_Uwing"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", []] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", [
-[]
-]] call _fnc_saveToTesmplate;
+["vehiclesArtillery", []] call _fnc_saveToTesmplate;
 
 ["uavsAttack", []] call _fnc_saveToTemplate;
 ["uavsPortable", []] call _fnc_saveToTemplate;

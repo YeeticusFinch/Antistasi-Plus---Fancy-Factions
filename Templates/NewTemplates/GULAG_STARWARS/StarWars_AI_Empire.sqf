@@ -399,7 +399,7 @@ _militiaLoadoutData setVariable ["sidearms", ["swop_SE14cPistol"]];
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["uniforms", ["SWOP_DeathT_f_Combat_Uniform"]];
+_eliteLoadoutData setVariable ["uniforms", ["SWOP_DeathT_f_CombatUniform"]];
 _eliteLoadoutData setVariable ["vests", ["SWOP_DeathTrarm"]];
 _eliteLoadoutData setVariable ["Hvests", ["SWOP_DeathElarm"]];
 _eliteLoadoutData setVariable ["GLvests", ["SWOP_DeathGrarm"]];
