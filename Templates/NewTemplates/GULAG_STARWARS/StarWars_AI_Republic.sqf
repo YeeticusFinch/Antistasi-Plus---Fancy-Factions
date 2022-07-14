@@ -77,16 +77,12 @@
 	["police_squadleader", "JLTS_Clone_P2_Seregant_SC"],
 	["police_standard", "JLTS_Clone_P2_DC15A_SC"]
 ]] call _fnc_saveToTemplate;
-
-
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
-
 ["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
-
 ["vehiclesBasic", ["3AS_Barc"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["3AS_Barc"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed",["3AS_Barc", "3AS_BarcSideCar", "3AS_ATRT"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
@@ -101,58 +97,42 @@
 ["vehiclesAA", ["3AS_RX200_Base"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["3as_RTT"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
-
 ["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
-
 ["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", []] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["3as_ATTE_Base"]] call _fnc_saveToTemplate;
-
 ["vehiclesPlanesCAS", ["3AS_BTLB_Bomber", "3AS_arc_ 170_blue"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["3as_V19_Base", "3as_Z95_blue", "SWOP_Vwing", "3AS_arc_ 170_blue"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Nuclass"]] call _fnc_saveToTemplate;
-
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Republic"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["3AS_Patrol_LAAT_Republic", "3as_LAAT_Mk1", "3as_LAAT_Mk2", "3AS_Nuclass"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["3as_LAAT_Mk1"]] call _fnc_saveToTemplate;
-
 ["vehiclesArtillery", [
 ["3as_ATAP_Base",["32Rnd_155mm_Mo_shells"]],
 ["3as_AV7",["32Rnd_155mm_Mo_shells"]]
 ]] call _fnc_saveToTemplate;
-
 ["uavsAttack", []] call _fnc_saveToTemplate;
 ["uavsPortable", ["3as_uas2"]] call _fnc_saveToTemplate;
-
 ["vehiclesMilitiaLightArmed", ["3AS_ATRT"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["3as_RTT"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["3AS_Barc"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaApcs", ["3as_ATTE_Base"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["3as_Jug"]] call _fnc_saveToTemplate;
-
 ["vehiclesPolice", ["3AS_ATRT", "3AS_BarcSideCar", "3AS_Barc", "3as_RTT"]] call _fnc_saveToTemplate;
-
 ["staticMGs", ["3AS_HeavyRepeater_Armoured"]] call _fnc_saveToTemplate;
 ["staticAT", ["3AS_StationaryTurret"]] call _fnc_saveToTemplate;
 ["staticAA", ["3as_XX9"]] call _fnc_saveToTemplate;
 ["staticMortars", ["3AS_Republic_Mortar"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["3as_AV7"]] call _fnc_saveToTemplate;
-
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
-
 ["howitzerMagazineHE", "not_supported"] call _fnc_saveToTemplate;
-
 ["baggedMGs", [["I_G_HMG_02_weapon_F", "I_G_HMG_02_support_high_F"]]] call _fnc_saveToTemplate;
 ["baggedAT", [["B_HMG_01_support_F", "B_AT_01_weapon_F"]]] call _fnc_saveToTemplate;
 ["baggedAA", [["B_HMG_01_support_F", "B_AA_01_weapon_F"]]] call _fnc_saveToTemplate;
 ["baggedMortars", [["B_Mortar_01_support_F", "B_Mortar_01_weapon_F"]]] call _fnc_saveToTemplate; 			//this line determines bagged static mortars -- Example: ["baggedMortars", [["B_Mortar_01_weapon_F", "B_Mortar_01_support_F"]]] -- Array, can contain multiple assets
-
-
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine_Range_Mag"]] call _fnc_saveToTemplate;
-
-
 ["playerDefaultLoadout", []] call _fnc_saveToTemplate;
 ["pvpLoadouts", [
 		//Team Leader
@@ -160,19 +140,16 @@
 		//Medic
 		["SWOP_GMARINES_Trooper_Medic"] call A3A_fnc_getLoadout,
 		//Autorifleman
-		["SWOP_GMARINES_Trooper"] call A3A_fnc_getLoadout,
+		["SWOP_GMARINES_Trooper_LMG"] call A3A_fnc_getLoadout,
 		//Marksman
-		["SWOP_GMARINES_Trooper_Elite"] call A3A_fnc_getLoadout,
+		["SWOP_GMARINES_Trooper_sniper"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
-		["SWOP_GMARINES_TrooperAT"] call A3A_fnc_getLoadout, // give jet pack
+		["SWOP_GMARINES_TrooperAT"] call A3A_fnc_getLoadout,
 		//AT2
-		["SWOP_GMARINES_Flame"] call A3A_fnc_getLoadout // galactic marine with flamethrower
+		["SWOP_GMARINES_TrooperAT2"] call A3A_fnc_getLoadout
 	]
 ] call _fnc_saveToTemplate;
-
 ["pvpVehicles", ["3as_saber_m1"]] call _fnc_saveToTemplate;
-
-
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
@@ -198,20 +175,14 @@ _loadoutData setVariable ["AALaunchers", [
 	["JLTS_PLX1_AT", "", "", "", [], [], ""]
 ]];
 _loadoutData setVariable ["sidearms", []];
-
 _loadoutData setVariable ["ATMines", ["ATMine_Range_Mag"]];
 _loadoutData setVariable ["APMines", ["APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag"]];
 _loadoutData setVariable ["lightExplosives", ["3AS_DetPack"]];
 _loadoutData setVariable ["heavyExplosives", ["RTX_RemoteMagazine"]];
-
 _loadoutData setVariable ["antiInfantryGrenades", ["SWOP_SCAR_DioxisGM", "swop_mag_incendiary", "swop_mag_gimpact", "SWOP_termDet_G"]];
 _loadoutData setVariable ["antiTankGrenades", ["SWOP_SCAR_EMP_GrenadeGM", "SWOP_termDet_G"]];
 _loadoutData setVariable ["smokeGrenades", ["SmokeShell"]];
 _loadoutData setVariable ["signalsmokeGrenades", ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"]];
-
-
-
-
 _loadoutData setVariable ["maps", ["ItemMap"]];
 _loadoutData setVariable ["watches", ["ItemWatch"]];
 _loadoutData setVariable ["compasses", ["ItemCompass"]];
@@ -220,7 +191,6 @@ _loadoutData setVariable ["gpses", ["ItemGPS"]];
 _loadoutData setVariable ["NVGs", ["JLTS_CloneNVG"]];
 _loadoutData setVariable ["binoculars", ["JLTS_CloneBinocular"]];
 _loadoutData setVariable ["Rangefinder", ["JLTS_CloneBinocular"]];
-
 _loadoutData setVariable ["uniforms", []];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["Hvests", []];
@@ -228,14 +198,11 @@ _loadoutData setVariable ["GLvests", []];
 _loadoutData setVariable ["backpacks", []];
 _loadoutData setVariable ["longRangeRadios", ["B_RadioBag_01_wdl_F"]];
 _loadoutData setVariable ["helmets", []];
-
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData setVariable ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
 _loadoutData setVariable ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the standard medical loadout for vanilla
 _loadoutData setVariable ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the medic medical loadout for vanilla
 _loadoutData setVariable ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
-
-
 _loadoutData setVariable ["items_squadleader_extras", ["ACE_microDAGR", "ACE_DAGR", "Laserbatteries", "Laserbatteries", "Laserbatteries"]];
 _loadoutData setVariable ["items_rifleman_extras", []];
 _loadoutData setVariable ["items_medic_extras", []];
@@ -251,21 +218,16 @@ _loadoutData setVariable ["items_sniper_extras", ["ACE_RangeCard", "ACE_ATragMX"
 _loadoutData setVariable ["items_police_extras", []];
 _loadoutData setVariable ["items_crew_extras", []];
 _loadoutData setVariable ["items_unarmed_extras", []];
-
 //TODO - ACE overrides for misc essentials, medical and engineer gear
-
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
 ///////////////////////////////////////
-
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData setVariable ["uniforms", ["3AS_U_Rep_Katarn_Armor_Sev"]];
 _sfLoadoutData setVariable ["vests", ["SWOP_Clonetrooper_Katarn_armor"]];
 _sfLoadoutData setVariable ["backpacks", ["3AS_B_Katarn_Backpack_Sev"]];
 _sfLoadoutData setVariable ["helmets", ["3AS_H_Katarn_Helmet_Sev"]];
 _sfLoadoutData setVariable ["binoculars", ["JLTS_CloneBinocular_black"]];
-
-
 _sfLoadoutData setVariable ["rifles", [
 ["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
 ["3AS_DC17M_F", "", "", "", ["3AS_100Rnd_EC40_mag"], [], ""],
@@ -1039,4 +1001,3 @@ private _unitTypes = [
 ["other", [["Traitor", _traitorTemplate]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
 ["other", [["Unarmed", _unarmedTemplate]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
-
