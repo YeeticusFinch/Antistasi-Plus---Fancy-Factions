@@ -55,7 +55,7 @@
 	["elite_marksman", "SWOP_Band_Trando_sniper"],
 	["elite_sniper", "SWOP_Band_Trando_sniper"],
 
-	["sf_squadleader", "SWOP_Mando_True_serg"
+	["sf_squadleader", "SWOP_Mando_True_serg"],
 	["sf_rifleman", "SWOP_Mando_True_sold"],
 	["sf_radioman", "SWOP_Mando_True_sold"],
 	["sf_medic", "SWOP_Mando_True_sold"],
