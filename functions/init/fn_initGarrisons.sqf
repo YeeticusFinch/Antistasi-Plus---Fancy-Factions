@@ -259,7 +259,9 @@ if (debug) then {
 
 diag_log ["!CARLS FANCY DEBUG! starting airport garrisons"];
 [airportsX, "Airport"] call _fnc_initGarrison;					//Old system
+diag_log ["!CARLS FANCY DEBUG! "finished initGarrison for airport, starting createGarrison for airport"];
 [airportsX, "Airport", [0,0,0]] call A3A_fnc_createGarrison;	//New system
+diag_log ["!CARLS FANCY DEBUG! Finished createGarrison for airports"];
 
 if (debug) then {
     diag_log format ["%1: [Antistasi] | DEBUG | initGarrisons.sqf | Setting up Resource stuff.", servertime];
@@ -267,7 +269,9 @@ if (debug) then {
 
 diag_log ["!CARLS FANCY DEBUG! starting resource garrisons"];
 [resourcesX, "Resource"] call _fnc_initGarrison;			//Old system
+diag_log ["!CARLS FANCY DEBUG! finished initGarrison for resource, starting createGarisson for resource"];
 [resourcesX, "Other", [0,0,0]] call A3A_fnc_createGarrison;	//New system
+diag_log ["!CARLS FANCY DEBUG! finished createGarisson for resource"];
 
 if (debug) then {
     diag_log format ["%1: [Antistasi] | DEBUG | initGarrisons.sqf | Setting up Factory stuff.", servertime];
