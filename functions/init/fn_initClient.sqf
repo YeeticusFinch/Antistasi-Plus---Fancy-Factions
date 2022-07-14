@@ -412,6 +412,7 @@ if (membershipEnabled) then {
 		};
 
 		if (_isMember) then {
+			diag_log ["!CARLS FANCY DEBUG! _isMember == true, pushing back membersX"];
 			membersX pushBack (getPlayerUID player);
 			publicVariable "membersX";
 		} else {
