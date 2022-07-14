@@ -24,7 +24,7 @@ private _basicMiscItems =
 		[
 			["ACE_Earplugs",1],
 			["ACE_Cabletie",3]
-		];
+		]; 
 	} else {
 		[
 
