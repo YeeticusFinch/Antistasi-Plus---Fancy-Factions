@@ -12,6 +12,8 @@ params ["_markerArray", "_type", ["_lose", [0, 0, 0]]];
 
 private ["_losses", "_preferred", "_garrison", "_requested", "_marker", "_side", "_line", "_start", "_index"];
 
+diag_log ["!CARLS FANCY DEBUG! starting create garrison"];
+
 _preferred = garrison getVariable [format ["%1_preference", _type], objNull];
 while {!(_preferred isEqualType [])} do
 {
@@ -19,18 +21,21 @@ while {!(_preferred isEqualType [])} do
   sleep 1;
   _preferred = garrison getVariable [format ["%1_preference", _type], objNull];
 };
+diag_log ["!CARLS FANCY DEBUG! finished first while loop"];
 {
   _losses = +_lose;
   _garrison = [];
   _requested = [];
   _marker = _x;
   _side = sidesX getVariable [_marker, sideUnknown];
+  diag_log ["!CARLS FANCY DEBUG! starting side == sideUnknown loop"];
   while {_side == sideUnknown} do
   {
     diag_log format ["Side unknown for %1, sleeping 1!", _marker];
     sleep 1;
     _side = sidesX getVariable [_marker, sideUnknown];
   };
+  diag_log ["!CARLS FANCY DEBUG! finished second while loop"];
   for "_i" from 0 to ((count _preferred) - 1) do
   {
     _line = [_preferred select _i, _side] call A3A_fnc_createGarrisonLine;
@@ -51,8 +56,10 @@ while {!(_preferred isEqualType [])} do
       _requested pushBack _line;
     };
   };
+  diag_log ["!CARLS FANCY DEBUG! finished first for loop, setting garrison variables"];
   garrison setVariable [format ["%1_garrison", _marker], _garrison, true];
   garrison setVariable [format ["%1_requested", _marker], _requested, true];
+  diag_log ["!CARLS FANCY DEBUG! set garrison variables"];
 
   if(debug) then
   {
@@ -60,5 +67,6 @@ while {!(_preferred isEqualType [])} do
     [_garrison, format ["%1_garrison", _marker]] call A3A_fnc_logArray;
   };
 
+  diag_log ["!CARLS FANCY DEBUG! updateReinfState"];
   [_marker] call A3A_fnc_updateReinfState;
 } forEach _markerArray;
