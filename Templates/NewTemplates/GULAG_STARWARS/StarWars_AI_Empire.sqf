@@ -97,16 +97,16 @@
 ["vehiclesFuelTrucks", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["O_JM_TX130_1", "O_SWOP_HoverTa_1", "O_SWOP_HoverTf_1", "O_SWOP_HoverTr_1"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["ATSTst"]] call _fnc_saveToTemplate;
-["vehiclesAA", []] call _fnc_saveToTemplate;
+["vehiclesTanks", ["O_JM_TX130_1"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["not_supported"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["O_SWOP_HoverT_1"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
 ["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
-["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
-["vehiclesGunBoats", []] call _fnc_saveToTemplate;
-["vehiclesAmphibious", []] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["not_supported"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["not_supported"]] call _fnc_saveToTemplate;
+["vehiclesAmphibious", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["swop_tieb", "swop_tiedef", "swop_TIE_Stryker"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["swop_tie_FOtorpe", "swop_tieFOSFtorpe", "swop_tietorpe", "swop_tie_int", "swop_tiedef", "swop_tie"]] call _fnc_saveToTemplate;

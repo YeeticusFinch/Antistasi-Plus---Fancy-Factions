@@ -9,7 +9,7 @@ params ["_markerArray", "_type", ["_lose", [0, 0, 0]]];
 *   Returns:
 *     Nothing
 */
-
+//error is in this file somewhere
 private ["_losses", "_preferred", "_garrison", "_requested", "_marker", "_side", "_line", "_start", "_index"];
 
 diag_log ["!CARLS FANCY DEBUG! starting create garrison"];
@@ -38,19 +38,24 @@ diag_log ["!CARLS FANCY DEBUG! finished first while loop"];
   diag_log ["!CARLS FANCY DEBUG! finished second while loop"];
   for "_i" from 0 to ((count _preferred) - 1) do
   {
+  	diag_log ["!CARLS FANCY DEBUG! starting garrison line"];
     _line = [_preferred select _i, _side] call A3A_fnc_createGarrisonLine;
+    diag_log ["!CARLS FANCY DEBUG! finished garrison line, selecting preferred"];
 
     _start = ((_preferred select _i) select 0) select [0,3];
     _index = ["LAN", "HEL", "AIR"] findIf {_x == _start};
+     diag_log ["!CARLS FANCY DEBUG! finished selecting preferred"];
     //diag_log format ["Start %1 Index %2 Preference %3", _start, _index, str (_preferred select _i)];
     if(_index == -1 || {(_losses select _index) <= 0}) then
     {
       //TODO init arrays with specific size to avoid resize operations
       _garrison pushBack _line;
       _requested pushBack ["", [], []];
+      diag_log ["!CARLS FANCY DEBUG! Index is -1 or losses select index is 0 or less"];
     }
     else
     {
+      diag_log ["!CARLS FANCY DEBUG! Setting losses and doing pushBack stuff"];
       _losses set [_index, (_losses select _index) - 1];
       _garrison pushBack ["", [], []];
       _requested pushBack _line;

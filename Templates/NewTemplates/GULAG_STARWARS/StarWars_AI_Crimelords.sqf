@@ -97,7 +97,7 @@
 ["vehiclesMedical", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["O_SWOP_Khetanna_1","SWOP_O_sandcrawler"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["SWOP_O_sandcrawler"]] call _fnc_saveToTemplate;
-["vehiclesAA", []] call _fnc_saveToTemplate;
+["vehiclesAA", ["not_supported"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["O_SWOP_Khetanna_1"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
@@ -112,14 +112,14 @@
 ["vehiclesPlanesAA", ["3as_Z95_green"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", []] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["not_supported"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["Swop_Uwing"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", []] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", []] call _fnc_saveToTemplate;
 
-["uavsAttack", []] call _fnc_saveToTemplate;
-["uavsPortable", []] call _fnc_saveToTemplate;
+["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;
+["uavsPortable", ["not_supported"]] call _fnc_saveToTemplate;
 
 
 ["vehiclesMilitiaLightArmed", ["O_SWOP_Skif_1"]] call _fnc_saveToTemplate;

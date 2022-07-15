@@ -8,21 +8,24 @@ params ["_preference", "_side"];
 *   Returns:
 *     _result : STRING : The typename of the selected vehicle
 */
-
+diag_log ["!WARRIOR24S FANCIER DEBUG! selecting vehicle type"];
 private _fileName = "SelectVehicleType";
 
 [4, format ["SelectVehicleType: Selecting vehicle now, preferred is %1, side is %2", _preference, _side], _fileName] call A3A_fnc_log;
 
 if(_preference == "LAND_AIR") exitWith
 {
+	diag_log ["!WARRIOR24S FANCIER DEBUG! preference is AA"];
   if(_side == Occupants) then {selectRandom vehNATOAA} else {selectRandom vehCSATAA};
 };
 if(_preference == "LAND_TANK") exitWith
 {
+diag_log ["!WARRIOR24S FANCIER DEBUG! preference is tank"];
   if(_side == Occupants) then {selectRandom vehNATOTanks} else {selectRandom vehCSATTanks};
 };
 
 private _possibleVehicles = [];
+diag_log ["!WARRIOR24S FANCIER DEBUG! created possibleVehicles, preference is neither tank nor AA"];
 if(_preference in ["EMPTY", "LAND_START", "HELI_PATROL", "AIR_DRONE"]) then
 {
   _possibleVehicles pushBack "";
@@ -125,4 +128,5 @@ if(count _possibleVehicles == 0) exitWith
 [4, format ["SelectVehicleType: Preselection done, possible vehicles are %1", str _possibleVehicles], _fileName] call A3A_fnc_log;
 
 private _result = selectRandom _possibleVehicles;
+diag_log ["!WARRIOR24S FANCIER DEBUG! and the chosen vehicle is", _result];
 _result;
