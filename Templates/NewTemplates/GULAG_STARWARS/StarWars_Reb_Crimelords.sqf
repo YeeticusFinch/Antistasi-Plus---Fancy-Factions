@@ -33,7 +33,7 @@
 ["staticAT", "Hoth_Dishturret"] call _fnc_saveToTemplate;
 ["staticAA", "NavyGunR"] call _fnc_saveToTemplate;
 ["staticMortar", "I_G_Mortar_01_F"] call _fnc_saveToTemplate; //this is the default mortar, feel free to change it
-["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] ] call _fnc_saveToTemplate;  //And the mortar's ammo
+["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;  //And the mortar's ammo
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 
 //Static weapon definitions
@@ -65,7 +65,7 @@
 	  "H_Hat_camo",
     "H_Bandana_camo",
     "H_Cap_oli_hs",
-    "H_Cap_oli",
+    "H_Cap_oli"
 ]] call _fnc_saveToTemplate;
 
 
@@ -78,7 +78,7 @@ private _initialRebelEquipment = [
 "JLTS_Glocko_mag","SWOP_a180Pistol_mag", "SWOP_DL44Pistol_mag",
 "swop_mag_incendiary", "swop_SmokeShell","swop_dl44_scope",
 "B_FieldPack_cbr", "B_FieldPack_oli",
-"SWOP_RemBron2","Binocular","Laserbatteries"];];  //If it should start off unlocked, then put it here                          
+"SWOP_RemBron2","Binocular","Laserbatteries"];  //If it should start off unlocked, then put it here                          
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};   
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "tf_anprc155"};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};

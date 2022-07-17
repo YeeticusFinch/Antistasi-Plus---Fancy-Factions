@@ -162,11 +162,11 @@ A3A_Occ_template = switch(true) do {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Empire.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Star Wars Empire as occupiers", _filename] call A3A_fnc_log;
             };
-            case(1): {
+            case(0): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Republic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Clone Wars era Republic as occupiers", _filename] call A3A_fnc_log;
             };
-            case(0): {
+            case(1): {
                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Separatist.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                [2, "Using Clone Wars era Separatists as occupiers", _filename] call A3A_fnc_log; 
             };
@@ -351,11 +351,11 @@ A3A_Inv_template = switch(true) do{
             };
             case(1): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Republic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-                [2, "Using Clone Wars era Separatists as invaders", _filename] call A3A_fnc_log;
+                [2, "Using Clone Wars era Republic as invaders", _filename] call A3A_fnc_log;
             };
             case(0): {
                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Separatist.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-               [2, "Using Clone Wars era Republic as invaders", _filename] call A3A_fnc_log; 
+               [2, "Using Clone Wars era Separatists as invaders", _filename] call A3A_fnc_log; 
             };
         };
         "StarWars"

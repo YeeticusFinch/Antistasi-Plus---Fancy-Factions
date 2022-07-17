@@ -13,69 +13,69 @@
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_squadleader", "SWOP_Rebel_wood_serg"],
-	["militia_rifleman", "SWOP_Rebel_wood_a280"],
-	["militia_radioman", "SWOP_Rebel_wood_a280"],
-	["militia_medic", "SWOP_Rebel_wood_med"],
-	["militia_engineer", "SWOP_Rebel_wood_med"],
-	["militia_explosivesexpert", "SWOP_Rebel_wood_demolisher"],
-	["militia_grenadier", "SWOP_Rebel_Scarif_Flamethrower"],
-	["militia_lat", "SWOP_Rebel_wood_aa"],
-	["militia_at", "SWOP_Rebel_wood_aa"],
-	["militia_aa", "SWOP_Rebel_wood_aa"],
-	["militia_machinegunner", "SWOP_Rebel_wood_mg"],
-	["militia_marksman", "SWOP_Rebel_wood_sniper"],
-	["militia_sniper", "SWOP_Rebel_wood_sniper"],
+	["militia_squadleader", "O_T_Soldier_SL_F"],
+	["militia_rifleman", "O_T_Soldier_F"],
+	["militia_radioman", "O_T_Soldier_F"],
+	["militia_medic", "O_T_Medic_F"],
+	["militia_engineer", "O_T_Engineer_F"],
+	["militia_explosivesexpert", "O_T_Soldier_Exp_F"],
+	["militia_grenadier", "O_T_Soldier_GL_F"],
+	["militia_lat", "O_T_Soldier_LAT_F"],
+	["militia_at", "O_T_Soldier_AT_F"],
+	["militia_aa", "O_T_Soldier_AA_F"],
+	["militia_machinegunner", "O_T_Soldier_AR_F"],
+	["militia_marksman", "O_T_Soldier_M_F"],
+	["militia_sniper", "O_T_Sniper_F"],
 
-	["military_squadleader", "SWOP_Rebel_wood_serg"],
-	["military_rifleman", "SWOP_Rebel_wood_a280"],
-	["military_radioman", "SWOP_Rebel_wood_a280"],
-	["military_medic", "SWOP_Rebel_wood_med"],
-	["military_engineer", "SWOP_Rebel_wood_med"],
-	["military_explosivesexpert", "SWOP_Rebel_wood_demolisher"],
-	["military_grenadier", "SWOP_Rebel_Scarif_Flamethrower"],
-	["military_lat", "SWOP_Rebel_wood_aa"],
-	["military_at", "SWOP_Rebel_wood_aa"],
-	["military_aa", "SWOP_Rebel_wood_aa"],
-	["military_machinegunner", "SWOP_Rebel_wood_mg"],
-	["military_marksman", "SWOP_Rebel_wood_sniper"],
-	["military_sniper", "SWOP_Rebel_wood_sniper"],
+	["military_squadleader", "O_T_Soldier_SL_F"],
+	["military_rifleman", "O_T_Soldier_F"],
+	["military_radioman", "O_T_Soldier_F"],
+	["military_medic", "O_T_Medic_F"],
+	["military_engineer", "O_T_Engineer_F"],
+	["military_explosivesexpert", "O_T_Soldier_Exp_F"],
+	["military_grenadier", "O_T_Soldier_GL_F"],
+	["military_lat", "O_T_Soldier_LAT_F"],
+	["military_at", "O_T_Soldier_AT_F"],
+	["military_aa", "O_T_Soldier_AA_F"],
+	["military_machinegunner", "O_T_Soldier_AR_F"],
+	["military_marksman", "O_T_Soldier_M_F"],
+	["military_sniper", "O_T_Sniper_F"],
 
-	["elite_squadleader", "SWOP_Chewbacca"],
-	["elite_rifleman", "SWOP_Chewbacca"],
-	["elite_radioman", "SWOP_Chewbacca"],
-	["elite_medic", "SWOP_Chewbacca"],
-	["elite_engineer", "SWOP_Chewbacca"],
-	["elite_explosivesexpert", "SWOP_Chewbacca"],
-	["elite_grenadier", "SWOP_Chewbacca"],
-	["elite_lat", "SWOP_Chewbacca"],
-	["elite_at", "SWOP_Chewbacca"],
-	["elite_aa", "SWOP_Chewbacca"],
-	["elite_machinegunner", "SWOP_Chewbacca"],
-	["elite_marksman", "SWOP_Chewbacca"],
-	["elite_sniper", "SWOP_Chewbacca"],
+	["elite_squadleader", "O_T_Soldier_SL_F"],
+	["elite_rifleman", "O_T_Soldier_F"],
+	["elite_radioman", "O_T_Soldier_F"],
+	["elite_medic", "O_T_Medic_F"],
+	["elite_engineer", "O_T_Engineer_F"],
+	["elite_explosivesexpert", "O_T_Soldier_Exp_F"],
+	["elite_grenadier", "O_T_Soldier_GL_F"],
+	["elite_lat", "O_T_Soldier_LAT_F"],
+	["elite_at", "O_T_Soldier_AT_F"],
+	["elite_aa", "O_T_Soldier_AA_F"],
+	["elite_machinegunner", "O_T_Soldier_AR_F"],
+	["elite_marksman", "O_T_Soldier_M_F"],
+	["elite_sniper", "O_T_Sniper_F"],
 
-	["sf_squadleader", "SWOP_Rebel_Scarif_Leader"],
-	["sf_rifleman", "SWOP_Rebel_Scarif_T1"],
-	["sf_radioman", "SWOP_Rebel_Scarif_RO"],
-	["sf_medic", "SWOP_Rebel_Scarif_Medic"],
-	["sf_engineer", "SWOP_Rebel_Scarif_AT"],
-	["sf_explosivesexpert", "SWOP_Rebel_Scarif_T1"],
-	["sf_grenadier", "SWOP_Rebel_Scarif_Flamethrower"],
-	["sf_lat", "SWOP_Rebel_Scarif_AT"],
-	["sf_at", "SWOP_Rebel_Scarif_AT"],
-	["sf_aa", "SWOP_Rebel_Scarif_AT"],
-	["sf_machinegunner", "SWOP_Rebel_Scarif_T1RB"],
-	["sf_marksman", "SWOP_Rebel_Scarif_TD"],
-	["sf_sniper", "SWOP_Rebel_Scarif_TD"],
+	["sf_squadleader", "O_V_Soldier_TL_ghex_F"],
+	["sf_rifleman", "O_V_Soldier_ghex_F"],
+	["sf_radioman", "O_V_Soldier_ghex_F"],
+	["sf_medic", "O_V_Soldier_Medic_ghex_F"],
+	["sf_engineer", "O_recon_F"],
+	["sf_explosivesexpert", "O_V_Soldier_Exp_ghex_F"],
+	["sf_grenadier", "O_T_Soldier_GL_F"],
+	["sf_lat", "O_V_Soldier_LAT_ghex_F"],
+	["sf_at", "O_V_Soldier_LAT_ghex_F"],
+	["sf_aa", "O_T_Soldier_AA_F"],
+	["sf_machinegunner", "O_T_Soldier_AR_F"],
+	["sf_marksman", "O_V_Soldier_M_ghex_F"],
+	["sf_sniper", "O_sniper_F"],
 
-	["other_crew", "SWOP_Rebel_navy_pil"],
-	["other_unarmed", "SWOP_Rebel_wood_a280"],
-	["other_official", "SWOP_Rebel_navy_of"],
-	["other_traitor", "SWOP_Rebel_navy_of"],
-	["other_pilot", "SWOP_Rebel_navy_pil"],
-	["police_squadleader", "SWOP_Rebel_cloud_serg"],
-	["police_standard", "SWOP_Rebel_cloud_a280"]
+	["other_crew", "O_T_Crew_F"],
+	["other_unarmed", "O_T_Soldier_unarmed_F"],
+	["other_official", "O_T_Officer_F"],
+	["other_traitor", "O_G_Soldier_F"],
+	["other_pilot", "O_T_Helipilot_F"],
+	["police_squadleader", "O_GEN_Commander_F"],
+	["police_standard", "O_GEN_Soldier_F"]
 ]] call _fnc_saveToTemplate;
 
 
@@ -114,12 +114,11 @@
 
 ["vehiclesHelisLight", ["Swop_Uwing"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["Swop_Uwing","swop_MF"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", []] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["Swop_Uwing"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", [
-]] call _fnc_saveToTesmplate;
+["vehiclesArtillery", []] call _fnc_saveToTemplate;
 
-["uavsAttack", []] call _fnc_saveToTemplate;
+["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["Swop_Rebel_Dio_Droid"]] call _fnc_saveToTemplate;
 
 

@@ -277,7 +277,7 @@ _sfLoadoutData setVariable ["marksmanRifles", [
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
 ["SWOP_DC17M_Sniper", "", "", "", [], [], ""],
-[3AS_Valken38X_F", "", "", "3as_optic_vk38x", [], [], ""]
+["3AS_Valken38X_F", "", "", "3as_optic_vk38x", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
 ["JLTS_Glocko", "", "", "", [], [], ""],
@@ -402,7 +402,6 @@ _eliteLoadoutData setVariable ["Hvests", ["SWOP_gmarinesarmor"]];
 _eliteLoadoutData setVariable ["GLvests", ["SWOP_gmarinesarmor"]];
 _eliteLoadoutData setVariable ["backpacks", ["SWOP_B_ImSnowBackpack_Base"]];
 _eliteLoadoutData setVariable ["helmets", []];
-]];
 
 _eliteLoadoutData setVariable ["rifles", [
 ["3AS_DC15C_F", "", "acc_pointer_IR", "3as_optic_acog_dc15c", [], [], ""],
