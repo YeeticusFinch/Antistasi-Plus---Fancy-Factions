@@ -13,69 +13,69 @@
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_squadleader", "SWOP_Navy_Green_Cap"],
-	["militia_rifleman", "SWOP_Navy_arm"],
-	["militia_radioman", "SWOP_Navy_arm"],
-	["militia_medic", "SWOP_Navy_arm"],
-	["militia_engineer", "SWOP_Navy_arm"],
-	["militia_explosivesexpert", "SWOP_Navy_arm"],
-	["militia_grenadier", "SWOP_Navy_arm"],
-	["militia_lat", "SWOP_Navy_arm"],
-	["militia_at", "SWOP_Navy_arm"],
-	["militia_aa", "SWOP_Navy_arm"],
-	["militia_machinegunner", "SWOP_Navy_arm"],
-	["militia_marksman", "SWOP_Navy_arm"],
-	["militia_sniper", "SWOP_Navy_arm"],
+	["militia_squadleader", "B_Soldier_SL_F"],
+	["militia_rifleman", "B_Soldier_F"],
+	["militia_radioman", "B_Soldier_F"],
+	["militia_medic", "B_medic_F"],
+	["militia_engineer", "B_engineer_F"],
+	["militia_explosivesexpert", "B_soldier_exp_F"],
+	["militia_grenadier", "B_Soldier_GL_F"],
+	["militia_lat", "B_soldier_LAT_F"],
+	["militia_at", "B_soldier_AT_F"],
+	["militia_aa", "B_soldier_AA_F"],
+	["militia_machinegunner", "B_soldier_AR_F"],
+	["militia_marksman", "B_soldier_M_F"],
+	["militia_sniper", "B_sniper_F"],
 
-	["military_squadleader", "SWOP_Storm_stormtrooper_SL"],
-	["military_rifleman", "SWOP_Snow_stormtrooper"],
-	["military_radioman", "SWOP_Storm_stormtrooper"],
-	["military_medic", "SWOP_Storm_stormtrooper_Corp"],
-	["military_engineer", "SWOP_Storm_stormtrooper"],
-	["military_explosivesexpert", "SWOP_Storm_stormtrooper"],
-	["military_grenadier", "SWOP_Storm_stormtrooper"],
-	["military_lat", "SWOP_Storm_stormtrooper_AA"],
-	["military_at", "SWOP_Storm_stormtrooper_AA"],
-	["military_aa", "SWOP_Storm_stormtrooper_AA"],
-	["military_machinegunner", "SWOP_Storm_stormtrooper_dlt"],
-	["military_marksman", "SWOP_Storm_stormtrooper_t"],
-	["military_sniper", "SWOP_Scout_sniper"],
+	["military_squadleader", "B_Soldier_SL_F"],
+	["military_rifleman", "B_Soldier_F"],
+	["military_radioman", "B_Soldier_F"],
+	["military_medic", "B_medic_F"],
+	["military_engineer", "B_engineer_F"],
+	["military_explosivesexpert", "B_soldier_exp_F"],
+	["military_grenadier", "B_Soldier_GL_F"],
+	["military_lat", "B_soldier_LAT_F"],
+	["military_at", "B_soldier_AT_F"],
+	["military_aa", "B_soldier_AA_F"],
+	["military_machinegunner", "B_soldier_AR_F"],
+	["military_marksman", "B_soldier_M_F"],
+	["military_sniper", "B_sniper_F"],
 
-	["elite_squadleader", "SWOP_imp_DeathtrooperLeader"],
-	["elite_rifleman", "SWOP_imp_Deathtrooper"],
-	["elite_radioman", "SWOP_imp_Deathtrooper"],
-	["elite_medic", "SWOP_imp_DeathtrooperTD"],
-	["elite_engineer", "SWOP_imp_DeathtrooperTD"],
-	["elite_explosivesexpert", "SWOP_imp_DeathtrooperTD"],
-	["elite_grenadier", "SWOP_imp_Deathtrooper"],
-	["elite_lat", "SWOP_imp_DeathtrooperHB"],           
-	["elite_at", "SWOP_imp_DeathtrooperHB"],
-	["elite_aa", "SWOP_imp_DeathtrooperHB"],
-	["elite_machinegunner", "SWOP_imp_DeathtrooperHB"],
-	["elite_marksman", "SWOP_imp_DeathtrooperHB"],
-	["elite_sniper", "SWOP_imp_DeathtrooperHB"],
+	["elite_squadleader", "B_Soldier_SL_F"],
+	["elite_rifleman", "B_Soldier_F"],
+	["elite_radioman", "B_Soldier_F"],
+	["elite_medic", "B_medic_F"],
+	["elite_engineer", "B_engineer_F"],
+	["elite_explosivesexpert", "B_soldier_exp_F"],
+	["elite_grenadier", "B_Soldier_GL_F"],
+	["elite_lat", "B_soldier_LAT_F"],
+	["elite_at", "B_soldier_AT_F"],
+	["elite_aa", "B_soldier_AA_F"],
+	["elite_machinegunner", "B_soldier_AR_F"],
+	["elite_marksman", "B_soldier_M_F"],
+	["elite_sniper", "B_sniper_F"],
 
-	["sf_squadleader", "SWOP_IMPSF_Inferno_com"],
-	["sf_rifleman", "SWOP_IMPSF_Infernopilot"],
-	["sf_radioman", "SWOP_IMPSF_Infernopilot"],
-	["sf_medic", "SWOP_IMPSF_Inferno_spec"],
-	["sf_engineer", "SWOP_IMPSF_Inferno_spec"],
-	["sf_explosivesexpert", "SWOP_IMPSF_Inferno_spec"],
-	["sf_grenadier", "SWOP_IMPSF_Inferno_spec"],
-	["sf_lat", "SWOP_IMPSF_Inferno_heavy"],
-	["sf_at", "SWOP_IMPSF_Inferno_heavy"],
-	["sf_aa", "SWOP_IMPSF_Inferno_heavy"],
-	["sf_machinegunner", "SWOP_IMPSF_Inferno_heavy"],
-	["sf_marksman", "SWOP_IMPSF_Inferno_spec"],
-	["sf_sniper", "SWOP_IMPSF_Inferno_spec"],
+	["sf_squadleader", "B_recon_TL_F"],
+	["sf_rifleman", "B_recon_F"],
+	["sf_radioman", "B_recon_F"],
+	["sf_medic", "B_recon_medic_F"],
+	["sf_engineer", "B_recon_F"],
+	["sf_explosivesexpert", "B_recon_exp_F"],
+	["sf_grenadier", "B_recon_JTAC_F"],
+	["sf_lat", "B_recon_LAT_F"],
+	["sf_at", "B_recon_LAT_F"],
+	["sf_aa", "B_soldier_AA_F"],
+	["sf_machinegunner", "B_soldier_AR_F"],
+	["sf_marksman", "B_recon_M_F"],
+	["sf_sniper", "B_sniper_F"],
 
-	["other_crew", "SWOP_Storm_crewman"],  ///////INCOMPLETE
+	["other_crew", "B_crew_F"],  ///////INCOMPLETE
 	["other_unarmed", "B_Survivor_F"],
-	["other_official", "SWOP_Navy_GA"],
+	["other_official", "B_officer_F"],
 	["other_traitor", "B_G_Soldier_F"],
-	["other_pilot", "SWOP_Navy_Pilot"],
-	["police_squadleader", "SWOP_Navy_Green_Cap"],
-	["police_standard", "SWOP_Navy_arm"]
+	["other_pilot", "B_Helipilot_F"],
+	["police_squadleader", "B_Soldier_F"],
+	["police_standard", "B_Soldier_F"]
 ]] call _fnc_saveToTemplate;
 
 
@@ -109,12 +109,12 @@
 ["vehiclesAmphibious", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["swop_tieb", "swop_tiedef", "swop_TIE_Stryker"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["swop_tie_FOtorpe", "swop_tieFOSFtorpe", "swop_tietorpe", "swop_tie_int", "swop_tiedef", "swop_tie"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["swop_tie_int", "swop_tiedef", "swop_tie"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["swop_lambda", "sh_flyable"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["swop_tieFO", "swop_tie", "swop_tiefosf"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["swop_tie"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["swop_lambda"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["swop_TIE_Stryker", "swop_tiex1", "swop_tie_silencer"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["swop_TIE_Stryker", "swop_tiex1"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", []] call _fnc_saveToTemplate;
 
@@ -250,7 +250,7 @@ private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData setVariable ["uniforms", ["SWOP_inferno_unif_f_CombatUniform"]];
 _sfLoadoutData setVariable ["vests", ["SWOP_Inferno_vestTroop"]];
 _sfLoadoutData setVariable ["Hvests", ["SWOP_Inferno_vestTroopHeavy"]];
-_sfLoadoutData setVariable ["backpacks", ["SWOP_O_DioPackUAV", "SWOP_B_AssaultPackPC_Base"]];
+_sfLoadoutData setVariable ["backpacks", ["SWOP_B_AssaultPackPC_Base"]];
 _sfLoadoutData setVariable ["helmets", ["SWOP_ImpInfernoH"]];
 _sfLoadoutData setVariable ["binoculars", ["scoutElectroBinoculars_F"]];
 
@@ -362,7 +362,7 @@ private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militiaLoadoutData setVariable ["uniforms", ["SWOP_ImpN_F_CombatUniform"]];
 _militiaLoadoutData setVariable ["vests", ["SWOP_infernoVest"]];
 _militiaLoadoutData setVariable ["backpacks", ["SWOP_B_AssaultPackPC_Base"]];
-_militiaLoadoutData setVariable ["helmets", ["SWOP_ImpnavH", "SWOP_ImpDriverHelm"]];
+_militiaLoadoutData setVariable ["helmets", ["SWOP_ImpnavH"]];
 
 _militiaLoadoutData setVariable ["rifles", [
 ["SWOP_e11", "", "", "SWOP_e11_bl_Scope", ["SWOP_e11_Mag"], [], ""],
