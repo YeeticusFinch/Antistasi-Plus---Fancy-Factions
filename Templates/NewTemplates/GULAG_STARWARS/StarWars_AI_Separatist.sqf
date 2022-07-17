@@ -87,8 +87,8 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", []] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", []] call _fnc_saveToTemplate;
+["vehiclesBasic", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed",["3AS_Advanced_DSD"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehiclesTrucks", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["3as_SAC_Trade", "3as_SAC_Trade"]] call _fnc_saveToTemplate;
@@ -102,15 +102,15 @@
 ["vehiclesLightAPCs", ["3as_n99"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["3AS_Hailfire_SAM"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["not_supported", "3AS_Hailfire_SAM"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
-["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
-["vehiclesGunBoats", []] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["3as_n99"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["3as_n99"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["3as_n99"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["3AS_Vulture_CAS_F", "swop_hbomber"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["3AS_Vulture_AA_F", "3AS_Tri_Fighter_dynamicLoadout"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["3AS_HMP_Transport"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["3AS_HMP_Transport"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["3AS_HMP_Transport"]] call _fnc_saveToTemplate;
@@ -129,7 +129,7 @@
 ["vehiclesMilitiaApcs", ["3as_n99"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["3AS_AAT"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["B_GEN_Offroad_01_gen_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_covered_F", "B_GEN_Van_02_transport_F"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["3as_n99", "3AS_AAT_Geonosis"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["3as_ParticleCannon"]] call _fnc_saveToTemplate;
 ["staticAT", ["3AS_FieldCannon"]] call _fnc_saveToTemplate;
@@ -169,7 +169,7 @@
 	]
 ] call _fnc_saveToTemplate;
 
-["pvpVehicles", ["B_LSV_01_armed_F", "B_LSV_01_unarmed_F"]] call _fnc_saveToTemplate;
+["pvpVehicles", ["3AS_AAT"]] call _fnc_saveToTemplate;
 
 
 //////////////////////////

@@ -98,15 +98,15 @@
 ["vehiclesMedical", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["O_JM_TX130_1", "O_SWOP_HoverTa_1", "O_SWOP_HoverTf_1", "O_SWOP_HoverTr_1"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["O_JM_TX130_1"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["not_supported"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["O_JM_TX130_1"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["O_SWOP_HoverT_1"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["not_supported","not_supported"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
-["vehiclesTransportBoats", ["not_supported"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["not_supported"]] call _fnc_saveToTemplate;
-["vehiclesAmphibious", ["not_supported"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
+["vehiclesAmphibious", ["SWOP_LIUV"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["swop_tieb", "swop_tiedef", "swop_TIE_Stryker"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["swop_tie_int", "swop_tiedef", "swop_tie"]] call _fnc_saveToTemplate;
@@ -272,7 +272,8 @@ _sfLoadoutData setVariable ["grenadeLaunchers", [
 _sfLoadoutData setVariable ["SMGs", [
 ["SWOP_palpatinegun", "", "", "", [], [], ""],
 ["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
+["SWOP_EE4BlasterRifle", "", "", "", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
 ["HeavyRepeater", "", "", "", [], [], ""]
@@ -348,7 +349,7 @@ _policeLoadoutData setVariable ["smgs", [
 ["SWOP_e11", "", "", "SWOP_e11_bl_Scope", ["SWOP_e11_Mag"], [], ""],
 ["SWOP_e11", "", "", "", ["SWOP_e11_Mag"], [], ""],
 ["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["SWOP_EE4BlasterRifle", "", "", "", [], [], ""]
 ]];
 _policeLoadoutData setVariable ["sidearms", [
 ["swop_SE14cPistol", "", "", "", [], [], ""]
@@ -376,8 +377,7 @@ _militiaLoadoutData setVariable ["grenadeLaunchers", [
 ["BTX42_Flamethrower", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["smgs", [
-["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["SWOP_EE4BlasterRifle", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
 ["SWOP_DLT19BlasterRifle", "", "", "", [], [], ""],
@@ -422,8 +422,7 @@ _eliteLoadoutData setVariable ["grenadeLaunchers", [
 ["3AS_DC15A_GL", "3as_muzzle_le_dc15a", "acc_flashlight", "3as_optic_lescope_dc15a", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _eliteLoadoutData setVariable ["SMGs", [
-["SWOP_EE4BlasterRifle", "", "", "", [], [], ""],
-["SWOP_EE4BlasterRifle", "", "", "SWOP_EE4BlasterScope", [], [], ""]
+["SWOP_EE4BlasterRifle", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["machineGuns", [
 ["SWOP_DLT19BlasterRifle", "", "", "", [], [], ""],

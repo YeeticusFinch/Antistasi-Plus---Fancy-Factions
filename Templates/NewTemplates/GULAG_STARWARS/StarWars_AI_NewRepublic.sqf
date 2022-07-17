@@ -97,11 +97,11 @@
 ["vehiclesMedical", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["O_SWOP_HoverTa_2","O_SWOP_HoverTf_2","O_SWOP_HoverTr_2"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["O_SWOP_HoverTa_2","O_SWOP_HoverTf_2","O_SWOP_HoverTr_2"]] call _fnc_saveToTemplate;
-["vehiclesAA", []] call _fnc_saveToTemplate;
+["vehiclesAA", ["O_SWOP_HoverTa_2"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["O_SWOP_HoverTa_2"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["not_supported", "not_supported"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 
 ["vehiclesTransportBoats", ["O_SWOP_landspeeder_1"]] call _fnc_saveToTemplate;

@@ -81,21 +81,21 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment pus
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_unarmed", "SWOP_Rebel_wood_med"],
-	["militia_rifleman", "SWOP_Rebel_wood_a280"],
-	["militia_staticcrew", "SWOP_Rebel_wood_med"],
-	["militia_medic", "SWOP_Rebel_wood_med"],
-	["militia_sniper", "SWOP_Rebel_wood_sniper"],
-	["militia_marksman", "SWOP_Rebel_wood_sniper"],
-	["militia_lat", "SWOP_Rebel_wood_aa"],
-	["militia_machinegunner", "SWOP_Rebel_wood_mg"],
-	["militia_explosivesexpert", "SWOP_Rebel_wood_demolisher"],
-	["militia_grenadier", "SWOP_Rebel_Scarif_Flamethrower"],
-	["militia_squadleader", "SWOP_Rebel_wood_serg"],
-	["militia_engineer", "SWOP_Rebel_wood_med"],
-	["militia_at", "SWOP_Rebel_wood_aa"],
-	["militia_aa", "SWOP_Rebel_wood_aa"],
-	["militia_petros", "SWOP_Rebel_wood_com"]
+	["militia_unarmed", "I_G_Survivor_F"],
+	["militia_rifleman", "I_G_Soldier_F"],
+	["militia_staticcrew", "I_G_Soldier_F"],
+	["militia_medic", "I_G_medic_F"],
+	["militia_sniper", "I_G_Sharpshooter_F"],
+	["militia_marksman", "I_G_Soldier_M_F"],
+	["militia_lat", "I_G_Soldier_LAT_F"],
+	["militia_machinegunner", "I_G_Soldier_AR_F"],
+	["militia_explosivesexpert", "I_G_Soldier_exp_F"],
+	["militia_grenadier", "I_G_Soldier_GL_F"],
+	["militia_squadleader", "I_G_Soldier_SL_F"],
+	["militia_engineer", "I_G_engineer_F"],
+	["militia_at", "I_Soldier_AT_F"],
+	["militia_aa", "I_Soldier_AA_F"],
+	["militia_petros", "I_G_officer_F"]
 ]] call _fnc_saveToTemplate;
 
 lootCrate = "Box_Syndicate_Ammo_F";

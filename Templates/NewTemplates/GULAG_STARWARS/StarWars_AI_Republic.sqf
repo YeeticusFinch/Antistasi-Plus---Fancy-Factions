@@ -70,7 +70,7 @@
 	["sf_sniper", "3AS_Rep_Commando_Sev"],
 
 	["other_crew", "3as_ATRT_Driver"],
-	["other_unarmed", "JLTS_Clone_P2_DC15S],
+	["other_unarmed", "JLTS_Clone_P2_DC15S"],
 	["other_official", "JLTS_Clone_P2_Commander"],
 	["other_traitor", "JLTS_Clone_P2_Commander_SC"],
 	["other_pilot", "3AS_Clone_P2_Pilot"],
@@ -97,27 +97,35 @@
 ["vehiclesAA", ["3AS_RX200_Base"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["3as_RTT"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
-["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
-["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
-["vehiclesGunBoats", []] call _fnc_saveToTemplate;
+
+["vehiclesSam", ["not_supported", "not_supported"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+
+["vehiclesTransportBoats", ["3AS_Barc"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["3AS_Barc"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["3as_ATTE_Base"]] call _fnc_saveToTemplate;
+
 ["vehiclesPlanesCAS", ["3AS_BTLB_Bomber", "3AS_arc_ 170_blue"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["3as_V19_Base", "3as_Z95_blue", "SWOP_Vwing", "3AS_arc_ 170_blue"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Nuclass"]] call _fnc_saveToTemplate;
+
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Republic"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["3AS_Patrol_LAAT_Republic", "3as_LAAT_Mk1", "3as_LAAT_Mk2", "3AS_Nuclass"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["3as_LAAT_Mk1"]] call _fnc_saveToTemplate;
+
 ["vehiclesArtillery", [
 ["3as_ATAP_Base",["32Rnd_155mm_Mo_shells"]],
 ["3as_AV7",["32Rnd_155mm_Mo_shells"]]
 ]] call _fnc_saveToTemplate;
-["uavsAttack", []] call _fnc_saveToTemplate;
+
+["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["3as_uas2"]] call _fnc_saveToTemplate;
+
 ["vehiclesMilitiaLightArmed", ["3AS_ATRT"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["3as_RTT"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["3AS_Barc"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaApcs", ["3as_ATTE_Base"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["3as_Jug"]] call _fnc_saveToTemplate;
+
 ["vehiclesPolice", ["3AS_ATRT", "3AS_BarcSideCar", "3AS_Barc", "3as_RTT"]] call _fnc_saveToTemplate;
 ["staticMGs", ["3AS_HeavyRepeater_Armoured"]] call _fnc_saveToTemplate;
 ["staticAT", ["3AS_StationaryTurret"]] call _fnc_saveToTemplate;

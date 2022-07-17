@@ -38,7 +38,7 @@ if (A3A_coldWarMode && {_itemIsVanilla}) exitWith {
 };
 
 //Remove vanilla items if no vanilla sides
-if (_itemIsVanilla && ({A3A_hasRHS || {A3A_hasCup}})) exitWith {
+if (_itemIsVanilla && ({A3A_hasRHS || {A3A_hasCup || A3A_hasStarWars || A3A_hasWW2}})) exitWith {
 	switch (_categories select 0) do {
 		case "Item": {
 			switch (_categories select 1) do {
