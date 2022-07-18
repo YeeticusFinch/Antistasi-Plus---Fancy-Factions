@@ -9,6 +9,8 @@
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
+										//For these only use them if their faction side (blufor, opfor, etc) agrees with how they would be in antistasi.
+										//i.e: blue for occupier, red for invader. otherwise, just use the vanilla blufor or opfor people, youll get to set their loadouts later
 	["militia_squadleader", "REPLACE"], //Militia are lower-skilled units you encounter early in the game
 	["militia_rifleman", "REPLACE"], //replace the stuff in second quotation marks with name of unit that this guy will be based off of
 	["militia_radioman", "REPLACE"],
@@ -66,7 +68,7 @@
 	["sf_sniper", "REPLACE"],
 
 	["other_crew", "REPLACE"],                    //These are for special roles people
-	["other_unarmed", "REPLACE],
+	["other_unarmed", "REPLACE"],
 	["other_official", "REPLACE"],
 	["other_traitor", "REPLACE"],
 	["other_pilot", "REPLACE"],
@@ -76,37 +78,41 @@
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
-["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
+["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate; 		//Don't touch or you die a sad and lonely death!
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
-["vehiclesBasic", ["REPLACE"]] call _fnc_saveToTemplate; //The most basic vehicle. Usually quad bike level stuff. You can add multiple vehicles to this array
-["vehiclesLightUnarmed", ["REPLACE"]] call _fnc_saveToTemplate;  //Small unarmed vehicles, stuff like jeeps, unarmed humvees, cars, etc
-["vehiclesLightArmed",["REPLACE"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+//For vehicles, you need to fill every slot with at least one thing, even if your faction doesnt have it
+//If your faction doesn't have anything remotely similar to, say, an attack helicopter, then put "not_supported" on the field instead
+["vehiclesBasic", ["REPLACE"]] call _fnc_saveToTemplate; 		//The most basic vehicle. Usually quad bike level stuff. You can add multiple vehicles to this array
+["vehiclesLightUnarmed", ["REPLACE"]] call _fnc_saveToTemplate; //Small unarmed vehicles, stuff like jeeps, unarmed humvees, cars, etc
+["vehiclesLightArmed",["REPLACE"]] call _fnc_saveToTemplate; 	//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehiclesTrucks", ["REPLACE"]] call _fnc_saveToTemplate;       //Trucks that can spawn carrying enemy infantry squads
 ["vehiclesCargoTrucks", ["REPLACE"]] call _fnc_saveToTemplate;  //Cargo trucks
 ["vehiclesAmmoTrucks", ["REPLACE"]] call _fnc_saveToTemplate;   //Ammo trucks. If you get one of these in the garage then your garage vehicles can refill ammo
 ["vehiclesRepairTrucks", ["REPLACE"]] call _fnc_saveToTemplate; //Repair trucks. If you get one of these in the garage then your garage vehicles can repair
 ["vehiclesFuelTrucks", ["REPLACE"]] call _fnc_saveToTemplate;   //Fuel trucks. If you get one of these in the garage then your garage vehicles can refuel
 ["vehiclesMedical", ["REPLACE"]] call _fnc_saveToTemplate;      //Medical trucks/cars
-["vehiclesAPCs", ["REPLACE"]] call _fnc_saveToTemplate; //APCs with mounted weapons that can carry people to the fight. Should be scary vehicles to face. Ex. M113, M2 Bradley
-["vehiclesTanks", ["REPLACE"]] call _fnc_saveToTemplate; //Tanks. Very heavily armed and armored, just one of these should be able to send the whole rebel force running. Ex. M1 Abrams
-["vehiclesAA", ["REPLACE"]] call _fnc_saveToTemplate;   //Anti-Air vehicles with flak guns or SAMs. Could be anything from a truck with a ZU bolted to the back to a full-on anti-air tank
-["vehiclesLightAPCs", ["REPLACE"]] call _fnc_saveToTemplate;  //Lighter APCs like the m113
-["vehiclesIFVs", []] call _fnc_saveToTemplate;  //This field is empty on all the templates I've seen, so I'd just leave it alone
-["vehiclesSam", ["REPLACE"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesAPCs", ["REPLACE"]] call _fnc_saveToTemplate; 		//APCs with mounted weapons that can carry people to the fight. Should be scary vehicles to face. Ex. M113, M2 Bradley
+["vehiclesTanks", ["REPLACE"]] call _fnc_saveToTemplate; 		//Tanks. Very heavily armed and armored, just one of these should be able to send the whole rebel force running. Ex. M1 Abrams
+["vehiclesAA", ["REPLACE"]] call _fnc_saveToTemplate;   		//Anti-Air vehicles with flak guns or SAMs. Could be anything from a truck with a ZU bolted to the back to a full-on anti-air tank
+["vehiclesLightAPCs", ["REPLACE"]] call _fnc_saveToTemplate;  	//Lighter APCs like the m113
+["vehiclesIFVs", []] call _fnc_saveToTemplate;  				//This field is empty on all the templates I've seen, so I'd just leave it alone
+
+["vehiclesSam", ["REPLACE", "REPLACE"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["REPLACE"]] call _fnc_saveToTemplate; //Boats that carry people
 ["vehiclesGunBoats", ["REPLACE"]] call _fnc_saveToTemplate;       //Boats that have mounted guns
-["vehiclesAmphibious", [""REPLACE""]] call _fnc_saveToTemplate;   //Amphibious APCs or other vehicles of the sort
+["vehiclesAmphibious", ["REPLACE"]] call _fnc_saveToTemplate;   //Amphibious APCs or other vehicles of the sort
 
-["vehiclesPlanesCAS", ["REPLACE"]] call _fnc_saveToTemplate;      //CLose Air Support planes liek the A-10
+["vehiclesPlanesCAS", ["REPLACE"]] call _fnc_saveToTemplate;      //CLose Air Support planes like the A-10
 ["vehiclesPlanesAA", ["REPLACE"]] call _fnc_saveToTemplate;       //Air superiority fighters like the F-22 Raptor
 ["vehiclesPlanesTransport", ["REPLACE"]] call _fnc_saveToTemplate;//Planes that will carry paratroopers to drop on people, like the C130
 
-["vehiclesHelisLight", ["REPLACE"]] call _fnc_saveToTemplate;  //Light helis like the Huey or Little Bird
-["vehiclesHelisTransport", ["REPLACE"]] call _fnc_saveToTemplate; //Troop carrier helis that land people during attacks like the Black Hawk or the Chinook
-["vehiclesHelisAttack", ["REPLACE"]] call _fnc_saveToTemplate; //Attack helis that shoot missiles and stuff at people like the Apache
+["vehiclesHelisLight", ["REPLACE"]] call _fnc_saveToTemplate;  		//Light helis like the Huey or Little Bird
+["vehiclesHelisTransport", ["REPLACE"]] call _fnc_saveToTemplate; 	//Troop carrier helis that land people during attacks like the Black Hawk or the Chinook
+["vehiclesHelisAttack", ["REPLACE"]] call _fnc_saveToTemplate; 		//Attack helis that shoot missiles and stuff at people like the Apache
 
+//you can leave artillery vehicles blank, but I wouldnt do it for any other vehicle type or else garrisons wont spawn
 ["vehiclesArtillery", [["REPLACE",["REPLACE(ammo type)"]]]] call _fnc_saveToTemplate; //Artillery systems, like mobile howitzers and self-propelled guns
 
 ["uavsAttack", ["REPLACE"]] call _fnc_saveToTemplate;    //Attack drones
@@ -139,7 +145,7 @@
 ["playerDefaultLoadout", []] call _fnc_saveToTemplate;
 ["pvpLoadouts", [
 		//Team Leader
-		["REPLACE"] call A3A_fnc_getLoadout,  //Loadouts for pvp players that join the government faction
+		["REPLACE"] call A3A_fnc_getLoadout,  //Loadouts for pvp players that join the government faction. You'll have to set these in the Loadouts folder in Templates, so don't stress about having th eexact unit here
 		//Medic
 		["REPLACE"] call A3A_fnc_getLoadout,
 		//Autorifleman
@@ -202,9 +208,9 @@ _loadoutData setVariable ["longRangeRadios", ["B_RadioBag_01_wdl_F"]];
 _loadoutData setVariable ["helmets", []];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
-_loadoutData setVariable ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
+_loadoutData setVariable ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; 		//this line defines the basic medical loadout for vanilla
 _loadoutData setVariable ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the standard medical loadout for vanilla
-_loadoutData setVariable ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the medic medical loadout for vanilla
+_loadoutData setVariable ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalSupplies]; 		//this line defines the medic medical loadout for vanilla
 _loadoutData setVariable ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 _loadoutData setVariable ["items_squadleader_extras", ["ACE_microDAGR", "ACE_DAGR", "Laserbatteries", "Laserbatteries", "Laserbatteries"]];
 _loadoutData setVariable ["items_rifleman_extras", []];
@@ -226,9 +232,10 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 //    Special Forces Loadout Data    //
 ///////////////////////////////////////
 //Set the default guns and gear for the 4 standard unit types, starting with SF, then Military, Militia, Police, and lastly Elite
+//If you don't plan on using, say, officer vests, then delete the parameter.
+//Leaving , for example, offvests blank would set officers to not have a vest. deleting the offvests parameter, however, would make officers use the regular vests
+
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-//If you don't plan on using, say, officer vests, then delete the parameter. Leaving offvests blank would set officers to not have a vest.
-//Deleting it would make it choose from the vests parameter instead. Same goes for all the others.
 _sfLoadoutData setVariable ["uniforms", ["REPLACE"]];        //Default uniforms
 _sfLoadoutData setVariable ["offuniforms", ["REPLACE"]];     //Officer uniforms (leave blank and officer will use default)
 _sfLoadoutData setVariable ["meduniforms", ["REPLACE"]];     //Medic uniforms (leave blank and medic will use default)
@@ -241,8 +248,13 @@ _sfLoadoutData setVariable ["helmets", ["REPLACE"]];         //Helmets
 _sfLoadoutData setVariable ["offhelmets", ["REPLACE"]];	     //Helmets but for officers
 _sfLoadoutData setVariable ["medhelmets", ["REPLACE"]];      //Helmets but for medics
 _sfLoadoutData setVariable ["binoculars", ["REPLACE"]];      //Binoculars if for some reason you want theris to be different
+
+//Set their guns with ["GUN", "MUZZLE", "FLASHLIGHT/LASER", "SIGHT", ["PRIMARY AMMO"], ["SECONDARY AMMO"], "UNDERBARREL(bipod,grip,etc)"]
+//You can put multiples here like this;
+//["GUN", "", "", "", [], [], ""],
+//["GUN2", "", "", "", [], [], ""]
 _sfLoadoutData setVariable ["rifles", [
-["REPLACE", "", "", "", [], [], ""]   //Set their guns with ["GUN", "MUZZLE", "FLASHLIGHT/LASER", "SIGHT", ["PRIMARY AMMO"], ["SECONDARY AMMO"], "UNDERBARREL(bipod,grip,etc)"]
+["REPLACE", "", "", "", [], [], ""]   
 ]];
 _sfLoadoutData setVariable ["carbines", [
 ["REPLACE", "", "", "", [], [], ""]
@@ -317,6 +329,7 @@ _policeLoadoutData setVariable ["offuniforms", ["REPLACE"]];
 _policeLoadoutData setVariable ["vests", ["REPLACE"]];
 _policeLoadoutData setVariable ["Hvests", ["REPLACE"]];
 _policeLoadoutData setVariable ["helmets", ["REPLACE"]];
+
 _policeLoadoutData setVariable ["smgs", [
 ["REPLACE", "", "", "", [], [], ""]
 ]];
@@ -376,7 +389,7 @@ _eliteLoadoutData setVariable ["backpacks", ["REPLACE"]];
 _eliteLoadoutData setVariable ["helmets", ["REPLACE"]];
 _eliteLoadoutData setVariable ["offhelmets", ["REPLACE"]];
 _eliteLoadoutData setVariable ["medhelmets", ["REPLACE"]];
-]];
+
 
 _eliteLoadoutData setVariable ["rifles", [
 ["REPLACE", "", "", "", [], [], ""]
