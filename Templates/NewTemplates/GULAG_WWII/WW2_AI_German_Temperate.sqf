@@ -96,32 +96,32 @@
 ["vehiclesRepairTrucks", ["VIOC_B_LIB_OpelBlitz_Parm"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["VIOC_B_LIB_OpelBlitz_Fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["VIOC_B_LIB_OpelBlitz_Ambulance"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["FA_SdKfz234", "FA_Sdkfz231"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["FA_SdKfz234", "FA_Sdkfz231", "VIOC_B_LIB_SdKfz251"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["VIOC_B_LIB_PzKpfwIV_H_tarn51c", "VIOC_B_LIB_PzKpfwVI_E_2", "LIB_GER_StuG_III_G_Tarn", "LIB_GER_PzKpfwV_Tarn"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["VIOC_B_LIB_SdKfz_7_AA", "VIOC_B_LIB_FlakPanzerIV_Wirbelwind"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["VIOC_B_LIB_SdKfz251"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", []] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["not_supported", "not_supported"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
-["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["VIOC_B_sab_nl_t22"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["VIOC_B_sab_nl_t22"]] call _fnc_saveToTemplate; //FYI, this aint just a speedboat, this is a biggole cruiser ship
-["vehiclesAmphibious", []] call _fnc_saveToTemplate;
+["vehiclesAmphibious", ["VIOC_B_LIB_PzKpfwIV_H_tarn51c"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["VIOC_B_sab_sw_ju87", "VIOC_B_sab_sw_bf110"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["VIOC_B_LIB_FW190F8", "VIOC_B_sab_fl_bf109f"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["VIOC_B_LIB_C47_raf"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", []] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", []] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", []] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["VIOC_B_sab_fl_bf109f"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["VIOC_B_LIB_C47_raf"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["VIOC_B_sab_sw_ju87"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [
 ["VIOC_B_LIB_SdKfz124",["32Rnd_155mm_Mo_shells"]],
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", []] call _fnc_saveToTemplate;
-["uavsPortable", []] call _fnc_saveToTemplate;
+["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;
+["uavsPortable", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["vehiclesMilitiaLightArmed", ["VIOC_B_LIB_Kfz1_MG42"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["VIOC_B_LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
@@ -373,7 +373,6 @@ _militiaLoadoutData setVariable ["offhelmets", ["H_LIB_GER_Fieldcap2"]];
 _militiaLoadoutData setVariable ["medhelmets", ["H_LIB_GER_Helmet_Medic"]];
 
 _militiaLoadoutData setVariable ["rifles", [
-["LIB_G43", "", "", "", ["LIB_10Rnd_792x57", "LIB_10Rnd_792x57", "LIB_10Rnd_792x57"], [], ""],
 ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57", "LIB_5Rnd_792x57", "LIB_5Rnd_792x57"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
@@ -418,8 +417,7 @@ _eliteLoadoutData setVariable ["medhelmets", ["H_LIB_GER_Helmet_Medic"]];
 ]];
 
 _eliteLoadoutData setVariable ["rifles", [
-["LIB_G43", "", "", "", ["LIB_10Rnd_792x57", "LIB_10Rnd_792x57", "LIB_10Rnd_792x57"], [], ""],
-["LIB_K98", "", "", "", ["LIB_5Rnd_792x57", "LIB_5Rnd_792x57", "LIB_5Rnd_792x57"], [], ""]
+["LIB_G43", "", "", "", ["LIB_10Rnd_792x57", "LIB_10Rnd_792x57", "LIB_10Rnd_792x57"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["carbines", [
 ["LIB_MP40", "", "", "", ["LIB_32Rnd_9x19", "LIB_32Rnd_9x19", "LIB_32Rnd_9x19"], [], ""],
