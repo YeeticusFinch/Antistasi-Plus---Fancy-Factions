@@ -539,5 +539,7 @@ if (A3A_has3CBFactions) then {call compileScript ["Templates\NewTemplates\3CBF\3
 if (A3A_hasCup) then {call compileScript ["Templates\NewTemplates\CUP\Cup_Logistics_Nodes.sqf"];};
 if (A3A_hasAegis) then {call compileScript ["Templates\NewTemplates\Aegis\Aegis_Logistics_Nodes.sqf"];};
 if (A3A_hasGlobMob) then {call compileScript ["Templates\NewTemplates\GM\GM_Logistics_Nodes.sqf"];};
+if (A3A_hasSW) then {call compileScript ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Logistics_nodes.sqf"];};
+if (A3A_hasWW2) then {call compileScript ["Templates\NewTemplates\GULAG_WWII\WWI_Logistics_nodes.sqf"];};
 if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};
 if (A3A_hasUR) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN_UR\VN_UR_Logistics_Nodes.sqf"};
