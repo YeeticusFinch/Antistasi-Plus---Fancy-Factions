@@ -39,7 +39,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [0, 6.79, 6.058],     []],
         [1,             [0, 7.452, 6.058],     []],
         [1,             [0, 8.177, 6.058],     []]
-    ]];
+    ]],
     ["SWOP_O_sandcrawler" call A3A_fnc_classNameToModel, [
         [1,             [2.433, 16.988, 20.511],     []],
         [1,             [2.724, 16.024, 20.446],     []],
@@ -109,7 +109,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-6.076, -10.86, 18.711],     []],
         [1,             [-6.076, -11.56, 18.711],     []],
         [1,             [-6.076, -12.26, 18.711],     []]
-    ]];
+    ]],
     // All the hover transports
     ["O_SWOP_HoverT_2" call A3A_fnc_classNameToModel, [
         [1,             [0.608, 0.641, 1.658],     []],
@@ -120,7 +120,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -0.147, 1.658],     []],
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
-    ]];
+    ]],
     ["O_SWOP_HoverTa_2" call A3A_fnc_classNameToModel, [
         [1,             [0.608, 0.641, 1.658],     []],
         [1,             [0.608, -0.147, 1.658],     []],
@@ -130,7 +130,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -0.147, 1.658],     []],
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
-    ]];
+    ]],
     ["O_SWOP_HoverTf_2" call A3A_fnc_classNameToModel, [
         [1,             [0.608, 0.641, 1.658],     []],
         [1,             [0.608, -0.147, 1.658],     []],
@@ -140,7 +140,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -0.147, 1.658],     []],
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
-    ]];
+    ]],
     ["O_SWOP_HoverTr_2" call A3A_fnc_classNameToModel, [
         [1,             [0.608, 0.641, 1.658],     []],
         [1,             [0.608, -0.147, 1.658],     []],
@@ -150,7 +150,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -0.147, 1.658],     []],
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
-    ]];
+    ]],
     ["O_SWOP_HoverT_1" call A3A_fnc_classNameToModel, [
         [1,             [0.608, 0.641, 1.658],     []],
         [1,             [0.608, -0.147, 1.658],     []],
@@ -160,7 +160,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -0.147, 1.658],     []],
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
-    ]];
+    ]],
     ["O_SWOP_HoverTa_1" call A3A_fnc_classNameToModel, [
         [1,             [0.608, 0.641, 1.658],     []],
         [1,             [0.608, -0.147, 1.658],     []],
@@ -170,7 +170,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -0.147, 1.658],     []],
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
-    ]];
+    ]],
     ["O_SWOP_HoverTf_1" call A3A_fnc_classNameToModel, [
         [1,             [0.608, 0.641, 1.658],     []],
         [1,             [0.608, -0.147, 1.658],     []],
@@ -180,7 +180,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -0.147, 1.658],     []],
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
-    ]];
+    ]],
     ["O_SWOP_HoverTr_1" call A3A_fnc_classNameToModel, [
         [1,             [0.608, 0.641, 1.658],     []],
         [1,             [0.608, -0.147, 1.658],     []],
@@ -190,7 +190,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [-0.608, -0.147, 1.658],     []],
         [1,             [-0.608, -1.601, 1.658],     []],
         [1,             [-0.608, -2.929, 1.658],     []]
-    ]];
+    ]],
     
     // LIUV
     ["SWOP_LIUV" call A3A_fnc_classNameToModel, [
@@ -199,7 +199,7 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [0, 0.275, 2.1],     []],
         [1,             [0, 0.942, 2.1],     []],
         [1,             [0, 1.613, 2.1],     []]
-    ]];
+    ]],
     
     ["3as_RTT" call A3A_fnc_classNameToModel, [
         [1,             [-1.124, -5.379, 1.193],     []],
@@ -222,8 +222,8 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [1.124, -3.367, 1.193],     []],
         [1,             [1.124, -2.703, 1.193],     []],
         [1,             [1.124, -2.031, 1.193],     []],
-        [1,             [1.124, -1.364, 1.193],     []],
-    ]];
+        [1,             [1.124, -1.364, 1.193],     []]
+    ]],
     
     ["3as_SAC_Trade" call A3A_fnc_classNameToModel, [
         [1,             [0.349, -4.844, 2.382],     []],
@@ -236,23 +236,23 @@ A3A_logistics_vehicleHardpoints = [
         [1,             [0.349, -0.182, 2.382],     []],
         [1,             [0.349, 0.482, 2.382],     []],
         [1,             [0.349, 1.153, 2.382],     []]
-    ]];
+    ]],
     
     ["SW_SpeederBike" call A3A_fnc_classNameToModel, [
         [1,             [-0.258, -1.196, 0.825],     []]
-    ]];
+    ]],
     ["SW_SpeederBikeIMPw" call A3A_fnc_classNameToModel, [
         [1,             [-0.258, -1.196, 0.825],     []]
-    ]];
+    ]],
     ["SW_SpeederBikeR" call A3A_fnc_classNameToModel, [
         [1,             [-0.258, -1.196, 0.825],     []]
-    ]];
+    ]],
     ["SW_SpeederBikeCIV" call A3A_fnc_classNameToModel, [
         [1,             [-0.258, -1.196, 0.825],     []]
-    ]];
+    ]],
     ["SW_SpeederBike" call A3A_fnc_classNameToModel, [
         [1,             [-0.258, -1.196, 0.825],     []]
-    ]];
+    ]],
     //Boats
     //Motorboat civilian
     ["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, [
@@ -347,7 +347,7 @@ A3A_logistics_weapons = [
     ["B_HMG_01_F" call A3A_fnc_classNameToModel,[]],
     ["B_Mortar_01_F" call A3A_fnc_classNameToModel,["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, "B_Boat_Transport_01_F" call A3A_fnc_classNameToModel, "C_Boat_Transport_02_F" call A3A_fnc_classNameToModel]],
     ["B_HMG_02_high_F" call A3A_fnc_classNameToModel,[]],
-    ["B_HMG_02_F" call A3A_fnc_classNameToModel,[]]
+    ["B_HMG_02_F" call A3A_fnc_classNameToModel,[]],
     
     //star wars
     ["AItur_base" call A3A_fnc_classNameToModel,[]],
@@ -365,5 +365,5 @@ A3A_logistics_weapons = [
     ["3AS_Republic_Mortar" call A3A_fnc_classNameToModel,[]],
     ["3AS_StationaryTurret" call A3A_fnc_classNameToModel,[]],
     ["3as_XX10" call A3A_fnc_classNameToModel,[]],
-    ["3as_XX9" call A3A_fnc_classNameToModel,[]],
+    ["3as_XX9" call A3A_fnc_classNameToModel,[]]
 ];

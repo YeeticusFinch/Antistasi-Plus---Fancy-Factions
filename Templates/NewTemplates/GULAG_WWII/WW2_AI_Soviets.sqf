@@ -84,7 +84,7 @@
 ["vehiclesLightUnarmed", ["VIOC_O_LIB_GazM1_SOV"]] call _fnc_saveToTemplate;  //Small unarmed vehicles, stuff like jeeps, unarmed humvees, cars, etc
 ["vehiclesLightArmed",["NORTH_SOV_T20", "VIOC_O_LIB_Zis5v_61k"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehiclesTrucks", ["VIOC_O_LIB_Zis5v","VIOC_O_LIB_US6_Tent"]] call _fnc_saveToTemplate;       //Trucks that can spawn carrying enemy infantry squads
-["vehiclesCargoTrucks", [""NORTH_SOV_T20", "VIOC_O_LIB_Zis5v_61k""]] call _fnc_saveToTemplate;  //Cargo trucks
+["vehiclesCargoTrucks", ["VIOC_O_LIB_US6_Open_Cargo"]] call _fnc_saveToTemplate;  //Cargo trucks
 ["vehiclesAmmoTrucks", ["VIOC_O_LIB_US6_Ammo"]] call _fnc_saveToTemplate;   //Ammo trucks. If you get one of these in the garage then your garage vehicles can refill ammo
 ["vehiclesRepairTrucks", ["VIOC_O_LIB_Zis6_Param"]] call _fnc_saveToTemplate; //Repair trucks. If you get one of these in the garage then your garage vehicles can repair
 ["vehiclesFuelTrucks", ["VIOC_O_LIB_Zis5v_Fuel"]] call _fnc_saveToTemplate;   //Fuel trucks. If you get one of these in the garage then your garage vehicles can refuel
@@ -327,68 +327,65 @@ _militiaLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack2_Gas_Kit_S
 _militiaLoadoutData setVariable ["helmets", ["H_LIB_SOV_RA_PrivateCap"]];
 
 _militiaLoadoutData setVariable ["rifles", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_PPSh41_d", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130", "lib_acc_gl_dyakonov_empty", "", "", ["LIB_5Rnd_762x54", "LIB_5Rnd_762x54", "LIB_1Rnd_G_DYAKONOV"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["smgs", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_PPSh41_d", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_DP28", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["marksmanRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130PU", "", "", "", [], [], ""]
 ]];
 _militiaLoadoutData setVariable ["sniperRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130PU", "", "", "", [], [], ""]
 ]];
-_militiaLoadoutData setVariable ["sidearms", ["REPLACE"]];
+_militiaLoadoutData setVariable ["sidearms", ["LIB_TT33"]];
 
 /////////////////////////////////
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["offuniforms", ["REPLACE"]];
-_eliteLoadoutData setVariable ["meduniforms", ["REPLACE"]];
-_eliteLoadoutData setVariable ["uniforms", ["REPLACE"]];
-_eliteLoadoutData setVariable ["offvests", ["REPLACE"]];
-_eliteLoadoutData setVariable ["vests", ["REPLACE"]];
-_eliteLoadoutData setVariable ["Hvests", ["REPLACE"]];
-_eliteLoadoutData setVariable ["GLvests", ["REPLACE"]];
-_eliteLoadoutData setVariable ["backpacks", ["REPLACE"]];
-_eliteLoadoutData setVariable ["helmets", ["REPLACE"]];
-_eliteLoadoutData setVariable ["offhelmets", ["REPLACE"]];
-_eliteLoadoutData setVariable ["medhelmets", ["REPLACE"]];
+_eliteLoadoutData setVariable ["offuniforms", ["U_LIB_SOV_VDV_Officer_camo_00v01pLtPpsch41m"]];
+_eliteLoadoutData setVariable ["uniforms", ["U_LIB_SOV_VDV_soldier_camo_01v00pSantSVT40"]];
+_eliteLoadoutData setVariable ["offvests", ["V_LIB_SOV_RAZV_OfficerVest"]];
+_eliteLoadoutData setVariable ["vests", ["V_LIB_SOV_RAZV_SVTBelt"]];
+_eliteLoadoutData setVariable ["Hvests", ["V_LIB_SOV_IShBrVestMG"]];
+_eliteLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel"]];
+_eliteLoadoutData setVariable ["helmets", ["H_LIB_SOV_RA_Helmet", "H_LIB_SOV_RA_PrivateCap_VDV01"]];
 
 
 _eliteLoadoutData setVariable ["rifles", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_SVT_40", "", "", "", [], [], ""] 
 ]];
 _eliteLoadoutData setVariable ["carbines", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_PPSh41_d", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["grenadeLaunchers", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130", "lib_acc_gl_dyakonov_empty", "", "", ["LIB_5Rnd_762x54", "LIB_5Rnd_762x54", "LIB_1Rnd_G_DYAKONOV"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["SMGs", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_PPSh41_d", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["machineGuns", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_DP28", "", "", "", [], [], ""],
+["LIB_DT_OPTIC", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["marksmanRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130PU", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sniperRifles", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_M9130PU", "", "", "", [], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sidearms", [
-["REPLACE", "", "", "", [], [], ""]
+["LIB_TT33", "", "", "", [], [], ""]
 ]];
 
 //////////////////////////
@@ -396,15 +393,15 @@ _eliteLoadoutData setVariable ["sidearms", [
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData setVariable ["uniforms", ["REPLACE"]];
-_crewLoadoutData setVariable ["vests", ["REPLACE"]];
-_crewLoadoutData setVariable ["helmets", ["REPLACE"]];
+_crewLoadoutData setVariable ["uniforms", ["U_LIB_SOV_Tank_ryadovoi"]];
+_crewLoadoutData setVariable ["vests", ["V_LIB_SOV_RA_Belt"]];
+_crewLoadoutData setVariable ["helmets", ["H_LIB_SOV_TankHelmet"]];
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData setVariable ["uniforms", ["REPLACE"]];
-_pilotLoadoutData setVariable ["vests", ["REPLACE"]];
-_pilotLoadoutData setVariable ["helmets", ["REPLACE"]];
+_pilotLoadoutData setVariable ["uniforms", ["U_LIB_SOV_Pilot"]];
+_pilotLoadoutData setVariable ["vests", ["V_LIB_SOV_RA_Belt"]];
+_pilotLoadoutData setVariable ["helmets", ["H_LIB_SOV_PilotHelmet"]];
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
 
