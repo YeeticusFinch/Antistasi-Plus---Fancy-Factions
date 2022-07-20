@@ -58,7 +58,9 @@ private _activeRealPanzer = false;
 private _activeEAW = false;
 private _activeGEIST = false;
 
-//Actual Detection
+/////////////////////////////
+//    STAR WARS DETECTION  //
+/////////////////////////////
 //3AS Detection
 if (isClass (configfile >> "CfgVehicles" >> "3AS_BTLB_Bomber")) then {
 	_active3AS = true;
@@ -77,6 +79,56 @@ if (_activeSWOP || _active3AS) then {
 		["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 	} else {
     A3A_hasStarWars = true;
+  };
+};
+/////////////////////////////
+//  	 WW2 Detection	   //
+/////////////////////////////
+
+// GEIST
+if (isClass (configfile >> "CfgVehicles" >> "LIB_GER_SdKfz234_1_Camo")) then {
+	_activeGEIST = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | GEIST Detected.",servertime];
+};
+
+//VIO Side Patch
+if (isClass (configfile >> "CfgVehicles" >> "VIOC_B_LIB_Ju87")) then {
+	_activeVIOC = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | VIO Side Patch Detected.",servertime];
+};
+//Northern Fronts
+if (isClass (configfile >> "CfgVehicles" >> "NORTH_SOV_T20")) then {
+	_activeNF = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | Northern Fronts Detected.",servertime];
+};
+//East Asia War
+if (isClass (configfile >> "CfgVehicles" >> "EAW_Type94_1937")) then {
+	_activeEAW = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | East Asia War Detected.",servertime];
+};
+//RealPanzer
+if (isClass (configfile >> "CfgVehicles" >> "RP_LIB_M5A1_Stuart")) then {
+	_activeRealPanzer = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | IFA3 RealPanzer Detected.",servertime];
+};
+//FOW
+if (isClass (configfile >> "CfgVehicles" >> "fow_v_m4a2_usa")) then {
+	_activeFOW = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | Faces Of War Detected.",servertime];
+};
+//WW2 Armored Cars
+if (isClass (configfile >> "CfgVehicles" >> "FA_SdKfz231")) then {
+	_activeWW2ac = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | WW2 Armored Cars Detected.",servertime];
+};
+if (_activeGEIST || _activeVIOC || _activeNF || _activeEAW || _activeRealPanzer || _activeFOW || _activeWW2ac) then {
+	if !(_activeGEIST && _activeVIOC && _activeNF && _activeEAW && _activeRealPanzer && _activeFOW && _activeWW2ac) then {
+    private _text = "My comrade in gulag u dont have all the world war 2 mods needed. Get all the mods that are required, then try again. Oh and make sure u load them, too.";
+    systemChat _text;
+    [1, _text, _fileName] call A3A_fnc_log;
+		["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+	} else {
+    A3A_hasWW2 = true;
   };
 };
 //IFA Detection (old)
