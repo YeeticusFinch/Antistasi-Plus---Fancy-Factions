@@ -253,7 +253,28 @@ class Params
      {
           title="Select Occupant Faction";
 		values[]={9999, 0, 1, 2, 3};
-		texts[]={"Load From Save (Default - Empire with crimelord invaders)", "Republic", "Separatists", "Empire (Crimelord invaders)", "Empire (Rebel invaders)"};
+		texts[]={"Load From Save (Default - Empire with crimelord invaders)", "Empire (Crimelord invaders)", "Empire (Rebel invaders)", "Republic", "Separatists"};
+		default = 9999;
+     };
+	class Spacer69696969
+     {
+          title = "";
+          values[] = {""};
+          texts[] = {""};
+          default = "";
+     };
+	class Spacer6942069
+     {
+          title = "WORLD WAR 2 SETTINGS";
+          values[] = {""};
+          texts[] = {""};
+          default = "";
+     };
+	class ww2OccupantFaction
+     {
+          title="Select Occupant Faction";
+		values[]={9999, 0, 1};
+		texts[]={"Load From Save (Default - Germany)", "Germany (Soviet invaders)", "Japan (USA invaders)"};
 		default = 9999;
      };
      class Spacer231
