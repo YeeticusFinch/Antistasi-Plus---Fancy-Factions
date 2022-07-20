@@ -55,19 +55,19 @@ A3A_Reb_template = switch(true) do {
     };
     case (A3A_hasStarWars): {
         switch(starWarsOccupantFaction) do {
-            case(3): {
+            case(1): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_Crimelords.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Star Wars crimelords as rebels", _filename] call A3A_fnc_log;
             };
-            case(2): {
+            case(0): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_Rebellion.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Star Wars rebels as rebels (go figure)", _filename] call A3A_fnc_log;
             };
-            case(1): {
+            case(2): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_CWPartisans.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Clone Wars Partisans as rebels", _filename] call A3A_fnc_log;
             };
-            case(0): {
+            case(3): {
                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_CWPartisans.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                [2, "Using Clone Wars Partisans as rebels", _filename] call A3A_fnc_log; 
             };
@@ -154,19 +154,19 @@ A3A_Occ_template = switch(true) do {
     };
     case (A3A_hasStarWars): {
         switch(starWarsOccupantFaction) do {
-            case(3): {
+            case(0): {
+                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Empire.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Star Wars Empire as occupiers", _filename] call A3A_fnc_log;
+            };
+            case(1): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Empire.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Star Wars Empire as occupiers", _filename] call A3A_fnc_log;
             };
             case(2): {
-                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Empire.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-                [2, "Using Star Wars Empire as occupiers", _filename] call A3A_fnc_log;
-            };
-            case(0): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Republic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Clone Wars era Republic as occupiers", _filename] call A3A_fnc_log;
             };
-            case(1): {
+            case(3): {
                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Separatist.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                [2, "Using Clone Wars era Separatists as occupiers", _filename] call A3A_fnc_log; 
             };
@@ -341,19 +341,19 @@ A3A_Inv_template = switch(true) do{
     };
     case (A3A_hasStarWars): {
         switch(starWarsOccupantFaction) do {
-            case(3): {
+            case(1): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_NewRepublic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Star Wars New Republic as invaders", _filename] call A3A_fnc_log;
             };
-            case(2): {
+            case(0): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Crimelords.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Star Wars Crimelords as invaders", _filename] call A3A_fnc_log;
             };
-            case(1): {
+            case(3): {
                 ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Republic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Clone Wars era Republic as invaders", _filename] call A3A_fnc_log;
             };
-            case(0): {
+            case(2): {
                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_AI_Separatist.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                [2, "Using Clone Wars era Separatists as invaders", _filename] call A3A_fnc_log; 
             };
