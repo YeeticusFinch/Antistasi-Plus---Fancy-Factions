@@ -78,7 +78,7 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment pus
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_unarmed", "REPLACE"],     //Default units for friendly AI, make sure u use units from a green faction or they'll all start killing each other (I wish I wa joking)
+	["militia_unarmed", "REPLACE"],     //Default units for friendly AI, make sure u use units from a green faction or they'll all start killing each other (I wish I was joking)
 	["militia_rifleman", "REPLACE"],
 	["militia_staticcrew", "REPLACE"],
 	["militia_medic", "REPLACE"],
