@@ -74,6 +74,19 @@ A3A_Reb_template = switch(true) do {
         };
         "StarWars"
     };
+    case (A3A_hasWW2): {
+        switch(ww2OccupantFaction) do {
+            case(0): {
+                ["Templates\NewTemplates\GULAG_WWII\WW2_PolishResistance.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Armia Krajowa as rebels", _filename] call A3A_fnc_log;
+            };
+//            case(1): {
+//                ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Reb_Rebellion.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+//                [2, "Using Star Wars rebels as rebels (go figure)", _filename] call A3A_fnc_log;
+//            };
+        };
+        "WorldWar2"
+    };
     case (A3A_hasRHS): {
         switch(true) do {
             case (_terrainName in tropicalMaps): {
@@ -172,6 +185,19 @@ A3A_Occ_template = switch(true) do {
             };
         };
         "StarWars"
+    };
+    case (A3A_hasWW2): {
+        switch(ww2OccupantFaction) do {
+            case(0): {
+                ["Templates\NewTemplates\GULAG_WWII\WW2_AI_German_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using the Wehrmacht as occupiers", _filename] call A3A_fnc_log;
+            };
+//            case(1): {
+//                ["Templates\NewTemplates\GULAG_WWII\WW2_AI_Japan.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+//                [2, "Using the Japanese as occupiers", _filename] call A3A_fnc_log;
+//            };
+        };
+        "WorldWar2"
     };
     case (A3A_has3CBFactions): {
         switch(threecbfOccupantFaction) do {
@@ -360,6 +386,20 @@ A3A_Inv_template = switch(true) do{
         };
         "StarWars"
     };
+        case (A3A_hasWW2): {
+        switch(ww2OccupantFaction) do {
+            case(0): {
+                ["Templates\NewTemplates\GULAG_WWII\WW2_AI_German_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using the Soviet Union as invaders", _filename] call A3A_fnc_log;
+            };
+//            case(1): {
+//                ["Templates\NewTemplates\GULAG_WWII\WW2_AI_Japan.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+//                [2, "Using the Japanese as occupiers", _filename] call A3A_fnc_log;
+//            };
+        };
+        "WorldWar2"
+    };
+    case
     case (A3A_hasRHS): {
         switch(true) do {
             case (_terrainName in _temperateMaps);
@@ -489,9 +529,14 @@ A3A_Civ_template = switch(true) do {
         "RHS"
     };
     case (A3A_hasStarWars): {
-        ["Templates\NewTemplates\GULAG_STARWARS\StarWars_civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+        ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Star Wars Civ Template", _filename] call A3A_fnc_log;
-        "RHS"
+        "StarWars"
+    };
+    case (A3A_hasWW2): {
+        ["Templates\NewTemplates\GULAG_WWII\WW2_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using World War 2 Civ Template", _filename] call A3A_fnc_log;
+        "WW2"
     };
     case (A3A_hasVN): {
         ["Templates\NewTemplates\VN\VN_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
