@@ -7,7 +7,7 @@
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
 ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate;
+["flagMarkerType", "geist_Flag_WHT"] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //

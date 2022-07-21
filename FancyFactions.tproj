@@ -7458,6 +7458,12 @@
                   <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="WW2_AI_Soviets.sqf" FileName="Templates\NewTemplates\GULAG_WWII\WW2_AI_Soviets.sqf">
                     <SubNodes />
                   </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="WW2_Civ.sqf" FileName="Templates\NewTemplates\GULAG_WWII\WW2_Civ.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="WW2_PolishResistance.sqf" FileName="Templates\NewTemplates\GULAG_WWII\WW2_PolishResistance.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
                 </SubNodes>
               </ProjectNodeViewModel>
               <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="RHS" FileName="Templates\NewTemplates\RHS">
