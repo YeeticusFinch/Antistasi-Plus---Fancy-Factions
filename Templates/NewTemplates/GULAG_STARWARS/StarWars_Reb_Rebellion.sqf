@@ -59,7 +59,7 @@
 
 ["headgear", [
     "H_Shemag_Olive",
-	 "H_Hat_camo",
+	"H_Hat_camo",
     "H_Bandana_camo",
     "H_Cap_oli_hs",
     "H_Cap_oli"
