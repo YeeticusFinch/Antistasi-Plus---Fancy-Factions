@@ -74,10 +74,6 @@ private _offsetAndDir = [_cargo] call A3A_fnc_logistics_getCargoOffsetAndDir;
 private _location = _offsetAndDir#0;
 private _location = _location vectorAdd _nodeOffset;
 
-if (A3A_hasStarWars) then {
-    _location = _location vectorAdd [0,0,-( ( (boundingBoxReal _vehicle select0) select 2 ) + (boundingBoxCenter _vehicle) )];
-};
-
 private _bbVehicle = (boundingBoxReal _vehicle select 0 select 1) + ((boundingCenter _vehicle) select 1);
 private _bbCargo = (boundingBoxReal _cargo select 0 select 1) + ((boundingCenter _cargo) select 1);
 private _yStart = _bbVehicle + _bbCargo - 0.1;
