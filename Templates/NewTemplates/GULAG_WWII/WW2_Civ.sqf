@@ -76,7 +76,6 @@
 ["vehiclesCivHeli", ["not_supported"]] call _fnc_saveToTemplate; 			//this line determines civilian helis -- Example: ["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] -- Array, can contain multiple assets
 
 ["vehiclesCivBoat", ["C_Boat_Civil_01_rescue_F", 0.1			// motorboats
-	,"O_SWOP_Landspeeder_1", 0.1
 	,"C_Boat_Civil_01_F", 1.0
 ]] call _fnc_saveToTemplate; 			//this line determines civilian boats -- Example: ["vehiclesCivBoat", ["C_Boat_Civil_01_F"]] -- Array, can contain multiple assets
 

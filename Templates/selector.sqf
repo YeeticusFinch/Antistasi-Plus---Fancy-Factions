@@ -389,7 +389,7 @@ A3A_Inv_template = switch(true) do{
         case (A3A_hasWW2): {
         switch(ww2OccupantFaction) do {
             case(0): {
-                ["Templates\NewTemplates\GULAG_WWII\WW2_AI_German_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                ["Templates\NewTemplates\GULAG_WWII\WW2_AI_Soviets.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using the Soviet Union as invaders", _filename] call A3A_fnc_log;
             };
 //            case(1): {
@@ -585,6 +585,6 @@ if (A3A_hasCup) then {call compileScript ["Templates\NewTemplates\CUP\Cup_Logist
 if (A3A_hasAegis) then {call compileScript ["Templates\NewTemplates\Aegis\Aegis_Logistics_Nodes.sqf"];};
 if (A3A_hasGlobMob) then {call compileScript ["Templates\NewTemplates\GM\GM_Logistics_Nodes.sqf"];};
 if (A3A_hasStarWars) then {call compileScript ["Templates\NewTemplates\GULAG_STARWARS\StarWars_Logistics_nodes.sqf"];};
-//if (A3A_hasWW2) then {call compileScript ["Templates\NewTemplates\GULAG_WWII\WWII_Logistics_nodes.sqf"];};
+if (A3A_hasWW2) then {call compileScript ["Templates\NewTemplates\GULAG_WWII\WW2_Logistics_Nodes.sqf"];};
 if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};
 if (A3A_hasUR) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN_UR\VN_UR_Logistics_Nodes.sqf"};

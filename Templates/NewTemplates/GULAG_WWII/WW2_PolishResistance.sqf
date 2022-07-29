@@ -2,7 +2,7 @@
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "FactionName"] call _fnc_saveToTemplate; //Doesn't have to be the faction's official name
+["name", "Polish Resistance"] call _fnc_saveToTemplate; //Doesn't have to be the faction's official name
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate; //Flag
 ["flagTexture", "\A3\Data_F\Flags\Flag_rcrystal_CO.paa"] call _fnc_saveToTemplate; //Path to flag texture
@@ -33,7 +33,7 @@
 ["staticAT", "VIOC_I_LIB_Pak40"] call _fnc_saveToTemplate;
 ["staticAA", "VIOC_I_LIB_Flakvierling_38"] call _fnc_saveToTemplate;
 ["staticMortar", "I_G_Mortar_01_F"] call _fnc_saveToTemplate; //this is the default mortar, feel free to change it
-["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] ] call _fnc_saveToTemplate;  //And the mortar's ammo
+["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;  //And the mortar's ammo
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 
 //Static weapon definitions
@@ -74,6 +74,37 @@ private _initialRebelEquipment = [                            //Add all the stuf
 "U_LIB_WP_Soldier_camo_1",
 "U_LIB_WP_Soldier_camo_2",
 "U_LIB_WP_Soldier_camo_3",
+"U_LIB_CIV_Citizen_1",
+    "U_LIB_CIV_Citizen_2",
+    "U_LIB_CIV_Citizen_3",
+    "U_LIB_CIV_Citizen_4",
+    "U_LIB_CIV_Citizen_5",
+    "U_LIB_CIV_Citizen_6",
+    "U_LIB_CIV_Citizen_7",
+    "U_LIB_CIV_Citizen_8",
+    "U_LIB_CIV_Functionary_1",
+    "U_LIB_CIV_Functionary_2",
+    "U_LIB_CIV_Functionary_3",
+    "U_LIB_CIV_Functionary_4",
+    "U_LIB_CIV_Rocker_1",
+    "U_LIB_CIV_Priest",
+    "U_LIB_CIV_Schoolteacher",
+    "U_LIB_CIV_Schoolteacher_2",
+    "U_LIB_CIV_Villager_1",
+    "U_LIB_CIV_Villager_2",
+    "U_LIB_CIV_Villager_3",
+    "U_LIB_CIV_Villager_4",
+    "U_LIB_CIV_Woodlander_1",
+    "U_LIB_CIV_Woodlander_2",
+    "U_LIB_CIV_Woodlander_3",
+    "U_LIB_CIV_Woodlander_4",
+    "U_LIB_CIV_Worker_1",
+    "U_LIB_CIV_Worker_2",
+    "U_LIB_CIV_Worker_3",
+    "U_LIB_CIV_Worker_4",
+    "U_LIB_CIV_Doctor",
+    "U_LIB_CIV_Assistant",
+    "U_LIB_CIV_Assistant_2",
 "V_LIB_WP_G43Vest",
 "B_LIB_GER_A_frame",
 "LIB_Binocular_GER",

@@ -82,18 +82,19 @@
 
 ["vehiclesBasic", ["VIOC_O_LIB_GazM1_SOV"]] call _fnc_saveToTemplate; //The most basic vehicle. Usually quad bike level stuff. You can add multiple vehicles to this array
 ["vehiclesLightUnarmed", ["VIOC_O_LIB_GazM1_SOV"]] call _fnc_saveToTemplate;  //Small unarmed vehicles, stuff like jeeps, unarmed humvees, cars, etc
-["vehiclesLightArmed",["NORTH_SOV_T20", "VIOC_O_LIB_Zis5v_61k"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+["vehiclesLightArmed",["NORTH_SOV_T20", "VIOC_O_LIB_Zis5v_61k", "FA_BA64", "FA_BA64"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehiclesTrucks", ["VIOC_O_LIB_Zis5v","VIOC_O_LIB_US6_Tent"]] call _fnc_saveToTemplate;       //Trucks that can spawn carrying enemy infantry squads
 ["vehiclesCargoTrucks", ["VIOC_O_LIB_US6_Open_Cargo"]] call _fnc_saveToTemplate;  //Cargo trucks
 ["vehiclesAmmoTrucks", ["VIOC_O_LIB_US6_Ammo"]] call _fnc_saveToTemplate;   //Ammo trucks. If you get one of these in the garage then your garage vehicles can refill ammo
-["vehiclesRepairTrucks", ["VIOC_O_LIB_Zis6_Param"]] call _fnc_saveToTemplate; //Repair trucks. If you get one of these in the garage then your garage vehicles can repair
+["vehiclesRepairTrucks", ["VIOC_O_LIB_Zis6_Parm"]] call _fnc_saveToTemplate; //Repair trucks. If you get one of these in the garage then your garage vehicles can repair
 ["vehiclesFuelTrucks", ["VIOC_O_LIB_Zis5v_Fuel"]] call _fnc_saveToTemplate;   //Fuel trucks. If you get one of these in the garage then your garage vehicles can refuel
 ["vehiclesMedical", ["VIOC_O_LIB_Zis5v_Med"]] call _fnc_saveToTemplate;      //Medical trucks/cars
-["vehiclesAPCs", ["NORTH_SOV_41_T26_M33_OT", "NORTH_SOV_BA10", "NORTH_SOV_41_T26_M31_OT", "FA_BA64", "NORTH_SOV_T60"]] call _fnc_saveToTemplate; //APCs with mounted weapons that can carry people to the fight. Should be scary vehicles to face. Ex. M113, M2 Bradley
+["vehiclesAPCs", ["NORTH_SOV_41_T26_M33_OT", "NORTH_SOV_BA10", "NORTH_SOV_41_T26_M31", "FA_BA64", "NORTH_SOV_T60"]] call _fnc_saveToTemplate; //APCs with mounted weapons that can carry people to the fight. Should be scary vehicles to face. Ex. M113, M2 Bradley
 ["vehiclesTanks", ["VIOC_O_LIB_JS2_43", "VIOC_O_LIB_T34_76", "VIOC_O_LIB_T34_85", "NORTH_SOV_T28"]] call _fnc_saveToTemplate; //Tanks. Very heavily armed and armored, just one of these should be able to send the whole rebel force running. Ex. M1 Abrams
 ["vehiclesAA", ["VIOC_O_LIB_Zis5v_61k"]] call _fnc_saveToTemplate;   //Anti-Air vehicles with flak guns or SAMs. Could be anything from a truck with a ZU bolted to the back to a full-on anti-air tank
 ["vehiclesLightAPCs", ["NORTH_SOV_T20"]] call _fnc_saveToTemplate;  //Lighter APCs like the m113
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;  //This field is empty on all the templates I've seen, so I'd just leave it alone
+
 ["vehiclesSam", ["not_supported", "not_supported"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["not_supported"]] call _fnc_saveToTemplate; //Boats that carry people
@@ -113,10 +114,10 @@
 ["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;    //Attack drones
 ["uavsPortable", ["not_supported"]] call _fnc_saveToTemplate;  //Portable recon drones
 
-["vehiclesMilitiaLightArmed", ["NORTH_SOV_T20"]] call _fnc_saveToTemplate;  //A smaller selection of vehicles for the militia sub-faction to use
+["vehiclesMilitiaLightArmed", ["NORTH_SOV_T20", "FA_BA64", "FA_BA64"]] call _fnc_saveToTemplate;  //A smaller selection of vehicles for the militia sub-faction to use
 ["vehiclesMilitiaTrucks", ["VIOC_O_LIB_Zis5v"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["VIOC_O_LIB_GazM1_SOV"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["NORTH_SOV_41_T26_M33_OT"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["NORTH_SOV_41_T26_M33_OT", "NORTH_SOV_BA10", "FA_BA64"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["VIOC_O_LIB_T34_76"]] call _fnc_saveToTemplate; 
 ["vehiclesPolice", ["VIOC_O_LIB_GazM1_SOV"]] call _fnc_saveToTemplate;             //Cop cars
 
@@ -128,7 +129,7 @@
 
 ["mortarMagazineHE", "LIB_8Rnd_82mmHE_BM37"] call _fnc_saveToTemplate;         //Ammo for artillery, left the defaults for mortars
 ["mortarMagazineSmoke", "LIB_82mm_BM37_SmokeShell"] call _fnc_saveToTemplate;
-["howitzerMagazineHE", "STR_NORTH_nameMag152h38"] call _fnc_saveToTemplate;
+["howitzerMagazineHE", "STR_NORTH_nameWep152h38"] call _fnc_saveToTemplate;
 
 ["baggedMGs", [["I_G_HMG_02_weapon_F", "I_G_HMG_02_support_high_F"]]] call _fnc_saveToTemplate; //I dont even know how this part works, so I leave it alone
 ["baggedAT", [["B_HMG_01_support_F", "B_AT_01_weapon_F"]]] call _fnc_saveToTemplate;
@@ -233,7 +234,7 @@ private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData setVariable ["uniforms", ["U_LIB_NKVD_Starshina"]];        //Default uniforms
 _sfLoadoutData setVariable ["offuniforms", ["U_LIB_NKVD_StLeutenant"]];     //Officer uniforms
 _sfLoadoutData setVariable ["vests", ["V_LIB_SOV_RA_MosinBelt"]];           //Default vests
-_sfLoadoutData setVariable ["offvests", ["V_LIB_SOV_OfficerVest"]];        //Officer vests
+_sfLoadoutData setVariable ["offvests", ["V_LIB_SOV_RA_OfficerVest"]];        //Officer vests
 _sfLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel"]];       //Backpacks
 _sfLoadoutData setVariable ["helmets", ["H_LIB_NKVD_PrivateCap"]];         //Helmets
 _sfLoadoutData setVariable ["offhelmets", ["H_LIB_NKVD_OfficerCap"]];	     //Helmets but for officers
