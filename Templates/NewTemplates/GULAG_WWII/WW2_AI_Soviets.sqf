@@ -143,15 +143,15 @@
 		//Team Leader
 		["LIB_NKVD_first_lieutenant"] call A3A_fnc_getLoadout,  //Loadouts for pvp players that join the government faction
 		//Medic
-		["LIB_NKVD_rifleman"] call A3A_fnc_getLoadout,
+		["LIB_NKVD_medic"] call A3A_fnc_getLoadout,
 		//Autorifleman
 		["LIB_NKVD_smgunner"] call A3A_fnc_getLoadout,
 		//Marksman
-		["LIB_NKVD_rifleman"] call A3A_fnc_getLoadout,
+		["LIB_NKVD_sniper"] call A3A_fnc_getLoadout,
 		//Anti-tank Scout
-		["LIB_NKVD_rifleman"] call A3A_fnc_getLoadout,
+		["LIB_NKVD_AT"] call A3A_fnc_getLoadout,
 		//AT2
-		["LIB_NKVD_rifleman"] call A3A_fnc_getLoadout
+		["LIB_NKVD_AlsoAT"] call A3A_fnc_getLoadout
 	]
 ] call _fnc_saveToTemplate;
 ["pvpVehicles", ["NORTH_SOV_41_T26_M33_OT"]] call _fnc_saveToTemplate;  //Vehicles that the pvp players can spawn in to hunt down rebels

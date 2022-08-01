@@ -7121,6 +7121,42 @@
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_opfor_teamLeader_temp.sqf" FileName="Templates\Loadouts\cup_opfor_teamLeader_temp.sqf">
                 <SubNodes />
               </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_GER_AT_soldier_WssFrsbrgStrmmMp40.sqf" FileName="Templates\Loadouts\LIB_GER_AT_soldier_WssFrsbrgStrmmMp40.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_GER_medic_WssFrsbrgK98.sqf" FileName="Templates\Loadouts\LIB_GER_medic_WssFrsbrgK98.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_GER_mgunner_WssFrsbrgStrmmMg42.sqf" FileName="Templates\Loadouts\LIB_GER_mgunner_WssFrsbrgStrmmMg42.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_GER_ober_rifleman_WssFrsbrgOmnnG43.sqf" FileName="Templates\Loadouts\LIB_GER_ober_rifleman_WssFrsbrgOmnnG43.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_GER_sniper_WssFrsbrgUschaK98zf39.sqf" FileName="Templates\Loadouts\LIB_GER_sniper_WssFrsbrgUschaK98zf39.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_GER_unterofficer_WssFrsbrgOschaMp40.sqf" FileName="Templates\Loadouts\LIB_GER_unterofficer_WssFrsbrgOschaMp40.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_NKVD_AlsoAT.sqf" FileName="Templates\Loadouts\LIB_NKVD_AlsoAT.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_NKVD_AT.sqf" FileName="Templates\Loadouts\LIB_NKVD_AT.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_NKVD_first_lieutenant.sqf" FileName="Templates\Loadouts\LIB_NKVD_first_lieutenant.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_NKVD_medic.sqf" FileName="Templates\Loadouts\LIB_NKVD_medic.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_NKVD_smgunner.sqf" FileName="Templates\Loadouts\LIB_NKVD_smgunner.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="LIB_NKVD_sniper.sqf" FileName="Templates\Loadouts\LIB_NKVD_sniper.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_afrf_AT.sqf" FileName="Templates\Loadouts\rhs_afrf_AT.sqf">
                 <SubNodes />
               </ProjectNodeViewModel>
@@ -7453,6 +7489,9 @@
               <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="GULAG_WWII" FileName="Templates\NewTemplates\GULAG_WWII">
                 <SubNodes>
                   <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="WW2_AI_German_Temperate.sqf" FileName="Templates\NewTemplates\GULAG_WWII\WW2_AI_German_Temperate.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="WW2_AI_Japan.sqf" FileName="Templates\NewTemplates\GULAG_WWII\WW2_AI_Japan.sqf">
                     <SubNodes />
                   </ProjectNodeViewModel>
                   <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="WW2_AI_Soviets.sqf" FileName="Templates\NewTemplates\GULAG_WWII\WW2_AI_Soviets.sqf">
